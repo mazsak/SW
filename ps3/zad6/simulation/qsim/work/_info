@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Projects/SW/ps3/zad6/simulation/qsim
+vbinary_6_bits_BCD_board
+Z1 !s110 1553763204
+!i10b 1
+!s100 dO9`aRnCJ_@CCdb^<fchm0
+IbCBSl74ATT96m65<X`anR0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1553763201
+8binary_6_bits_BCD_board.vo
+Fbinary_6_bits_BCD_board.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1553763204.000000
+!s107 binary_6_bits_BCD_board.vo|
+!s90 -work|work|binary_6_bits_BCD_board.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+nbinary_6_bits_@b@c@d_board
+vbinary_6_bits_BCD_board_vlg_vec_tst
+R1
+!i10b 1
+!s100 2C_GBjezk>K_Sh=DgK^ga1
+IUe1CBK^IEG=zB6cC<5WKQ0
+R2
+R0
+w1553763199
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+nbinary_6_bits_@b@c@d_board_vlg_vec_tst
