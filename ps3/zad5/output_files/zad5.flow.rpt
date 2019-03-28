@@ -1,5 +1,5 @@
 Flow report for zad5
-Thu Mar 21 13:20:45 2019
+Thu Mar 28 14:57:15 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,14 +40,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Mar 21 13:20:26 2019       ;
+; Flow Status                     ; Successful - Thu Mar 28 14:56:56 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; zad5                                        ;
 ; Top-level Entity Name           ; zad5                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 18 / 32,070 ( < 1 % )                       ;
+; Logic utilization (in ALMs)     ; 17 / 32,070 ( < 1 % )                       ;
 ; Total registers                 ; 0                                           ;
 ; Total pins                      ; 47 / 457 ( 10 % )                           ;
 ; Total virtual pins              ; 0                                           ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/21/2019 13:17:53 ;
+; Start date & time ; 03/28/2019 14:55:21 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; zad5                ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 35775002756364.155317067206008         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 88491848904580.155378132104456         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -93,11 +93,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:31     ; 1.0                     ; 4800 MB             ; 00:00:44                           ;
-; Fitter                    ; 00:01:33     ; 1.0                     ; 6174 MB             ; 00:01:39                           ;
-; Assembler                 ; 00:00:19     ; 1.0                     ; 4835 MB             ; 00:00:15                           ;
-; TimeQuest Timing Analyzer ; 00:00:16     ; 1.0                     ; 5097 MB             ; 00:00:13                           ;
-; Total                     ; 00:02:39     ; --                      ; --                  ; 00:02:51                           ;
+; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 4812 MB             ; 00:00:41                           ;
+; Fitter                    ; 00:01:03     ; 1.0                     ; 6264 MB             ; 00:01:57                           ;
+; Assembler                 ; 00:00:10     ; 1.0                     ; 4848 MB             ; 00:00:10                           ;
+; TimeQuest Timing Analyzer ; 00:00:18     ; 1.0                     ; 5119 MB             ; 00:00:13                           ;
+; Total                     ; 00:01:49     ; --                      ; --                  ; 00:03:01                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -106,10 +106,10 @@ refer to the applicable agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 

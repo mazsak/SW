@@ -1,5 +1,5 @@
 Analysis & Synthesis report for zad5
-Thu Mar 21 13:18:21 2019
+Thu Mar 28 14:55:38 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -14,11 +14,9 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "binary_BCD_4_bits:comb_40"
- 10. Port Connectivity Checks: "binary_BCD_4_bits:comb_39"
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -44,7 +42,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Mar 21 13:18:21 2019       ;
+; Analysis & Synthesis Status     ; Successful - Thu Mar 28 14:55:38 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; zad5                                        ;
 ; Top-level Entity Name           ; zad5                                        ;
@@ -156,7 +154,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 2           ;
+; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -167,14 +165,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                          ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                            ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
-; binary_BCD_4_bits.v              ; yes             ; User Verilog HDL File  ; C:/Users/Acerek/Desktop/SW/ps3/zad5/binary_BCD_4_bits.v ;         ;
-; zad5.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Acerek/Desktop/SW/ps3/zad5/zad5.v              ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                 ;
++----------------------------------+-----------------+------------------------+--------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path   ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------+---------+
+; zad5.v                           ; yes             ; User Verilog HDL File  ; D:/Projects/SW/ps3/zad5/zad5.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -182,11 +179,11 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 18          ;
+; Estimate of Logic utilization (ALMs needed) ; 17          ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 33          ;
+; Combinational ALUT usage for logic          ; 32          ;
 ;     -- 7 input functions                    ; 0           ;
-;     -- 6 input functions                    ; 2           ;
+;     -- 6 input functions                    ; 1           ;
 ;     -- 5 input functions                    ; 0           ;
 ;     -- 4 input functions                    ; 25          ;
 ;     -- <=3 input functions                  ; 6           ;
@@ -199,21 +196,22 @@ refer to the applicable agreement for further details.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; SW[1]~input ;
 ; Maximum fan-out                             ; 10          ;
-; Total fan-out                               ; 207         ;
-; Average fan-out                             ; 1.63        ;
+; Total fan-out                               ; 202         ;
+; Average fan-out                             ; 1.60        ;
 +---------------------------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                          ;
-+--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------+-------------------+--------------+
-; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Entity Name       ; Library Name ;
-+--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------+-------------------+--------------+
-; |zad5                          ; 33 (12)             ; 0 (0)                     ; 0                 ; 0          ; 47   ; 0            ; |zad5                           ; zad5              ; work         ;
-;    |binary_BCD_4_bits:comb_39| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |zad5|binary_BCD_4_bits:comb_39 ; binary_BCD_4_bits ; work         ;
-;    |binary_BCD_4_bits:comb_41| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |zad5|binary_BCD_4_bits:comb_41 ; binary_BCD_4_bits ; work         ;
-;    |binary_BCD_4_bits:comb_42| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |zad5|binary_BCD_4_bits:comb_42 ; binary_BCD_4_bits ; work         ;
-+--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------+-------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |zad5                      ; 32 (0)              ; 0 (0)                     ; 0                 ; 0          ; 47   ; 0            ; |zad5               ; zad5        ; work         ;
+;    |decoder:e1|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |zad5|decoder:e1    ; decoder     ; work         ;
+;    |decoder:e2|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |zad5|decoder:e2    ; decoder     ; work         ;
+;    |decoder:e4|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |zad5|decoder:e4    ; decoder     ; work         ;
+;    |sum:e3|                ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |zad5|sum:e3        ; sum         ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -232,44 +230,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "binary_BCD_4_bits:comb_40"                                                                                                                                                         ;
-+---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port    ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; x       ; Input ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; x[3..1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                     ;
-+---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "binary_BCD_4_bits:comb_39"                                                                                                                                                      ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; x    ; Input ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 38                          ;
+; arriav_lcell_comb     ; 37                          ;
 ;     arith             ; 6                           ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 4                           ;
-;     normal            ; 32                          ;
+;     normal            ; 31                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 3                           ;
 ;         4 data inputs ; 25                          ;
-;         6 data inputs ; 2                           ;
+;         6 data inputs ; 1                           ;
 ; boundary_port         ; 47                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 2.98                        ;
+; Average LUT depth     ; 2.97                        ;
 +-----------------------+-----------------------------+
 
 
@@ -278,7 +257,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -288,27 +267,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Mar 21 13:17:50 2019
+    Info: Processing started: Thu Mar 28 14:55:20 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off zad5 -c zad5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file binary_bcd_4_bits.v
-    Info (12023): Found entity 1: binary_BCD_4_bits File: C:/Users/Acerek/Desktop/SW/ps3/zad5/binary_BCD_4_bits.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file zad5.v
-    Info (12023): Found entity 1: zad5 File: C:/Users/Acerek/Desktop/SW/ps3/zad5/zad5.v Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at zad5.v(37): instance has no name File: C:/Users/Acerek/Desktop/SW/ps3/zad5/zad5.v Line: 37
-Critical Warning (10846): Verilog HDL Instantiation warning at zad5.v(38): instance has no name File: C:/Users/Acerek/Desktop/SW/ps3/zad5/zad5.v Line: 38
-Critical Warning (10846): Verilog HDL Instantiation warning at zad5.v(39): instance has no name File: C:/Users/Acerek/Desktop/SW/ps3/zad5/zad5.v Line: 39
-Critical Warning (10846): Verilog HDL Instantiation warning at zad5.v(40): instance has no name File: C:/Users/Acerek/Desktop/SW/ps3/zad5/zad5.v Line: 40
+    Info (12023): Found entity 1: binary_BCD_4_bits File: D:/Projects/SW/ps3/zad5/binary_BCD_4_bits.v Line: 1
+Info (12021): Found 3 design units, including 3 entities, in source file zad5.v
+    Info (12023): Found entity 1: zad5 File: D:/Projects/SW/ps3/zad5/zad5.v Line: 1
+    Info (12023): Found entity 2: decoder File: D:/Projects/SW/ps3/zad5/zad5.v Line: 22
+    Info (12023): Found entity 3: sum File: D:/Projects/SW/ps3/zad5/zad5.v Line: 43
 Info (12127): Elaborating entity "zad5" for the top level hierarchy
-Warning (10034): Output port "LEDR[8]" at zad5.v(1) has no driver File: C:/Users/Acerek/Desktop/SW/ps3/zad5/zad5.v Line: 1
-Info (12128): Elaborating entity "binary_BCD_4_bits" for hierarchy "binary_BCD_4_bits:comb_39" File: C:/Users/Acerek/Desktop/SW/ps3/zad5/zad5.v Line: 37
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "decoder" for hierarchy "decoder:e1" File: D:/Projects/SW/ps3/zad5/zad5.v Line: 13
+Info (12128): Elaborating entity "sum" for hierarchy "sum:e3" File: D:/Projects/SW/ps3/zad5/zad5.v Line: 15
+Warning (10230): Verilog HDL assignment warning at zad5.v(63): truncated value with size 8 to match size of target (4) File: D:/Projects/SW/ps3/zad5/zad5.v Line: 63
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps3/zad5/zad5.v Line: 1
-    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/Users/Acerek/Desktop/SW/ps3/zad5/zad5.v Line: 1
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps3/zad5/zad5.v Line: 1
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps3/zad5/zad5.v Line: 1
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: D:/Projects/SW/ps3/zad5/zad5.v Line: 4
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: D:/Projects/SW/ps3/zad5/zad5.v Line: 4
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: D:/Projects/SW/ps3/zad5/zad5.v Line: 4
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
@@ -884,14 +860,14 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 80 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 79 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 38 output pins
-    Info (21061): Implemented 33 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 584 warnings
-    Info: Peak virtual memory: 4815 megabytes
-    Info: Processing ended: Thu Mar 21 13:18:21 2019
-    Info: Elapsed time: 00:00:31
-    Info: Total CPU time (on all processors): 00:00:44
+    Info (21061): Implemented 32 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 578 warnings
+    Info: Peak virtual memory: 4823 megabytes
+    Info: Processing ended: Thu Mar 28 14:55:38 2019
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:41
 
 

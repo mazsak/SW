@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/Users/Acerek/Desktop/SW/ps4/adder_A_B_8_bits_board/output_files/") File("adder_A_B_8_bits_board.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("D:/Projects/SW/ps4/adder_A_B_8_bits_board/output_files/") File("adder_A_B_8_bits_board.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

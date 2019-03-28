@@ -4,11 +4,11 @@ module adder_BCD_2_digits_board(
 										output [0:6] HEX0, output [0:6] HEX1,
 										output [0:6] HEX3, output [0:6] HEX5);					
 		
-		reg [0:0] error;
+		wire [0:0] error;
 		wire [3:0] R0, R1;
 		
-		assign LEDR[7:0] = SW[7:0];
-		assign LEDR[9] = cin;
+		assign LEDR[8:0] = SW[8:0];
+		assign LEDR[9] = error;
 		
 		binary_BCD_4_bits e1(SW[3:0], HEX3[0:6]);
 		binary_BCD_4_bits e2(SW[7:4], HEX5[0:6]);
@@ -42,34 +42,42 @@ endmodule
 
 module sum(
 		input [3:0] x, y, input [0:0] cin,
-		output reg [3:0] reply0, reply1, output [0:0]error);
+		output reg [3:0] reply0, reply1, output reg [0:0] error);
 		
-		reg sum_number;
+		reg [7:0] reply;
 		
-		always @(*)
+		
+		always @ (*)
 		begin
-			sum_number = x + y + cin;
-			if(x[3:0] < 10 && y[3:0] < 10)
-			begin
-				if(sum_number > 9)
+			reply = x + y + cin;
+			if(cin == 1'd0)
+				if(reply > 8'd18 || x > 4'd9 || y > 4'd9)
 				begin
-					sum_number = sum_number + 6;
+					error = 1'd1;
+					reply0 = 4'd10;
+					reply1 = 4'd10;
 				end
-				error = 0;
-				reply0 = sum_number%10;
-				if(sum_number > 9)
-					reply1 = 4'd1;
 				else
-					reply1 = 4'd0;
-			end
+				begin
+					error = 1'd0;
+					reply0 = reply%10;
+					reply1 = (reply - reply%10)/10;
+				end
 			else
-			begin
-				error = 1;
-				reply0 = 4'd0;
-				reply1 = 4'd0;
-			end
-				
+				if(reply > 8'd19 || x > 4'd9 || y > 4'd9)
+				begin
+					error = 1'd1;
+					reply0 = 4'd10;
+					reply1 = 4'd10;
+				end
+				else
+				begin
+					error = 1'd0;
+					reply0 = reply%10;
+					reply1 = (reply - reply%10)/10;
+				end
 		end
+		
 		
 endmodule
 
