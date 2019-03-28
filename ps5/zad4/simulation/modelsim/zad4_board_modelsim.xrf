@@ -1,7 +1,7 @@
 vendor_name = ModelSim
-source_file = 1, D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v
-source_file = 1, D:/Programy/Systemy wbudowane/ps5/zad4/Waveform.vwf
-source_file = 1, D:/Programy/Systemy wbudowane/ps5/zad4/db/zad4_board.cbx.xml
+source_file = 1, C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v
+source_file = 1, C:/Users/Acerek/Desktop/SW/ps5/zad4/Waveform.vwf
+source_file = 1, C:/Users/Acerek/Desktop/SW/ps5/zad4/db/zad4_board.cbx.xml
 design_name = zad4_board
 instance = comp, \HEX0[6]~output , HEX0[6]~output, zad4_board, 1
 instance = comp, \HEX0[5]~output , HEX0[5]~output, zad4_board, 1

@@ -1,0 +1,123 @@
+|binary_BCD_4_bits_board
+SW[0] => SW[0].IN3
+SW[1] => SW[1].IN3
+SW[2] => SW[2].IN3
+SW[3] => SW[3].IN3
+LEDR[0] << SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] << SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] << SW[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] << SW[3].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] << binary_BCD_4_bits:ex5.port1
+HEX0[5] << binary_BCD_4_bits:ex5.port1
+HEX0[4] << binary_BCD_4_bits:ex5.port1
+HEX0[3] << binary_BCD_4_bits:ex5.port1
+HEX0[2] << binary_BCD_4_bits:ex5.port1
+HEX0[1] << binary_BCD_4_bits:ex5.port1
+HEX0[0] << binary_BCD_4_bits:ex5.port1
+HEX1[6] << binary_BCD_4_bits:ex4.port1
+HEX1[5] << binary_BCD_4_bits:ex4.port1
+HEX1[4] << binary_BCD_4_bits:ex4.port1
+HEX1[3] << binary_BCD_4_bits:ex4.port1
+HEX1[2] << binary_BCD_4_bits:ex4.port1
+HEX1[1] << binary_BCD_4_bits:ex4.port1
+HEX1[0] << binary_BCD_4_bits:ex4.port1
+
+
+|binary_BCD_4_bits_board|circuit_a:e1
+x[0] => m[0].DATAIN
+x[1] => Add0.IN6
+x[2] => Add0.IN5
+x[3] => Add0.IN4
+m[0] <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+m[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+m[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+m[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|binary_BCD_4_bits_board|comparator:e2
+x[0] => LessThan0.IN8
+x[1] => LessThan0.IN7
+x[2] => LessThan0.IN6
+x[3] => LessThan0.IN5
+m[0] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+m[1] <= <GND>
+m[2] <= <GND>
+m[3] <= <GND>
+
+
+|binary_BCD_4_bits_board|mux_4:e3
+x[0] => x[0].IN1
+x[1] => x[1].IN1
+x[2] => x[2].IN1
+x[3] => x[3].IN1
+y[0] => y[0].IN1
+y[1] => y[1].IN1
+y[2] => y[2].IN1
+y[3] => y[3].IN1
+s => s.IN4
+m[0] <= mux:ex2.port3
+m[1] <= mux:ex3.port3
+m[2] <= mux:ex4.port3
+m[3] <= mux:ex5.port3
+
+
+|binary_BCD_4_bits_board|mux_4:e3|mux:ex2
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|binary_BCD_4_bits_board|mux_4:e3|mux:ex3
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|binary_BCD_4_bits_board|mux_4:e3|mux:ex4
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|binary_BCD_4_bits_board|mux_4:e3|mux:ex5
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|binary_BCD_4_bits_board|binary_BCD_4_bits:ex4
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+h[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|binary_BCD_4_bits_board|binary_BCD_4_bits:ex5
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+h[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

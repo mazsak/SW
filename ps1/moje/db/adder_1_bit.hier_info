@@ -1,0 +1,11 @@
+|adder_1_bit
+cin => s.IN1
+cin => cout.IN1
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

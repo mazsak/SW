@@ -1,5 +1,5 @@
 EDA Netlist Writer report for zad4_board
-Wed Mar 27 22:45:07 2019
+Thu Mar 28 11:24:09 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Mar 27 22:45:07 2019 ;
+; EDA Netlist Writer Status ; Successful - Thu Mar 28 11:24:09 2019 ;
 ; Revision Name             ; zad4_board                            ;
 ; Top-level Entity Name     ; zad4_board                            ;
 ; Family                    ; Cyclone V                             ;
@@ -50,7 +50,8 @@ refer to the applicable agreement for further details.
 ; Option                                                                                            ; Setting                   ;
 +---------------------------------------------------------------------------------------------------+---------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate functional simulation netlist                                                            ; On                        ;
+; Generate functional simulation netlist                                                            ; Off                       ;
+; Time scale                                                                                        ; 1 ps                      ;
 ; Truncate long hierarchy paths                                                                     ; Off                       ;
 ; Map illegal HDL characters                                                                        ; Off                       ;
 ; Flatten buses into individual nodes                                                               ; Off                       ;
@@ -70,7 +71,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Generated Files                                                       ;
 +-----------------------------------------------------------------------+
-; D:/Programy/Systemy wbudowane/ps5/zad4/simulation/qsim//zad4_board.vo ;
+; C:/Users/Acerek/Desktop/SW/ps5/zad4/simulation/modelsim/zad4_board.vo ;
 +-----------------------------------------------------------------------+
 
 
@@ -80,27 +81,15 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
-    Info: Your use of Intel Corporation's design tools, logic functions 
-    Info: and other software and tools, and its AMPP partner logic 
-    Info: functions, and any output files from any of the foregoing 
-    Info: (including device programming or simulation files), and any 
-    Info: associated documentation or information are expressly subject 
-    Info: to the terms and conditions of the Intel Program License 
-    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
-    Info: the Intel FPGA IP License Agreement, or other applicable license
-    Info: agreement, including, without limitation, that your use is for
-    Info: the sole purpose of programming logic devices manufactured by
-    Info: Intel and sold by Intel or its authorized distributors.  Please
-    Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed Mar 27 22:45:05 2019
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Programy/Systemy wbudowane/ps5/zad4/simulation/qsim/" zad4_board -c zad4_board
+    Info: Processing started: Thu Mar 28 11:24:05 2019
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off zad4_board -c zad4_board
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file zad4_board.vo in folder "D:/Programy/Systemy wbudowane/ps5/zad4/simulation/qsim//" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 578 megabytes
-    Info: Processing ended: Wed Mar 27 22:45:07 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
+Info (204019): Generated file zad4_board.vo in folder "C:/Users/Acerek/Desktop/SW/ps5/zad4/simulation/modelsim/" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4735 megabytes
+    Info: Processing ended: Thu Mar 28 11:24:09 2019
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 

@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Acerek/Desktop/SW/ps4/zad6/simulation/qsim
+vsubtractor_A_B_8_bits_board
+Z1 !s110 1553593418
+!i10b 1
+!s100 4z[U>8<iSORLnzN5;l=IZ0
+IQNol9b:AHMkhEj@QK4:9:3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1553593414
+8subtractor_A_B_8_bits_board.vo
+Fsubtractor_A_B_8_bits_board.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1553593417.000000
+!s107 subtractor_A_B_8_bits_board.vo|
+!s90 -work|work|subtractor_A_B_8_bits_board.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+nsubtractor_@a_@b_8_bits_board
+vsubtractor_A_B_8_bits_board_vlg_vec_tst
+R1
+!i10b 1
+!s100 K=`ZHTN[0lZ[:l8aYWHeN1
+IEoF>4QeICPR4;SV5Dk@n:0
+R2
+R0
+w1553593409
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1553593418.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+nsubtractor_@a_@b_8_bits_board_vlg_vec_tst

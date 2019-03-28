@@ -1,0 +1,33 @@
+$comment
+	File created using the following command:
+		vcd file RS_gates_board.msim.vcd -direction
+$end
+$date
+	Wed Mar 20 11:46:19 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module RS_gates_board_vlg_vec_tst $end
+$var reg 3 ! SW [2:0] $end
+$var wire 1 " LEDR [0] $end
+
+$scope module i1 $end
+$var wire 1 # gnd $end
+$var wire 1 $ vcc $end
+$var wire 1 % unknown $end
+$var tri1 1 & devclrn $end
+$var tri1 1 ' devpor $end
+$var tri1 1 ( devoe $end
+$var wire 1 ) ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 * SW[2]~input_o $end
+$var wire 1 + SW[1]~input_o $end
+$var wire 1 , ex1|R_g~combout $end
+$var wire 1 - SW[0]~input_o $end
+$var wire 1 . ex1|S_g~combout $end
+$var wire 1 / ex1|Qb~combout $end
+$var wire 1 0 ex1|Qa~combout $end

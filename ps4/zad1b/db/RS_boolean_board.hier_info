@@ -1,0 +1,15 @@
+|RS_boolean_board
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+LEDR[0] <= RS_boolean:ex1.port3
+
+
+|RS_boolean_board|RS_boolean:ex1
+Clk => R_g.IN0
+Clk => S_g.IN0
+R => R_g.IN1
+S => S_g.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

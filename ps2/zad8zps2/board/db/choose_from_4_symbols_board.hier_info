@@ -1,0 +1,86 @@
+|choose_from_4_symbols_board
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => LEDR[8].DATAIN
+SW[9] => LEDR[9].DATAIN
+KEY[0] => KEY[0].IN2
+KEY[1] => KEY[1].IN2
+HEX0[6] <= choose_from_4_symbols:ex3.port1
+HEX0[5] <= choose_from_4_symbols:ex3.port1
+HEX0[4] <= choose_from_4_symbols:ex3.port1
+HEX0[3] <= choose_from_4_symbols:ex3.port1
+HEX0[2] <= choose_from_4_symbols:ex3.port1
+HEX0[1] <= choose_from_4_symbols:ex3.port1
+HEX0[0] <= choose_from_4_symbols:ex3.port1
+LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= SW[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= SW[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= SW[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= SW[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= SW[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= SW[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= SW[8].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[9] <= SW[9].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|choose_from_4_symbols_board|mux_4_1_1_bit:ex1
+u => m.IN1
+v => m.IN1
+w => m.IN1
+x => m.IN1
+S0 => m.IN0
+S0 => m.IN0
+S0 => m.IN0
+S0 => m.IN0
+S1 => m.IN1
+S1 => m.IN1
+S1 => m.IN1
+S1 => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|choose_from_4_symbols_board|mux_4_1_1_bit:ex2
+u => m.IN1
+v => m.IN1
+w => m.IN1
+x => m.IN1
+S0 => m.IN0
+S0 => m.IN0
+S0 => m.IN0
+S0 => m.IN0
+S1 => m.IN1
+S1 => m.IN1
+S1 => m.IN1
+S1 => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|choose_from_4_symbols_board|choose_from_4_symbols:ex3
+u => m.IN1
+v => m.IN1
+w => m.IN1
+x => m.IN1
+S0 => m.IN0
+S0 => m.IN0
+S0 => m.IN0
+S0 => m.IN0
+S1 => m.IN1
+S1 => m.IN1
+S1 => m.IN1
+S1 => m.IN1
+h[6] <= <VCC>
+h[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= <GND>
+h[1] <= <GND>
+h[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

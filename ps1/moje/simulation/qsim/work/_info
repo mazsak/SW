@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/student/Desktop/moje/simulation/qsim
+vadder_1_bit
+Z1 !s110 1551347468
+!i10b 1
+!s100 HGW[ghEc8^1>0OKXLBS`D2
+I8lEak;7zG^ANHf8J[iT0Y3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1551347465
+8adder_1_bit.vo
+Fadder_1_bit.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1551347468.000000
+!s107 adder_1_bit.vo|
+!s90 -work|work|adder_1_bit.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vadder_1_bit_vlg_vec_tst
+R1
+!i10b 1
+!s100 :c48E0<E@nUdB@=T`TkIY0
+Ige4NzMKG46jRk>fK2K5[f1
+R2
+R0
+w1551347462
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

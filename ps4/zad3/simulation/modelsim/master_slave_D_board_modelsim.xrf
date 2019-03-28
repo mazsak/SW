@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Acerek/Desktop/SW/ps4/zad3/master_slave_D_board.v
+source_file = 1, C:/Users/Acerek/Desktop/SW/ps4/zad3/db/master_slave_D_board.cbx.xml
+design_name = master_slave_D_board
+instance = comp, \LEDR[0]~output , LEDR[0]~output, master_slave_D_board, 1
+instance = comp, \LEDR[1]~output , LEDR[1]~output, master_slave_D_board, 1
+instance = comp, \SW[3]~input , SW[3]~input, master_slave_D_board, 1
+instance = comp, \SW[2]~input , SW[2]~input, master_slave_D_board, 1
+instance = comp, \ex1|ex2|Qa~0 , ex1|ex2|Qa~0, master_slave_D_board, 1
+instance = comp, \ex1|ex3|Qa~0 , ex1|ex3|Qa~0, master_slave_D_board, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, master_slave_D_board, 1

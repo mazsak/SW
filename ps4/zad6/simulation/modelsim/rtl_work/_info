@@ -1,0 +1,99 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Acerek/Desktop/SW/ps4/zad6/simulation/modelsim
+vdecoder_hex_16
+Z1 !s110 1553534093
+!i10b 1
+!s100 MnUBA]7WFlA90MZV@5>bk0
+IJWkgJQ00R@5<26T?:b?VT3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1553533836
+Z4 8C:/Users/Acerek/Desktop/SW/ps4/zad6/subtractor_A_B_8_bits_board.v
+Z5 FC:/Users/Acerek/Desktop/SW/ps4/zad6/subtractor_A_B_8_bits_board.v
+L0 48
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1553534093.000000
+Z8 !s107 C:/Users/Acerek/Desktop/SW/ps4/zad6/subtractor_A_B_8_bits_board.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Acerek/Desktop/SW/ps4/zad6|C:/Users/Acerek/Desktop/SW/ps4/zad6/subtractor_A_B_8_bits_board.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/Acerek/Desktop/SW/ps4/zad6
+Z12 tCvgOpt 0
+vdecoder_reply
+R1
+!i10b 1
+!s100 CLbGjn:`Z]MzbR`bF8LG=0
+IWRzka87J^5e@FABn]eW@52
+R2
+R0
+R3
+R4
+R5
+L0 34
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vregister
+R1
+!i10b 1
+!s100 XaC`e46N4ADCdjE@8`2bE3
+I3@YV:]1aedKOB3_;@FnK60
+R2
+R0
+R3
+R4
+R5
+L0 19
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vsubtractor_A_B_8_bits_board
+R1
+!i10b 1
+!s100 O5b7LDQl^Hm`A85RC5z=b2
+I?gj7S:8WmOl1j:1O?ikaY3
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nsubtractor_@a_@b_8_bits_board

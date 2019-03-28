@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/student/Desktop/moje3/segment.v
+source_file = 1, C:/Users/student/Desktop/moje3/db/segment.cbx.xml
+design_name = segment
+instance = comp, \LEDR[0]~output , LEDR[0]~output, segment, 1
+instance = comp, \LEDR[1]~output , LEDR[1]~output, segment, 1
+instance = comp, \LEDR[2]~output , LEDR[2]~output, segment, 1
+instance = comp, \LEDR[3]~output , LEDR[3]~output, segment, 1
+instance = comp, \KEY[0]~input , KEY[0]~input, segment, 1
+instance = comp, \KEY[1]~input , KEY[1]~input, segment, 1
+instance = comp, \KEY[2]~input , KEY[2]~input, segment, 1
+instance = comp, \KEY[3]~input , KEY[3]~input, segment, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, segment, 1

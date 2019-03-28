@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/student/Desktop/moje/Verilog1.v
+source_file = 1, C:/Users/student/Desktop/moje2/adder_1_bit_board.v
+source_file = 1, C:/Users/student/Desktop/moje2/db/adder_1_bit_board.cbx.xml
+design_name = adder_1_bit_board
+instance = comp, \LEDR[0]~output , LEDR[0]~output, adder_1_bit_board, 1
+instance = comp, \LEDR[1]~output , LEDR[1]~output, adder_1_bit_board, 1
+instance = comp, \SW[0]~input , SW[0]~input, adder_1_bit_board, 1
+instance = comp, \SW[2]~input , SW[2]~input, adder_1_bit_board, 1
+instance = comp, \SW[1]~input , SW[1]~input, adder_1_bit_board, 1
+instance = comp, \ex1|Add1~0 , ex1|Add1~0, adder_1_bit_board, 1
+instance = comp, \ex1|Add1~1 , ex1|Add1~1, adder_1_bit_board, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, adder_1_bit_board, 1

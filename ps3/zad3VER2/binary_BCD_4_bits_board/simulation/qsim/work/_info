@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Acerek/Desktop/SW/ps3/zad3VER2/binary_BCD_4_bits_board/simulation/qsim
+vbinary_BCD_4_bits_board
+Z1 !s110 1553107213
+!i10b 1
+!s100 FjdPcYS6IFH?F4LoRZ4]l2
+IMPh<l>^B]KRM]1k0M<I[e0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1553107207
+8binary_BCD_4_bits_board.vo
+Fbinary_BCD_4_bits_board.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1553107212.000000
+!s107 binary_BCD_4_bits_board.vo|
+!s90 -work|work|binary_BCD_4_bits_board.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+nbinary_@b@c@d_4_bits_board
+vbinary_BCD_4_bits_board_vlg_vec_tst
+R1
+!i10b 1
+!s100 LFh@B^n^hFi]X?_F6[el<1
+IOCj7fee<a_RP8IBSWER]D1
+R2
+R0
+w1553107202
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1553107213.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+nbinary_@b@c@d_4_bits_board_vlg_vec_tst

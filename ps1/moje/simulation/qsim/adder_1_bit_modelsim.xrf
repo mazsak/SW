@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/student/Desktop/moje/Verilog1.v
+source_file = 1, C:/Users/student/Desktop/moje/db/adder_1_bit.cbx.xml
+design_name = adder_1_bit
+instance = comp, \s~output , s~output, adder_1_bit, 1
+instance = comp, \cout~output , cout~output, adder_1_bit, 1
+instance = comp, \a~input , a~input, adder_1_bit, 1
+instance = comp, \b~input , b~input, adder_1_bit, 1
+instance = comp, \cin~input , cin~input, adder_1_bit, 1
+instance = comp, \s~0 , s~0, adder_1_bit, 1
+instance = comp, \cout~0 , cout~0, adder_1_bit, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, adder_1_bit, 1

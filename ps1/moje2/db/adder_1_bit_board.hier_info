@@ -1,0 +1,40 @@
+|adder_1_bit_board
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => ~NO_FANOUT~
+SW[9] => SW[9].IN1
+LEDR[0] <= adder_1_bit:ex1.port3
+LEDR[1] <= adder_1_bit:ex1.port3
+LEDR[2] <= adder_1_bit:ex1.port3
+LEDR[3] <= adder_1_bit:ex1.port3
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= adder_1_bit:ex1.port4
+
+
+|adder_1_bit_board|adder_1_bit:ex1
+a[0] => _.DATAD
+a[1] => _.DATAD
+a[2] => _.DATAD
+a[3] => _.DATAD
+b[0] => _.DATAC
+b[1] => _.DATAC
+b[2] => _.DATAC
+b[3] => _.DATAC
+cin => _.DATAB
+s[0] <= _.SUM_OUT
+s[1] <= _.SUM_OUT
+s[2] <= _.SUM_OUT
+s[3] <= _.SUM_OUT
+cout <= _.SUM_OUT
+
+

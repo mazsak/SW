@@ -1,11 +1,11 @@
 module counter_16_bits_board(
 							input [0:0] KEY,
-							input [1:0] SW,
+							input [2:1] SW,
 							output [0:6] HEX0, HEX1, HEX2, HEX3);
 
 		wire [15:0] A;
 		
-		counter_N_bits ex0(KEY[0], SW[0], SW[1], A[15:0]);
+		counter_N_bits ex0(KEY[0], SW[1], SW[2], A[15:0]);
 		decoder_hex_16 ex1(A[3:0], HEX0[0:6]);
 		decoder_hex_16 ex2(A[7:4], HEX1[0:6]);
 		decoder_hex_16 ex3(A[11:8], HEX2[0:6]);

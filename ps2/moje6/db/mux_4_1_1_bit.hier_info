@@ -1,0 +1,16 @@
+|mux_4_1_1_bit
+u => m.IN1
+v => m.IN1
+w => m.IN1
+x => m.IN1
+S1 => m.IN0
+S1 => m.IN0
+S1 => m.IN0
+S1 => m.IN0
+S0 => m.IN1
+S0 => m.IN1
+S0 => m.IN1
+S0 => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+

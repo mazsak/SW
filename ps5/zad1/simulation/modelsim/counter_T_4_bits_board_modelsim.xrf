@@ -1,8 +1,9 @@
 vendor_name = ModelSim
-source_file = 1, D:/Programy/Systemy wbudowane/ps5/zad1/counter_T_4_bits_board.v
-source_file = 1, D:/Programy/Systemy wbudowane/ps5/zad1/Waveform.vwf
-source_file = 1, D:/Programy/Systemy wbudowane/ps5/zad1/Waveform1.vwf
-source_file = 1, D:/Programy/Systemy wbudowane/ps5/zad1/db/counter_T_4_bits_board.cbx.xml
+source_file = 1, C:/Users/Acerek/Desktop/SW/ps5/zad1/counter_T_4_bits_board.v
+source_file = 1, C:/Users/Acerek/Desktop/SW/ps5/zad1/Waveform.vwf
+source_file = 1, C:/Users/Acerek/Desktop/SW/ps5/zad1/Waveform1.vwf
+source_file = 1, C:/Users/Acerek/Desktop/SW/ps5/zad1/Waveform2.vwf
+source_file = 1, C:/Users/Acerek/Desktop/SW/ps5/zad1/db/counter_T_4_bits_board.cbx.xml
 design_name = counter_T_4_bits_board
 instance = comp, \HEX0[6]~output , HEX0[6]~output, counter_T_4_bits_board, 1
 instance = comp, \HEX0[5]~output , HEX0[5]~output, counter_T_4_bits_board, 1

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for counter_mod_M_board
-Wed Mar 27 22:16:59 2019
+Thu Mar 28 11:49:26 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -15,12 +15,11 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: counter_modulo_M_rollover:ex
- 11. Parameter Settings for User Entity Instance: counter_mod_10:ex0|counter_mod_M:ex
- 12. Port Connectivity Checks: "counter_modulo_M_rollover:ex"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+ 10. Parameter Settings for User Entity Instance: lab5_part3a:exx|counter_mod_M:ex0
+ 11. Parameter Settings for User Entity Instance: lab5_part3a:exx|counter_mod_M:ex1
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -46,13 +45,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Mar 27 22:16:59 2019       ;
+; Analysis & Synthesis Status     ; Successful - Thu Mar 28 11:49:26 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; counter_mod_M_board                         ;
 ; Top-level Entity Name           ; counter_mod_M_board                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 28                                          ;
+; Total registers                 ; 30                                          ;
 ; Total pins                      ; 10                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -158,66 +157,65 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                 ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
-; counter_mod_M_board.v            ; yes             ; User Verilog HDL File  ; D:/Programy/Systemy wbudowane/ps5/zad3/counter_mod_M_board.v ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                            ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+; counter_mod_M_board.v            ; yes             ; User Verilog HDL File  ; C:/Users/Acerek/Desktop/SW/ps5/zad3/counter_mod_M_board.v ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                       ;
-+---------------------------------------------+-------------------------------------+
-; Resource                                    ; Usage                               ;
-+---------------------------------------------+-------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 22                                  ;
-;                                             ;                                     ;
-; Combinational ALUT usage for logic          ; 41                                  ;
-;     -- 7 input functions                    ; 0                                   ;
-;     -- 6 input functions                    ; 3                                   ;
-;     -- 5 input functions                    ; 5                                   ;
-;     -- 4 input functions                    ; 8                                   ;
-;     -- <=3 input functions                  ; 25                                  ;
-;                                             ;                                     ;
-; Dedicated logic registers                   ; 28                                  ;
-;                                             ;                                     ;
-; I/O pins                                    ; 10                                  ;
-;                                             ;                                     ;
-; Total DSP Blocks                            ; 0                                   ;
-;                                             ;                                     ;
-; Maximum fan-out node                        ; counter_modulo_M_rollover:ex|Equal0 ;
-; Maximum fan-out                             ; 29                                  ;
-; Total fan-out                               ; 273                                 ;
-; Average fan-out                             ; 3.07                                ;
-+---------------------------------------------+-------------------------------------+
++-----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                     ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Estimate of Logic utilization (ALMs needed) ; 29                ;
+;                                             ;                   ;
+; Combinational ALUT usage for logic          ; 49                ;
+;     -- 7 input functions                    ; 0                 ;
+;     -- 6 input functions                    ; 9                 ;
+;     -- 5 input functions                    ; 5                 ;
+;     -- 4 input functions                    ; 7                 ;
+;     -- <=3 input functions                  ; 28                ;
+;                                             ;                   ;
+; Dedicated logic registers                   ; 30                ;
+;                                             ;                   ;
+; I/O pins                                    ; 10                ;
+;                                             ;                   ;
+; Total DSP Blocks                            ; 0                 ;
+;                                             ;                   ;
+; Maximum fan-out node                        ; CLOCK_50[0]~input ;
+; Maximum fan-out                             ; 30                ;
+; Total fan-out                               ; 321               ;
+; Average fan-out                             ; 3.24              ;
++---------------------------------------------+-------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                              ;
-+-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+---------------------------+--------------+
-; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Entity Name               ; Library Name ;
-+-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+---------------------------+--------------+
-; |counter_mod_M_board              ; 41 (0)              ; 28 (0)                    ; 0                 ; 0          ; 10   ; 0            ; |counter_mod_M_board                                     ; counter_mod_M_board       ; work         ;
-;    |counter_mod_10:ex0|           ; 4 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |counter_mod_M_board|counter_mod_10:ex0                  ; counter_mod_10            ; work         ;
-;       |counter_mod_M:ex|          ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |counter_mod_M_board|counter_mod_10:ex0|counter_mod_M:ex ; counter_mod_M             ; work         ;
-;    |counter_modulo_M_rollover:ex| ; 30 (30)             ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |counter_mod_M_board|counter_modulo_M_rollover:ex        ; counter_modulo_M_rollover ; work         ;
-;    |decoder_hex_10:ex1|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |counter_mod_M_board|decoder_hex_10:ex1                  ; decoder_hex_10            ; work         ;
-+-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+---------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                               ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Entity Name         ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------+---------------------+--------------+
+; |counter_mod_M_board       ; 49 (0)              ; 30 (0)                    ; 0                 ; 0          ; 10   ; 0            ; |counter_mod_M_board                                   ; counter_mod_M_board ; work         ;
+;    |lab5_part3a:exx|       ; 49 (4)              ; 30 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |counter_mod_M_board|lab5_part3a:exx                   ; lab5_part3a         ; work         ;
+;       |counter_mod_M:ex0|  ; 34 (34)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |counter_mod_M_board|lab5_part3a:exx|counter_mod_M:ex0 ; counter_mod_M       ; work         ;
+;       |counter_mod_M:ex1|  ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |counter_mod_M_board|lab5_part3a:exx|counter_mod_M:ex1 ; counter_mod_M       ; work         ;
+;       |decoder_hex_10:ex|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |counter_mod_M_board|lab5_part3a:exx|decoder_hex_10:ex ; decoder_hex_10      ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -226,54 +224,44 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 28    ;
-; Number of registers using Synchronous Clear  ; 24    ;
+; Total registers                              ; 30    ;
+; Number of registers using Synchronous Clear  ; 26    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 28    ;
+; Number of registers using Asynchronous Clear ; 30    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 24    ;
+; Number of registers using Clock Enable       ; 26    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |counter_mod_M_board|counter_mod_10:ex0|counter_mod_M:ex|Q[0] ;
-; 3:1                ; 24 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |counter_mod_M_board|counter_modulo_M_rollover:ex|Q[23]       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
+; 3:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |counter_mod_M_board|lab5_part3a:exx|counter_mod_M:ex0|Q[0] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |counter_mod_M_board|lab5_part3a:exx|counter_mod_M:ex1|Q[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: counter_modulo_M_rollover:ex ;
-+----------------+----------+-----------------------------------------------+
-; Parameter Name ; Value    ; Type                                          ;
-+----------------+----------+-----------------------------------------------+
-; M              ; 10000000 ; Signed Integer                                ;
-+----------------+----------+-----------------------------------------------+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lab5_part3a:exx|counter_mod_M:ex0 ;
++----------------+----------+----------------------------------------------------+
+; Parameter Name ; Value    ; Type                                               ;
++----------------+----------+----------------------------------------------------+
+; M              ; 50000000 ; Signed Integer                                     ;
++----------------+----------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: counter_mod_10:ex0|counter_mod_M:ex ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; M              ; 10    ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lab5_part3a:exx|counter_mod_M:ex1 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; M              ; 11    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "counter_modulo_M_rollover:ex"                                                                                          ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
-; Q    ; Output ; Warning  ; Output or bidir port (24 bits) is wider than the port expression (1 bits) it drives; bit(s) "Q[23..1]" have no fanouts ;
-; Q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                    ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -281,22 +269,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 28                          ;
+; arriav_ff             ; 30                          ;
 ;     CLR               ; 4                           ;
-;     ENA CLR SCLR      ; 24                          ;
-; arriav_lcell_comb     ; 42                          ;
-;     arith             ; 24                          ;
-;         1 data inputs ; 24                          ;
-;     normal            ; 18                          ;
+;     ENA CLR SCLR      ; 26                          ;
+; arriav_lcell_comb     ; 50                          ;
+;     arith             ; 26                          ;
+;         1 data inputs ; 26                          ;
+;     normal            ; 24                          ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
-;         4 data inputs ; 8                           ;
+;         2 data inputs ; 2                           ;
+;         4 data inputs ; 7                           ;
 ;         5 data inputs ; 5                           ;
-;         6 data inputs ; 3                           ;
+;         6 data inputs ; 9                           ;
 ; boundary_port         ; 10                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.30                        ;
-; Average LUT depth     ; 2.49                        ;
+; Max LUT depth         ; 3.50                        ;
+; Average LUT depth     ; 2.65                        ;
 +-----------------------+-----------------------------+
 
 
@@ -305,7 +293,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -315,23 +303,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Mar 27 22:16:40 2019
+    Info: Processing started: Thu Mar 28 11:48:53 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off counter_mod_M_board -c counter_mod_M_board
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 6 design units, including 6 entities, in source file counter_mod_m_board.v
-    Info (12023): Found entity 1: counter_mod_M_board File: D:/Programy/Systemy wbudowane/ps5/zad3/counter_mod_M_board.v Line: 1
-    Info (12023): Found entity 2: counter_modulo_M_rollover File: D:/Programy/Systemy wbudowane/ps5/zad3/counter_mod_M_board.v Line: 16
-    Info (12023): Found entity 3: counter_mod_10 File: D:/Programy/Systemy wbudowane/ps5/zad3/counter_mod_M_board.v Line: 38
-    Info (12023): Found entity 4: counter_mod_M File: D:/Programy/Systemy wbudowane/ps5/zad3/counter_mod_M_board.v Line: 47
-    Info (12023): Found entity 5: counter_N_bits File: D:/Programy/Systemy wbudowane/ps5/zad3/counter_mod_M_board.v Line: 67
-    Info (12023): Found entity 6: decoder_hex_10 File: D:/Programy/Systemy wbudowane/ps5/zad3/counter_mod_M_board.v Line: 79
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 4 design units, including 4 entities, in source file counter_mod_m_board.v
+    Info (12023): Found entity 1: counter_mod_M_board File: C:/Users/Acerek/Desktop/SW/ps5/zad3/counter_mod_M_board.v Line: 1
+    Info (12023): Found entity 2: counter_mod_M File: C:/Users/Acerek/Desktop/SW/ps5/zad3/counter_mod_M_board.v Line: 10
+    Info (12023): Found entity 3: lab5_part3a File: C:/Users/Acerek/Desktop/SW/ps5/zad3/counter_mod_M_board.v Line: 30
+    Info (12023): Found entity 4: decoder_hex_10 File: C:/Users/Acerek/Desktop/SW/ps5/zad3/counter_mod_M_board.v Line: 47
 Info (12127): Elaborating entity "counter_mod_M_board" for the top level hierarchy
-Info (12128): Elaborating entity "counter_modulo_M_rollover" for hierarchy "counter_modulo_M_rollover:ex" File: D:/Programy/Systemy wbudowane/ps5/zad3/counter_mod_M_board.v Line: 10
-Info (12128): Elaborating entity "counter_mod_10" for hierarchy "counter_mod_10:ex0" File: D:/Programy/Systemy wbudowane/ps5/zad3/counter_mod_M_board.v Line: 11
-Info (12128): Elaborating entity "counter_mod_M" for hierarchy "counter_mod_10:ex0|counter_mod_M:ex" File: D:/Programy/Systemy wbudowane/ps5/zad3/counter_mod_M_board.v Line: 43
-Info (12128): Elaborating entity "decoder_hex_10" for hierarchy "decoder_hex_10:ex1" File: D:/Programy/Systemy wbudowane/ps5/zad3/counter_mod_M_board.v Line: 12
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "lab5_part3a" for hierarchy "lab5_part3a:exx" File: C:/Users/Acerek/Desktop/SW/ps5/zad3/counter_mod_M_board.v Line: 6
+Info (12128): Elaborating entity "counter_mod_M" for hierarchy "lab5_part3a:exx|counter_mod_M:ex0" File: C:/Users/Acerek/Desktop/SW/ps5/zad3/counter_mod_M_board.v Line: 41
+Info (12128): Elaborating entity "counter_mod_M" for hierarchy "lab5_part3a:exx|counter_mod_M:ex1" File: C:/Users/Acerek/Desktop/SW/ps5/zad3/counter_mod_M_board.v Line: 43
+Info (12128): Elaborating entity "decoder_hex_10" for hierarchy "lab5_part3a:exx|decoder_hex_10:ex" File: C:/Users/Acerek/Desktop/SW/ps5/zad3/counter_mod_M_board.v Line: 44
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
@@ -907,14 +892,14 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 51 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 59 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 41 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 574 warnings
-    Info: Peak virtual memory: 690 megabytes
-    Info: Processing ended: Wed Mar 27 22:16:59 2019
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:40
+    Info (21061): Implemented 49 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 573 warnings
+    Info: Peak virtual memory: 4816 megabytes
+    Info: Processing ended: Thu Mar 28 11:49:26 2019
+    Info: Elapsed time: 00:00:33
+    Info: Total CPU time (on all processors): 00:00:48
 
 

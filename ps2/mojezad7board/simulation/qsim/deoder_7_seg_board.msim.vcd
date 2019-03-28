@@ -1,0 +1,91 @@
+$comment
+	File created using the following command:
+		vcd file deoder_7_seg_board.msim.vcd -direction
+$end
+$date
+	Tue Mar 12 10:58:15 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module deoder_7_seg_board_vlg_vec_tst $end
+$var reg 2 ! SW [1:0] $end
+$var wire 1 " HEX0 [0] $end
+$var wire 1 # HEX0 [1] $end
+$var wire 1 $ HEX0 [2] $end
+$var wire 1 % HEX0 [3] $end
+$var wire 1 & HEX0 [4] $end
+$var wire 1 ' HEX0 [5] $end
+$var wire 1 ( HEX0 [6] $end
+
+$scope module i1 $end
+$var wire 1 ) gnd $end
+$var wire 1 * vcc $end
+$var wire 1 + unknown $end
+$var tri1 1 , devclrn $end
+$var tri1 1 - devpor $end
+$var tri1 1 . devoe $end
+$var wire 1 / ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 0 SW[1]~input_o $end
+$var wire 1 1 SW[0]~input_o $end
+$var wire 1 2 ex1|Decoder0~0_combout $end
+$var wire 1 3 ex1|Decoder0~1_combout $end
+$var wire 1 4 ex1|Decoder0~2_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+1(
+0'
+0&
+0%
+0$
+0#
+0"
+0)
+1*
+x+
+1,
+1-
+1.
+0/
+00
+01
+02
+03
+04
+$end
+#5000
+b1 !
+11
+1&
+13
+12
+1'
+1%
+1"
+#10000
+b11 !
+b10 !
+10
+01
+0&
+0(
+14
+03
+0%
+0"
+1$
+#15000
+b11 !
+11
+1&
+04
+0$
+#20000

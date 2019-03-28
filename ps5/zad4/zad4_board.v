@@ -6,10 +6,10 @@ module zad4_board(
 		wire [1:0] c2;
 		wire [1:0] c3;
 		
-		assign c0 = 2'd0;
-		assign c1 = 2'd1;
-		assign c2 = 2'd2;
-		assign c3 = 2'd3;
+		assign c0 = 2'd3;
+		assign c1 = 2'd2;
+		assign c2 = 2'd1;
+		assign c3 = 2'd0;
 					
 		decoder_7_seg ex3(c3[1:0], HEX3[0:6]);
 		decoder_7_seg ex2(c2[1:0], HEX2[0:6]);
@@ -24,10 +24,10 @@ module decoder_7_seg(
 	
 	always @(*)
 		casex(x)
-			4'd0: h=7'b1000010;
-			4'd1: h=7'b0110000;
-			4'd2: h=7'b1001111;
-			4'd3: h=7'b1110111;
+			4'd0: h=7'b0101000;
+			4'd1: h=7'b1000001;
+			4'd2: h=7'b1110001;
+			4'd3: h=7'b0110000;
 			default: h=7'b1111111;
 		endcase
 

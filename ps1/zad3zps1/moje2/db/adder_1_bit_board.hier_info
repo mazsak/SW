@@ -1,0 +1,16 @@
+|adder_1_bit_board
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+LEDR[0] << adder_1_bit:ex1.port3
+LEDR[1] << adder_1_bit:ex1.port4
+
+
+|adder_1_bit_board|adder_1_bit:ex1
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+s <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+

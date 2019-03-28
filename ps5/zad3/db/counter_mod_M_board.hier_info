@@ -1,17 +1,30 @@
 |counter_mod_M_board
 CLOCK_50[0] => CLOCK_50[0].IN1
-SW[0] => SW[0].IN2
-SW[1] => SW[1].IN2
-HEX0[6] <= decoder_hex_10:ex1.port1
-HEX0[5] <= decoder_hex_10:ex1.port1
-HEX0[4] <= decoder_hex_10:ex1.port1
-HEX0[3] <= decoder_hex_10:ex1.port1
-HEX0[2] <= decoder_hex_10:ex1.port1
-HEX0[1] <= decoder_hex_10:ex1.port1
-HEX0[0] <= decoder_hex_10:ex1.port1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+HEX0[6] <= lab5_part3a:exx.port3
+HEX0[5] <= lab5_part3a:exx.port3
+HEX0[4] <= lab5_part3a:exx.port3
+HEX0[3] <= lab5_part3a:exx.port3
+HEX0[2] <= lab5_part3a:exx.port3
+HEX0[1] <= lab5_part3a:exx.port3
+HEX0[0] <= lab5_part3a:exx.port3
 
 
-|counter_mod_M_board|counter_modulo_M_rollover:ex
+|counter_mod_M_board|lab5_part3a:exx
+clk => clk.IN2
+aclr => aclr.IN2
+enable => enable.IN1
+h[6] <= decoder_hex_10:ex.port1
+h[5] <= decoder_hex_10:ex.port1
+h[4] <= decoder_hex_10:ex.port1
+h[3] <= decoder_hex_10:ex.port1
+h[2] <= decoder_hex_10:ex.port1
+h[1] <= decoder_hex_10:ex.port1
+h[0] <= decoder_hex_10:ex.port1
+
+
+|counter_mod_M_board|lab5_part3a:exx|counter_mod_M:ex0
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -36,6 +49,8 @@ clk => Q[20]~reg0.CLK
 clk => Q[21]~reg0.CLK
 clk => Q[22]~reg0.CLK
 clk => Q[23]~reg0.CLK
+clk => Q[24]~reg0.CLK
+clk => Q[25]~reg0.CLK
 aclr => Q[0]~reg0.ACLR
 aclr => Q[1]~reg0.ACLR
 aclr => Q[2]~reg0.ACLR
@@ -60,6 +75,10 @@ aclr => Q[20]~reg0.ACLR
 aclr => Q[21]~reg0.ACLR
 aclr => Q[22]~reg0.ACLR
 aclr => Q[23]~reg0.ACLR
+aclr => Q[24]~reg0.ACLR
+aclr => Q[25]~reg0.ACLR
+enable => Q.OUTPUTSELECT
+enable => Q.OUTPUTSELECT
 enable => Q.OUTPUTSELECT
 enable => Q.OUTPUTSELECT
 enable => Q.OUTPUTSELECT
@@ -108,20 +127,11 @@ Q[20] <= Q[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[21] <= Q[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[22] <= Q[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[23] <= Q[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-rollover <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+Q[24] <= Q[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[25] <= Q[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|counter_mod_M_board|counter_mod_10:ex0
-clk => clk.IN1
-aclr => aclr.IN1
-enable => enable.IN1
-Q[0] <= counter_mod_M:ex.port3
-Q[1] <= counter_mod_M:ex.port3
-Q[2] <= counter_mod_M:ex.port3
-Q[3] <= counter_mod_M:ex.port3
-
-
-|counter_mod_M_board|counter_mod_10:ex0|counter_mod_M:ex
+|counter_mod_M_board|lab5_part3a:exx|counter_mod_M:ex1
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -140,7 +150,7 @@ Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|counter_mod_M_board|decoder_hex_10:ex1
+|counter_mod_M_board|lab5_part3a:exx|decoder_hex_10:ex
 x[0] => Decoder0.IN3
 x[1] => Decoder0.IN2
 x[2] => Decoder0.IN1

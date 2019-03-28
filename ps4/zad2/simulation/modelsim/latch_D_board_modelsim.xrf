@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Acerek/Desktop/SW/ps4/zad2/latch_D_board.v
+source_file = 1, C:/Users/Acerek/Desktop/SW/ps4/zad2/db/latch_D_board.cbx.xml
+design_name = latch_D_board
+instance = comp, \LEDR[0]~output , LEDR[0]~output, latch_D_board, 1
+instance = comp, \SW[2]~input , SW[2]~input, latch_D_board, 1
+instance = comp, \SW[3]~input , SW[3]~input, latch_D_board, 1
+instance = comp, \ex1|comb~0 , ex1|comb~0, latch_D_board, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, latch_D_board, 1

@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Mar 27 22:16:59 2019
+Analysis & Synthesis Status : Successful - Thu Mar 28 11:49:26 2019
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : counter_mod_M_board
 Top-level Entity Name : counter_mod_M_board
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 28
+Total registers : 30
 Total pins : 10
 Total virtual pins : 0
 Total block memory bits : 0

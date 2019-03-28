@@ -1,0 +1,29 @@
+|deoder_7_seg_board
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+HEX0[6] << decoder_7_seg:ex1.port1
+HEX0[5] << decoder_7_seg:ex1.port1
+HEX0[4] << decoder_7_seg:ex1.port1
+HEX0[3] << decoder_7_seg:ex1.port1
+HEX0[2] << decoder_7_seg:ex1.port1
+HEX0[1] << decoder_7_seg:ex1.port1
+HEX0[0] << decoder_7_seg:ex1.port1
+
+
+|deoder_7_seg_board|decoder_7_seg:ex1
+x[0] => Decoder0.IN1
+x[0] => h[1].DATAIN
+x[0] => h[2].DATAIN
+x[1] => Decoder0.IN0
+x[1] => h[3].DATAIN
+x[1] => h[4].DATAIN
+x[1] => h[6].DATAIN
+h[6] <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

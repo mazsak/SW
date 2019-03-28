@@ -1,0 +1,51 @@
+|mux_4_1_1_bit_board
+SW[0] => ~NO_FANOUT~
+SW[1] => ~NO_FANOUT~
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+SW[9] => SW[9].IN1
+KEY[0] => KEY[0].IN2
+KEY[1] => KEY[1].IN2
+LEDR[0] <= <GND>
+LEDR[1] <= <GND>
+LEDR[2] <= mux_4_1_1_bit:ex1.port6
+LEDR[3] <= mux_4_1_1_bit:ex2.port6
+
+
+|mux_4_1_1_bit_board|mux_4_1_1_bit:ex1
+u => m.IN1
+v => m.IN1
+w => m.IN1
+x => m.IN1
+S0 => m.IN0
+S0 => m.IN0
+S0 => m.IN0
+S0 => m.IN0
+S1 => m.IN1
+S1 => m.IN1
+S1 => m.IN1
+S1 => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_4_1_1_bit_board|mux_4_1_1_bit:ex2
+u => m.IN1
+v => m.IN1
+w => m.IN1
+x => m.IN1
+S0 => m.IN0
+S0 => m.IN0
+S0 => m.IN0
+S0 => m.IN0
+S1 => m.IN1
+S1 => m.IN1
+S1 => m.IN1
+S1 => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+

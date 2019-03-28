@@ -1,0 +1,86 @@
+|binary_BCD_4_bits_board
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+SW[3] => SW[3].IN2
+LEDR[0] << SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] << SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] << SW[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] << SW[3].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] << binary_BCD_4_bits:ex1.port1
+HEX0[5] << binary_BCD_4_bits:ex1.port1
+HEX0[4] << binary_BCD_4_bits:ex1.port1
+HEX0[3] << binary_BCD_4_bits:ex1.port1
+HEX0[2] << binary_BCD_4_bits:ex1.port1
+HEX0[1] << binary_BCD_4_bits:ex1.port1
+HEX0[0] << binary_BCD_4_bits:ex1.port1
+HEX1[6] << <VCC>
+HEX1[5] << LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[4] << LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[3] << LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[2] << <GND>
+HEX1[1] << <GND>
+HEX1[0] << LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|binary_BCD_4_bits_board|binary_BCD_4_bits:ex1
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+h[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|binary_BCD_4_bits_board|circuit_a:e1
+x[0] => LessThan0.IN8
+x[0] => m[0]$latch.DATAIN
+x[1] => LessThan0.IN7
+x[1] => Add0.IN6
+x[2] => LessThan0.IN6
+x[2] => Add0.IN5
+x[3] => LessThan0.IN5
+x[3] => Add0.IN4
+m[0] <= m[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+m[1] <= m[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+m[2] <= m[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+m[3] <= m[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|binary_BCD_4_bits_board|mux_2_1_1_bit:ex2
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|binary_BCD_4_bits_board|mux_2_1_1_bit:ex3
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|binary_BCD_4_bits_board|mux_2_1_1_bit:ex4
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|binary_BCD_4_bits_board|mux_2_1_1_bit:ex5
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Project_Quartus/ps3/zad1/decoder_hex_10_board/simulation/qsim
+vdecoder_hex_10_board
+Z1 !s110 1552510770
+!i10b 1
+!s100 i428ZaZ^646S?lJT2oUgN2
+I0_;gWdJ8kNIn7d>13kmg51
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1552510768
+8decoder_hex_10_board.vo
+Fdecoder_hex_10_board.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1552510770.000000
+!s107 decoder_hex_10_board.vo|
+!s90 -work|work|decoder_hex_10_board.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vdecoder_hex_10_board_vlg_vec_tst
+R1
+!i10b 1
+!s100 6oc5SoWCZ7U]Cd3MI]oI;3
+IddiMVFbDIUg;QSKdM0fPi2
+R2
+R0
+w1552510764
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R5
+R6

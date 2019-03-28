@@ -1,5 +1,5 @@
 Analysis & Synthesis report for zad4_board
-Wed Mar 27 22:41:52 2019
+Thu Mar 28 11:21:50 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Mar 27 22:41:52 2019       ;
+; Analysis & Synthesis Status     ; Successful - Thu Mar 28 11:21:50 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; zad4_board                                  ;
 ; Top-level Entity Name           ; zad4_board                                  ;
@@ -158,8 +158,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -169,13 +169,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                      ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                        ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
-; zad4_board.v                     ; yes             ; User Verilog HDL File  ; D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                   ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                     ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
+; zad4_board.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -235,22 +235,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+---------------------+
 ; Port ; Type  ; Severity ; Details             ;
 +------+-------+----------+---------------------+
-; x    ; Input ; Info     ; Stuck at GND        ;
+; x    ; Input ; Info     ; Stuck at VCC        ;
 +------+-------+----------+---------------------+
 
 
 +-----------------------------------------------+
 ; Port Connectivity Checks: "decoder_7_seg:ex1" ;
-+------+-------+----------+---------------------+
-; Port ; Type  ; Severity ; Details             ;
-+------+-------+----------+---------------------+
-; x[1] ; Input ; Info     ; Stuck at GND        ;
-; x[0] ; Input ; Info     ; Stuck at VCC        ;
-+------+-------+----------+---------------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "decoder_7_seg:ex2" ;
 +------+-------+----------+---------------------+
 ; Port ; Type  ; Severity ; Details             ;
 +------+-------+----------+---------------------+
@@ -260,11 +250,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-----------------------------------------------+
+; Port Connectivity Checks: "decoder_7_seg:ex2" ;
++------+-------+----------+---------------------+
+; Port ; Type  ; Severity ; Details             ;
++------+-------+----------+---------------------+
+; x[1] ; Input ; Info     ; Stuck at GND        ;
+; x[0] ; Input ; Info     ; Stuck at VCC        ;
++------+-------+----------+---------------------+
+
+
++-----------------------------------------------+
 ; Port Connectivity Checks: "decoder_7_seg:ex3" ;
 +------+-------+----------+---------------------+
 ; Port ; Type  ; Severity ; Details             ;
 +------+-------+----------+---------------------+
-; x    ; Input ; Info     ; Stuck at VCC        ;
+; x    ; Input ; Info     ; Stuck at GND        ;
 +------+-------+----------+---------------------+
 
 
@@ -288,7 +288,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -298,53 +298,53 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Mar 27 22:41:35 2019
+    Info: Processing started: Thu Mar 28 11:21:13 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off zad4_board -c zad4_board
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file zad4_board.v
-    Info (12023): Found entity 1: zad4_board File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 1
-    Info (12023): Found entity 2: decoder_7_seg File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 21
+    Info (12023): Found entity 1: zad4_board File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 1
+    Info (12023): Found entity 2: decoder_7_seg File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 21
 Info (12127): Elaborating entity "zad4_board" for the top level hierarchy
-Info (12128): Elaborating entity "decoder_7_seg" for hierarchy "decoder_7_seg:ex3" File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 14
+Info (12128): Elaborating entity "decoder_7_seg" for hierarchy "decoder_7_seg:ex3" File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 14
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX0[5]" is stuck at VCC File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX0[0]" is stuck at VCC File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX1[2]" is stuck at VCC File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX2[5]" is stuck at VCC File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX2[4]" is stuck at VCC File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX2[3]" is stuck at VCC File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX2[0]" is stuck at VCC File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX3[6]" is stuck at VCC File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX3[5]" is stuck at VCC File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX3[4]" is stuck at VCC File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX3[2]" is stuck at VCC File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX3[1]" is stuck at VCC File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
-    Warning (13410): Pin "HEX3[0]" is stuck at VCC File: D:/Programy/Systemy wbudowane/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX0[2]" is stuck at VCC File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX0[1]" is stuck at VCC File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX1[2]" is stuck at VCC File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX1[0]" is stuck at VCC File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX2[0]" is stuck at VCC File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX3[3]" is stuck at VCC File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX3[1]" is stuck at VCC File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/Acerek/Desktop/SW/ps5/zad4/zad4_board.v Line: 2
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 0 input pins
     Info (21059): Implemented 28 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 657 megabytes
-    Info: Processing ended: Wed Mar 27 22:41:52 2019
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Peak virtual memory: 4811 megabytes
+    Info: Processing ended: Thu Mar 28 11:21:50 2019
+    Info: Elapsed time: 00:00:37
+    Info: Total CPU time (on all processors): 00:00:46
 
 

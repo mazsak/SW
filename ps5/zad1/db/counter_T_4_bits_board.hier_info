@@ -2,13 +2,13 @@
 KEY[0] => KEY[0].IN1
 SW[0] => SW[0].IN1
 SW[1] => SW[1].IN1
-HEX0[6] <= decoder_hex_16:ex1.port1
-HEX0[5] <= decoder_hex_16:ex1.port1
-HEX0[4] <= decoder_hex_16:ex1.port1
-HEX0[3] <= decoder_hex_16:ex1.port1
-HEX0[2] <= decoder_hex_16:ex1.port1
-HEX0[1] <= decoder_hex_16:ex1.port1
-HEX0[0] <= decoder_hex_16:ex1.port1
+HEX0[6] << decoder_hex_16:ex1.port1
+HEX0[5] << decoder_hex_16:ex1.port1
+HEX0[4] << decoder_hex_16:ex1.port1
+HEX0[3] << decoder_hex_16:ex1.port1
+HEX0[2] << decoder_hex_16:ex1.port1
+HEX0[1] << decoder_hex_16:ex1.port1
+HEX0[0] << decoder_hex_16:ex1.port1
 
 
 |counter_T_4_bits_board|counter_T_4_bits:ex0

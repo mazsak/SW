@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Project_Quartus/ps4/zad1/simulation/qsim
+vRS_gates_board
+Z1 !s110 1553078778
+!i10b 1
+!s100 Z`Z:Hl3kcdZ<55QJ8_f3U1
+I]]_oOmfokS?ic1;Od@iG^1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1553078776
+8RS_gates_board.vo
+FRS_gates_board.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1553078778.000000
+!s107 RS_gates_board.vo|
+!s90 -work|work|RS_gates_board.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@r@s_gates_board
+vRS_gates_board_vlg_vec_tst
+R1
+!i10b 1
+!s100 HzGW3V9jR2LLk]F]a4BKi3
+Ii7W2NGG71c8<a^?cW89k13
+R2
+R0
+w1553078772
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+n@r@s_gates_board_vlg_vec_tst

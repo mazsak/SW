@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Acerek/Desktop/SW/ps2/mojezad7board/simulation/qsim
+vdeoder_7_seg_board
+Z1 !s110 1552384694
+!i10b 1
+!s100 `<DK?o4Q5`:^AaI^Rb>a=2
+ITRVT1aDk4Y]YS?W?zB@iL0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1552384692
+8deoder_7_seg_board.vo
+Fdeoder_7_seg_board.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1552384693.000000
+!s107 deoder_7_seg_board.vo|
+!s90 -work|work|deoder_7_seg_board.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vdeoder_7_seg_board_vlg_vec_tst
+R1
+!i10b 1
+!s100 O1Uak>QW9ZG@c57RBf3:=0
+IY8?oJaIe7LmVoVjZACdVz1
+R2
+R0
+w1552384687
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1552384694.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5

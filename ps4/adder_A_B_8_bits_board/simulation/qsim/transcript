@@ -1,0 +1,29 @@
+# do adder_A_B_8_bits_board.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:06:12 on Mar 25,2019
+# vlog -work work adder_A_B_8_bits_board.vo 
+# -- Compiling module adder_A_B_8_bits_board
+# 
+# Top level modules:
+# 	adder_A_B_8_bits_board
+# End time: 11:06:12 on Mar 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:06:12 on Mar 25,2019
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module adder_A_B_8_bits_board_vlg_vec_tst
+# 
+# Top level modules:
+# 	adder_A_B_8_bits_board_vlg_vec_tst
+# End time: 11:06:12 on Mar 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.adder_A_B_8_bits_board_vlg_vec_tst 
+# Start time: 11:06:12 on Mar 25,2019
+# Loading work.adder_A_B_8_bits_board_vlg_vec_tst
+# Loading work.adder_A_B_8_bits_board
+# after#25
+# ** Note: $finish    : Waveform.vwf.vt(58)
+#    Time: 1 us  Iteration: 0  Instance: /adder_A_B_8_bits_board_vlg_vec_tst
+# End time: 11:06:13 on Mar 25,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

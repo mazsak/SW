@@ -1,0 +1,14 @@
+|latch_D_board
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+LEDR[0] <= latch_D:ex1.port2
+
+
+|latch_D_board|latch_D:ex1
+Clk => S_g.IN0
+Clk => R_g.IN0
+D => S_g.IN1
+D => R_g.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Acerek/Desktop/SW/ps2/zad6zps2/moje7/simulation/qsim
+vmux_4_1_1_bit_board
+!s110 1552384219
+!i10b 1
+!s100 oSDfc1c@AdUaX<;?72^C_2
+IiRzcX_DDMgGAn:WH9f14@2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1552384217
+8mux_4_1_1_bit_board.vo
+Fmux_4_1_1_bit_board.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1552384219.000000
+!s107 mux_4_1_1_bit_board.vo|
+!s90 -work|work|mux_4_1_1_bit_board.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vmux_4_1_1_bit_board_vlg_vec_tst
+!s110 1552384220
+!i10b 1
+!s100 zI0kaNHcPo:ZZaAL:XY?00
+Ib3Zd1b5>4c8QAzQ=mJ?cB0
+R1
+R0
+w1552384212
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+L0 29
+R2
+r1
+!s85 0
+31
+R3
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R4
+R5

@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition"
 
-// DATE "03/27/2019 19:26:10"
+// DATE "03/28/2019 10:49:36"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -36,7 +36,7 @@ module counter_16_bits_board (
 	HEX2,
 	HEX3);
 input 	[0:0] KEY;
-input 	[1:0] SW;
+input 	[2:1] SW;
 output 	[0:6] HEX0;
 output 	[0:6] HEX1;
 output 	[0:6] HEX2;
@@ -72,8 +72,8 @@ output 	[0:6] HEX3;
 // HEX3[1]	=>  Location: PIN_AC27,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // HEX3[0]	=>  Location: PIN_AD26,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // KEY[0]	=>  Location: PIN_AA14,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// SW[0]	=>  Location: PIN_AB12,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // SW[1]	=>  Location: PIN_AC12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW[2]	=>  Location: PIN_AF9,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -91,8 +91,8 @@ wire \~QUARTUS_CREATED_GND~I_combout ;
 wire \KEY[0]~input_o ;
 wire \KEY[0]~inputCLKENA0_outclk ;
 wire \ex0|Q[0]~0_combout ;
-wire \SW[0]~input_o ;
 wire \SW[1]~input_o ;
+wire \SW[2]~input_o ;
 wire \ex0|Add0~1_sumout ;
 wire \ex0|Add0~2 ;
 wire \ex0|Add0~5_sumout ;
@@ -650,17 +650,6 @@ defparam \ex0|Q[0]~0 .lut_mask = 64'hFF00FF00FF00FF00;
 defparam \ex0|Q[0]~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: IOIBUF_X12_Y0_N18
-cyclonev_io_ibuf \SW[0]~input (
-	.i(SW[0]),
-	.ibar(gnd),
-	.dynamicterminationcontrol(gnd),
-	.o(\SW[0]~input_o ));
-// synopsys translate_off
-defparam \SW[0]~input .bus_hold = "false";
-defparam \SW[0]~input .simulate_z_as = "z";
-// synopsys translate_on
-
 // Location: IOIBUF_X16_Y0_N1
 cyclonev_io_ibuf \SW[1]~input (
 	.i(SW[1]),
@@ -672,16 +661,27 @@ defparam \SW[1]~input .bus_hold = "false";
 defparam \SW[1]~input .simulate_z_as = "z";
 // synopsys translate_on
 
+// Location: IOIBUF_X8_Y0_N35
+cyclonev_io_ibuf \SW[2]~input (
+	.i(SW[2]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW[2]~input_o ));
+// synopsys translate_off
+defparam \SW[2]~input .bus_hold = "false";
+defparam \SW[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
 // Location: FF_X87_Y12_N56
 dffeas \ex0|Q[0] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Q[0]~0_combout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [0]),
@@ -721,11 +721,11 @@ dffeas \ex0|Q[1] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Add0~1_sumout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [1]),
@@ -765,11 +765,11 @@ dffeas \ex0|Q[2] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Add0~5_sumout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [2]),
@@ -809,11 +809,11 @@ dffeas \ex0|Q[3] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Add0~9_sumout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [3]),
@@ -946,12 +946,12 @@ defparam \ex1|WideOr2~0 .shared_arith = "off";
 // Location: MLABCELL_X87_Y12_N48
 cyclonev_lcell_comb \ex1|WideOr1~0 (
 // Equation(s):
-// \ex1|WideOr1~0_combout  = ( \ex0|Q [2] & ( (!\ex0|Q [1] & (!\ex0|Q [3] $ (!\ex0|Q [0]))) # (\ex0|Q [1] & ((!\ex0|Q [0]) # (\ex0|Q [3]))) ) ) # ( !\ex0|Q [2] & ( (\ex0|Q [1] & (\ex0|Q [3] & \ex0|Q [0])) ) )
+// \ex1|WideOr1~0_combout  = ( \ex0|Q [2] & ( (!\ex0|Q [0] & ((\ex0|Q [1]) # (\ex0|Q [3]))) # (\ex0|Q [0] & (!\ex0|Q [3] $ (\ex0|Q [1]))) ) ) # ( !\ex0|Q [2] & ( (\ex0|Q [0] & (\ex0|Q [3] & \ex0|Q [1])) ) )
 
-	.dataa(!\ex0|Q [1]),
+	.dataa(!\ex0|Q [0]),
 	.datab(gnd),
 	.datac(!\ex0|Q [3]),
-	.datad(!\ex0|Q [0]),
+	.datad(!\ex0|Q [1]),
 	.datae(gnd),
 	.dataf(!\ex0|Q [2]),
 	.datag(gnd),
@@ -963,7 +963,7 @@ cyclonev_lcell_comb \ex1|WideOr1~0 (
 	.shareout());
 // synopsys translate_off
 defparam \ex1|WideOr1~0 .extended_lut = "off";
-defparam \ex1|WideOr1~0 .lut_mask = 64'h000500055FA55FA5;
+defparam \ex1|WideOr1~0 .lut_mask = 64'h000500055AAF5AAF;
 defparam \ex1|WideOr1~0 .shared_arith = "off";
 // synopsys translate_on
 
@@ -1021,11 +1021,11 @@ dffeas \ex0|Q[4] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Add0~13_sumout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [4]),
@@ -1065,11 +1065,11 @@ dffeas \ex0|Q[5] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Add0~17_sumout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [5]),
@@ -1109,11 +1109,11 @@ dffeas \ex0|Q[6] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Add0~21_sumout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [6]),
@@ -1153,11 +1153,11 @@ dffeas \ex0|Q[7] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Add0~25_sumout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [7]),
@@ -1365,11 +1365,11 @@ dffeas \ex0|Q[8] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Add0~29_sumout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [8]),
@@ -1409,11 +1409,11 @@ dffeas \ex0|Q[9] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Add0~33_sumout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [9]),
@@ -1453,11 +1453,11 @@ dffeas \ex0|Q[10] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Add0~37_sumout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [10]),
@@ -1497,11 +1497,11 @@ dffeas \ex0|Q[11] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Add0~41_sumout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [11]),
@@ -1709,11 +1709,11 @@ dffeas \ex0|Q[12] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Add0~45_sumout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [12]),
@@ -1753,11 +1753,11 @@ dffeas \ex0|Q[13] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Add0~49_sumout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [13]),
@@ -1797,11 +1797,11 @@ dffeas \ex0|Q[14] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Add0~53_sumout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [14]),
@@ -1840,11 +1840,11 @@ dffeas \ex0|Q[15] (
 	.clk(\KEY[0]~inputCLKENA0_outclk ),
 	.d(\ex0|Add0~57_sumout ),
 	.asdata(vcc),
-	.clrn(\SW[0]~input_o ),
+	.clrn(\SW[1]~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\SW[1]~input_o ),
+	.ena(\SW[2]~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\ex0|Q [15]),
@@ -1982,8 +1982,8 @@ cyclonev_lcell_comb \ex4|WideOr1~0 (
 // \ex4|WideOr1~0_combout  = ( \ex0|Q [12] & ( (!\ex0|Q [15] & (\ex0|Q [14] & !\ex0|Q [13])) # (\ex0|Q [15] & ((\ex0|Q [13]))) ) ) # ( !\ex0|Q [12] & ( (\ex0|Q [14] & ((\ex0|Q [13]) # (\ex0|Q [15]))) ) )
 
 	.dataa(gnd),
-	.datab(!\ex0|Q [14]),
-	.datac(!\ex0|Q [15]),
+	.datab(!\ex0|Q [15]),
+	.datac(!\ex0|Q [14]),
 	.datad(!\ex0|Q [13]),
 	.datae(gnd),
 	.dataf(!\ex0|Q [12]),
@@ -1996,7 +1996,7 @@ cyclonev_lcell_comb \ex4|WideOr1~0 (
 	.shareout());
 // synopsys translate_off
 defparam \ex4|WideOr1~0 .extended_lut = "off";
-defparam \ex4|WideOr1~0 .lut_mask = 64'h03330333300F300F;
+defparam \ex4|WideOr1~0 .lut_mask = 64'h030F030F0C330C33;
 defparam \ex4|WideOr1~0 .shared_arith = "off";
 // synopsys translate_on
 
