@@ -1,0 +1,95 @@
+|zad4_board
+HEX0[6] <= decoder_7_seg:ex0.port1
+HEX0[5] <= decoder_7_seg:ex0.port1
+HEX0[4] <= decoder_7_seg:ex0.port1
+HEX0[3] <= decoder_7_seg:ex0.port1
+HEX0[2] <= decoder_7_seg:ex0.port1
+HEX0[1] <= decoder_7_seg:ex0.port1
+HEX0[0] <= decoder_7_seg:ex0.port1
+HEX1[6] <= decoder_7_seg:ex1.port1
+HEX1[5] <= decoder_7_seg:ex1.port1
+HEX1[4] <= decoder_7_seg:ex1.port1
+HEX1[3] <= decoder_7_seg:ex1.port1
+HEX1[2] <= decoder_7_seg:ex1.port1
+HEX1[1] <= decoder_7_seg:ex1.port1
+HEX1[0] <= decoder_7_seg:ex1.port1
+HEX2[6] <= decoder_7_seg:ex2.port1
+HEX2[5] <= decoder_7_seg:ex2.port1
+HEX2[4] <= decoder_7_seg:ex2.port1
+HEX2[3] <= decoder_7_seg:ex2.port1
+HEX2[2] <= decoder_7_seg:ex2.port1
+HEX2[1] <= decoder_7_seg:ex2.port1
+HEX2[0] <= decoder_7_seg:ex2.port1
+HEX3[6] <= decoder_7_seg:ex3.port1
+HEX3[5] <= decoder_7_seg:ex3.port1
+HEX3[4] <= decoder_7_seg:ex3.port1
+HEX3[3] <= decoder_7_seg:ex3.port1
+HEX3[2] <= decoder_7_seg:ex3.port1
+HEX3[1] <= decoder_7_seg:ex3.port1
+HEX3[0] <= decoder_7_seg:ex3.port1
+
+
+|zad4_board|decoder_7_seg:ex3
+x[0] => Decoder0.IN1
+x[0] => h[1].DATAIN
+x[0] => h[2].DATAIN
+x[1] => Decoder0.IN0
+x[1] => h[4].DATAIN
+x[1] => h[6].DATAIN
+h[6] <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|zad4_board|decoder_7_seg:ex2
+x[0] => Decoder0.IN1
+x[0] => h[1].DATAIN
+x[0] => h[2].DATAIN
+x[1] => Decoder0.IN0
+x[1] => h[4].DATAIN
+x[1] => h[6].DATAIN
+h[6] <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|zad4_board|decoder_7_seg:ex1
+x[0] => Decoder0.IN1
+x[0] => h[1].DATAIN
+x[0] => h[2].DATAIN
+x[1] => Decoder0.IN0
+x[1] => h[4].DATAIN
+x[1] => h[6].DATAIN
+h[6] <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|zad4_board|decoder_7_seg:ex0
+x[0] => Decoder0.IN1
+x[0] => h[1].DATAIN
+x[0] => h[2].DATAIN
+x[1] => Decoder0.IN0
+x[1] => h[4].DATAIN
+x[1] => h[6].DATAIN
+h[6] <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,7 @@
+module counter_T_4_bits_board(
+					input [7:0] SW,
+					input [1:0] KEY,
+					output [0:6] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5,
+					output [0:0] LEDR);
+
+endmodule

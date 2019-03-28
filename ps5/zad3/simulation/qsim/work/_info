@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Programy/Systemy wbudowane/ps5/zad3/simulation/qsim
+vcounter_mod_M_board
+Z1 !s110 1553721316
+!i10b 1
+!s100 ^KV@z;VIi8=jZhP;:7Z2W2
+Il6MgO;o31m4LgI9kQY9cb2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1553721315
+8counter_mod_M_board.vo
+Fcounter_mod_M_board.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1553721316.000000
+!s107 counter_mod_M_board.vo|
+!s90 -work|work|counter_mod_M_board.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+ncounter_mod_@m_board
+vcounter_mod_M_board_vlg_vec_tst
+R1
+!i10b 1
+!s100 FgV@nC2bLD:7bg]JFdcfQ3
+I?o?USm@a__jOVblg0SC:L0
+R2
+R0
+w1553721313
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R5
+R6
+ncounter_mod_@m_board_vlg_vec_tst

@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50[0]'
+Slack : -7.022
+TNS   : -165.757
+
+Type  : Slow 1100mV 85C Model Setup 'counter_modulo_M_rollover:ex|Q[0]'
+Slack : -1.212
+TNS   : -4.814
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50[0]'
+Slack : 0.367
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'counter_modulo_M_rollover:ex|Q[0]'
+Slack : 0.881
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50[0]'
+Slack : -0.394
+TNS   : -12.749
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'counter_modulo_M_rollover:ex|Q[0]'
+Slack : -0.394
+TNS   : -2.128
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50[0]'
+Slack : -6.748
+TNS   : -159.086
+
+Type  : Slow 1100mV 0C Model Setup 'counter_modulo_M_rollover:ex|Q[0]'
+Slack : -1.229
+TNS   : -4.861
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50[0]'
+Slack : 0.057
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'counter_modulo_M_rollover:ex|Q[0]'
+Slack : 0.849
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50[0]'
+Slack : -0.394
+TNS   : -13.311
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'counter_modulo_M_rollover:ex|Q[0]'
+Slack : -0.394
+TNS   : -2.208
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50[0]'
+Slack : -4.270
+TNS   : -100.977
+
+Type  : Fast 1100mV 85C Model Setup 'counter_modulo_M_rollover:ex|Q[0]'
+Slack : -0.411
+TNS   : -1.516
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50[0]'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'counter_modulo_M_rollover:ex|Q[0]'
+Slack : 0.475
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50[0]'
+Slack : -0.094
+TNS   : -2.213
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'counter_modulo_M_rollover:ex|Q[0]'
+Slack : 0.070
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50[0]'
+Slack : -3.664
+TNS   : -86.619
+
+Type  : Fast 1100mV 0C Model Setup 'counter_modulo_M_rollover:ex|Q[0]'
+Slack : -0.335
+TNS   : -1.243
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50[0]'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'counter_modulo_M_rollover:ex|Q[0]'
+Slack : 0.424
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50[0]'
+Slack : -0.093
+TNS   : -2.208
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'counter_modulo_M_rollover:ex|Q[0]'
+Slack : 0.079
+TNS   : 0.000
+
+------------------------------------------------------------
