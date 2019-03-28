@@ -17,7 +17,7 @@ module binary_8_bits_BCD(
 		
 		always @ (*)
 		begin
-			j = x%100;
+			j = x%10;
 			d = ((x - x%10)%100)/10;
 			s = (x - x%100)/100;
 		end

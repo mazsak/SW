@@ -1,5 +1,5 @@
 Fitter report for binary_8_bits_BCD_board
-Thu Mar 28 10:03:10 2019
+Thu Mar 28 11:14:31 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Thu Mar 28 10:03:10 2019       ;
+; Fitter Status                   ; Successful - Thu Mar 28 11:14:30 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; binary_8_bits_BCD_board                     ;
 ; Top-level Entity Name           ; binary_8_bits_BCD_board                     ;
@@ -448,8 +448,8 @@ The pin-out file can be found in D:/Projects/SW/ps3/zad7/output_files/binary_8_b
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 31 / 3,207         ; < 1 % ;
-;     -- Logic LABs                                           ; 31                 ;       ;
+; Total LABs:  partially or completely used                   ; 27 / 3,207         ; < 1 % ;
+;     -- Logic LABs                                           ; 27                 ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Combinational ALUT usage for logic                          ; 440                ;       ;
@@ -522,7 +522,7 @@ The pin-out file can be found in D:/Projects/SW/ps3/zad7/output_files/binary_8_b
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.1% / 0.1% / 0.1% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 2.8% / 3.0% / 2.1% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 2.2% / 2.3% / 2.1% ;       ;
 ; Maximum fan-out                                             ; 23                 ;       ;
 ; Highest non-global fan-out                                  ; 23                 ;       ;
 ; Total fan-out                                               ; 1339               ;       ;
@@ -551,8 +551,8 @@ The pin-out file can be found in D:/Projects/SW/ps3/zad7/output_files/binary_8_b
 ;                                                             ;                       ;                                ;
 ; Difficulty packing design                                   ; Low                   ; Low                            ;
 ;                                                             ;                       ;                                ;
-; Total LABs:  partially or completely used                   ; 31 / 3207 ( < 1 % )   ; 0 / 3207 ( 0 % )               ;
-;     -- Logic LABs                                           ; 31                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 27 / 3207 ( < 1 % )   ; 0 / 3207 ( 0 % )               ;
+;     -- Logic LABs                                           ; 27                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Combinational ALUT usage for logic                          ; 440                   ; 0                              ;
@@ -1651,26 +1651,26 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;       |decoder_hex_10:ex2|                ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|decoder_hex_10:ex2                                                                              ; decoder_hex_10          ; work         ;
 ;       |decoder_hex_10:ex3|                ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|decoder_hex_10:ex3                                                                              ; decoder_hex_10          ; work         ;
 ;       |decoder_hex_10:ex4|                ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|decoder_hex_10:ex4                                                                              ; decoder_hex_10          ; work         ;
-;       |lpm_divide:Div0|                   ; 19.0 (0.0)           ; 19.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Div0                                                                                 ; lpm_divide              ; work         ;
-;          |lpm_divide_4am:auto_generated|  ; 19.0 (0.0)           ; 19.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Div0|lpm_divide_4am:auto_generated                                                   ; lpm_divide_4am          ; work         ;
-;             |sign_div_unsign_akh:divider| ; 19.0 (0.0)           ; 19.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Div0|lpm_divide_4am:auto_generated|sign_div_unsign_akh:divider                       ; sign_div_unsign_akh     ; work         ;
-;                |alt_u_div_qse:divider|    ; 19.0 (19.0)          ; 19.0 (19.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (36)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Div0|lpm_divide_4am:auto_generated|sign_div_unsign_akh:divider|alt_u_div_qse:divider ; alt_u_div_qse           ; work         ;
+;       |lpm_divide:Div0|                   ; 19.5 (0.0)           ; 19.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Div0                                                                                 ; lpm_divide              ; work         ;
+;          |lpm_divide_4am:auto_generated|  ; 19.5 (0.0)           ; 19.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Div0|lpm_divide_4am:auto_generated                                                   ; lpm_divide_4am          ; work         ;
+;             |sign_div_unsign_akh:divider| ; 19.5 (0.0)           ; 19.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Div0|lpm_divide_4am:auto_generated|sign_div_unsign_akh:divider                       ; sign_div_unsign_akh     ; work         ;
+;                |alt_u_div_qse:divider|    ; 19.5 (19.5)          ; 19.5 (19.5)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (36)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Div0|lpm_divide_4am:auto_generated|sign_div_unsign_akh:divider|alt_u_div_qse:divider ; alt_u_div_qse           ; work         ;
 ;       |lpm_divide:Div1|                   ; 65.0 (0.0)           ; 65.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 130 (0)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Div1                                                                                 ; lpm_divide              ; work         ;
 ;          |lpm_divide_lbm:auto_generated|  ; 65.0 (0.0)           ; 65.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 130 (0)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Div1|lpm_divide_lbm:auto_generated                                                   ; lpm_divide_lbm          ; work         ;
 ;             |sign_div_unsign_rlh:divider| ; 65.0 (0.0)           ; 65.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 130 (0)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Div1|lpm_divide_lbm:auto_generated|sign_div_unsign_rlh:divider                       ; sign_div_unsign_rlh     ; work         ;
 ;                |alt_u_div_sve:divider|    ; 65.0 (65.0)          ; 65.0 (65.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 130 (130)           ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Div1|lpm_divide_lbm:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_sve:divider ; alt_u_div_sve           ; work         ;
-;       |lpm_divide:Mod0|                   ; 16.5 (0.0)           ; 16.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 33 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod0                                                                                 ; lpm_divide              ; work         ;
-;          |lpm_divide_b2m:auto_generated|  ; 16.5 (0.0)           ; 16.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 33 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated                                                   ; lpm_divide_b2m          ; work         ;
-;             |sign_div_unsign_ekh:divider| ; 16.5 (0.0)           ; 16.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 33 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider                       ; sign_div_unsign_ekh     ; work         ;
-;                |alt_u_div_2te:divider|    ; 16.5 (16.5)          ; 16.5 (16.5)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 33 (33)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider ; alt_u_div_2te           ; work         ;
-;       |lpm_divide:Mod1|                   ; 26.0 (0.0)           ; 26.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 52 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod1                                                                                 ; lpm_divide              ; work         ;
-;          |lpm_divide_82m:auto_generated|  ; 26.0 (0.0)           ; 26.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 52 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated                                                   ; lpm_divide_82m          ; work         ;
-;             |sign_div_unsign_bkh:divider| ; 26.0 (0.0)           ; 26.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 52 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh     ; work         ;
-;                |alt_u_div_sse:divider|    ; 26.0 (26.0)          ; 26.0 (26.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 52 (52)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider ; alt_u_div_sse           ; work         ;
-;       |lpm_divide:Mod2|                   ; 74.5 (0.0)           ; 74.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 149 (0)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod2                                                                                 ; lpm_divide              ; work         ;
-;          |lpm_divide_o3m:auto_generated|  ; 74.5 (0.0)           ; 74.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 149 (0)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod2|lpm_divide_o3m:auto_generated                                                   ; lpm_divide_o3m          ; work         ;
-;             |sign_div_unsign_rlh:divider| ; 74.5 (0.0)           ; 74.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 149 (0)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod2|lpm_divide_o3m:auto_generated|sign_div_unsign_rlh:divider                       ; sign_div_unsign_rlh     ; work         ;
-;                |alt_u_div_sve:divider|    ; 74.5 (74.5)          ; 74.5 (74.5)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 149 (149)           ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod2|lpm_divide_o3m:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_sve:divider ; alt_u_div_sve           ; work         ;
+;       |lpm_divide:Mod0|                   ; 27.5 (0.0)           ; 27.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 55 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod0                                                                                 ; lpm_divide              ; work         ;
+;          |lpm_divide_82m:auto_generated|  ; 27.5 (0.0)           ; 27.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 55 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated                                                   ; lpm_divide_82m          ; work         ;
+;             |sign_div_unsign_bkh:divider| ; 27.5 (0.0)           ; 27.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 55 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh     ; work         ;
+;                |alt_u_div_sse:divider|    ; 27.5 (27.5)          ; 27.5 (27.5)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 55 (55)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider ; alt_u_div_sse           ; work         ;
+;       |lpm_divide:Mod2|                   ; 74.0 (0.0)           ; 74.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 149 (0)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod2                                                                                 ; lpm_divide              ; work         ;
+;          |lpm_divide_o3m:auto_generated|  ; 74.0 (0.0)           ; 74.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 149 (0)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod2|lpm_divide_o3m:auto_generated                                                   ; lpm_divide_o3m          ; work         ;
+;             |sign_div_unsign_rlh:divider| ; 74.0 (0.0)           ; 74.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 149 (0)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod2|lpm_divide_o3m:auto_generated|sign_div_unsign_rlh:divider                       ; sign_div_unsign_rlh     ; work         ;
+;                |alt_u_div_sve:divider|    ; 74.0 (74.0)          ; 74.0 (74.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 149 (149)           ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod2|lpm_divide_o3m:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_sve:divider ; alt_u_div_sve           ; work         ;
+;       |lpm_divide:Mod3|                   ; 15.0 (0.0)           ; 15.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 30 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod3                                                                                 ; lpm_divide              ; work         ;
+;          |lpm_divide_b2m:auto_generated|  ; 15.0 (0.0)           ; 15.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 30 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated                                                   ; lpm_divide_b2m          ; work         ;
+;             |sign_div_unsign_ekh:divider| ; 15.0 (0.0)           ; 15.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 30 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider                       ; sign_div_unsign_ekh     ; work         ;
+;                |alt_u_div_2te:divider|    ; 15.0 (15.0)          ; 15.0 (15.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 30 (30)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |binary_8_bits_BCD_board|binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider ; alt_u_div_2te           ; work         ;
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1709,9 +1709,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[5] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; LEDR[6] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; LEDR[7] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; SW[0]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[0]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[1]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[2]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[2]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[3]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[4]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[5]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
@@ -1726,76 +1726,76 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                                                                                                                                     ; Pad To Core Index ; Setting ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------+
 ; SW[0]                                                                                                                                                   ;                   ;         ;
-;      - binary_8_bits_BCD:ex1|Add0~33                                                                                                                    ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|Add1~33                                                                                                                    ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_8~21                    ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|op_8~5                     ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|StageOut[56]~0             ; 1                 ; 0       ;
-;      - LEDR[0]~output                                                                                                                                   ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|Add0~33                                                                                                                    ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|Add1~33                                                                                                                    ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|op_8~33                    ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_8~5                     ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[35]~0             ; 0                 ; 0       ;
+;      - LEDR[0]~output                                                                                                                                   ; 0                 ; 0       ;
 ; SW[1]                                                                                                                                                   ;                   ;         ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|add_sub_6_result_int[0]~5  ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|add_sub_6_result_int[0]~29 ; 0                 ; 0       ;
 ;      - binary_8_bits_BCD:ex1|Add0~29                                                                                                                    ; 0                 ; 0       ;
 ;      - binary_8_bits_BCD:ex1|Add1~29                                                                                                                    ; 0                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_7~21                    ; 0                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_8~17                    ; 0                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|op_8~9                     ; 0                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|StageOut[48]~1             ; 0                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[30]~16            ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|op_8~29                    ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_7~5                     ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_8~9                     ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[30]~1             ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|StageOut[48]~11            ; 0                 ; 0       ;
 ;      - LEDR[1]~output                                                                                                                                   ; 0                 ; 0       ;
 ; SW[2]                                                                                                                                                   ;                   ;         ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|add_sub_6_result_int[1]~9  ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|Add0~25                                                                                                                    ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|Add1~25                                                                                                                    ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_6~13                    ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_7~13                    ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|StageOut[49]~4             ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[25]~3             ; 1                 ; 0       ;
-;      - LEDR[2]~output                                                                                                                                   ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|add_sub_6_result_int[1]~25 ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|Add0~25                                                                                                                    ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|Add1~25                                                                                                                    ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_6~5                     ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_7~9                     ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[25]~3             ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|StageOut[49]~9             ; 0                 ; 0       ;
+;      - LEDR[2]~output                                                                                                                                   ; 0                 ; 0       ;
 ; SW[3]                                                                                                                                                   ;                   ;         ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|add_sub_6_result_int[2]~13 ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|add_sub_6_result_int[2]~21 ; 1                 ; 0       ;
 ;      - binary_8_bits_BCD:ex1|Add0~13                                                                                                                    ; 1                 ; 0       ;
 ;      - binary_8_bits_BCD:ex1|Add1~21                                                                                                                    ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_5~5                     ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_6~5                     ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|op_8~17                    ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|StageOut[59]~7             ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[20]~0             ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|op_8~21                    ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_5~5                     ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_6~9                     ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[20]~6             ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|StageOut[59]~7             ; 1                 ; 0       ;
 ;      - LEDR[3]~output                                                                                                                                   ; 1                 ; 0       ;
 ; SW[4]                                                                                                                                                   ;                   ;         ;
 ;      - binary_8_bits_BCD:ex1|Add0~1                                                                                                                     ; 0                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|add_sub_3_result_int[0]~17 ; 0                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|add_sub_6_result_int[3]~29 ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|add_sub_6_result_int[3]~17 ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|add_sub_3_result_int[0]~5  ; 0                 ; 0       ;
 ;      - binary_8_bits_BCD:ex1|Add1~17                                                                                                                    ; 0                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_5~25                    ; 0                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|StageOut[51]~12            ; 0                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[15]~13            ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_5~17                    ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[15]~10            ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|StageOut[51]~5             ; 0                 ; 0       ;
 ;      - LEDR[4]~output                                                                                                                                   ; 0                 ; 0       ;
 ; SW[5]                                                                                                                                                   ;                   ;         ;
 ;      - binary_8_bits_BCD:ex1|Add0~5                                                                                                                     ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|add_sub_3_result_int[1]~5  ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|add_sub_6_result_int[4]~25 ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|add_sub_6_result_int[4]~9  ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|add_sub_3_result_int[1]~9  ; 1                 ; 0       ;
 ;      - binary_8_bits_BCD:ex1|Add1~13                                                                                                                    ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|op_8~33                    ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|StageOut[61]~13            ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[16]~6             ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[16]~18            ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|op_8~9                     ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[16]~14            ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[16]~21            ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|StageOut[61]~3             ; 1                 ; 0       ;
 ;      - LEDR[5]~output                                                                                                                                   ; 1                 ; 0       ;
 ; SW[6]                                                                                                                                                   ;                   ;         ;
 ;      - binary_8_bits_BCD:ex1|Add0~9                                                                                                                     ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|add_sub_3_result_int[2]~9  ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|add_sub_6_result_int[5]~21 ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|add_sub_6_result_int[5]~1  ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|add_sub_3_result_int[2]~13 ; 1                 ; 0       ;
 ;      - binary_8_bits_BCD:ex1|Add1~9                                                                                                                     ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_5~21                    ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|StageOut[53]~9             ; 1                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[17]~9             ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|op_5~25                    ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[17]~17            ; 1                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|StageOut[53]~1             ; 1                 ; 0       ;
 ;      - LEDR[6]~output                                                                                                                                   ; 1                 ; 0       ;
 ; SW[7]                                                                                                                                                   ;                   ;         ;
 ;      - binary_8_bits_BCD:ex1|Add0~17                                                                                                                    ; 0                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|add_sub_3_result_int[3]~13 ; 0                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|add_sub_6_result_int[6]~17 ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|add_sub_6_result_int[6]~13 ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|add_sub_3_result_int[3]~17 ; 0                 ; 0       ;
 ;      - binary_8_bits_BCD:ex1|Add1~1                                                                                                                     ; 0                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|op_8~22                    ; 0                 ; 0       ;
-;      - binary_8_bits_BCD:ex1|lpm_divide:Mod1|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[18]~11            ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod3|lpm_divide_b2m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|op_8~14                    ; 0                 ; 0       ;
+;      - binary_8_bits_BCD:ex1|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider|StageOut[18]~19            ; 0                 ; 0       ;
 ;      - LEDR[7]~output                                                                                                                                   ; 0                 ; 0       ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------+
 
@@ -1805,14 +1805,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------------+
 ; Routing Resource Type                       ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Block interconnects                         ; 485 / 289,320 ( < 1 % ) ;
-; C12 interconnects                           ; 14 / 13,420 ( < 1 % )   ;
-; C2 interconnects                            ; 106 / 119,108 ( < 1 % ) ;
-; C4 interconnects                            ; 69 / 56,300 ( < 1 % )   ;
+; Block interconnects                         ; 468 / 289,320 ( < 1 % ) ;
+; C12 interconnects                           ; 11 / 13,420 ( < 1 % )   ;
+; C2 interconnects                            ; 90 / 119,108 ( < 1 % )  ;
+; C4 interconnects                            ; 84 / 56,300 ( < 1 % )   ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )          ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )          ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )          ;
-; Direct links                                ; 147 / 289,320 ( < 1 % ) ;
+; Direct links                                ; 145 / 289,320 ( < 1 % ) ;
 ; Global clocks                               ; 0 / 16 ( 0 % )          ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )           ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )           ;
@@ -1868,12 +1868,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )           ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )          ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )          ;
-; Local interconnects                         ; 86 / 84,580 ( < 1 % )   ;
+; Local interconnects                         ; 105 / 84,580 ( < 1 % )  ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )          ;
 ; R14 interconnects                           ; 43 / 12,676 ( < 1 % )   ;
 ; R14/C12 interconnect drivers                ; 46 / 20,720 ( < 1 % )   ;
-; R3 interconnects                            ; 151 / 130,992 ( < 1 % ) ;
-; R6 interconnects                            ; 231 / 266,960 ( < 1 % ) ;
+; R3 interconnects                            ; 165 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 190 / 266,960 ( < 1 % ) ;
 ; Spine clocks                                ; 0 / 360 ( 0 % )         ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )      ;
 +---------------------------------------------+-------------------------+
@@ -2259,7 +2259,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_SYNC_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:16
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:17
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'binary_8_bits_BCD_board.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -2280,7 +2280,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.18 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2290,9 +2290,9 @@ Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments 
 Info (144001): Generated suppressed messages file D:/Projects/SW/ps3/zad7/output_files/binary_8_bits_BCD_board.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 228 warnings
     Info: Peak virtual memory: 6270 megabytes
-    Info: Processing ended: Thu Mar 28 10:03:11 2019
-    Info: Elapsed time: 00:01:03
-    Info: Total CPU time (on all processors): 00:01:49
+    Info: Processing ended: Thu Mar 28 11:14:31 2019
+    Info: Elapsed time: 00:01:08
+    Info: Total CPU time (on all processors): 00:01:58
 
 
 +----------------------------+

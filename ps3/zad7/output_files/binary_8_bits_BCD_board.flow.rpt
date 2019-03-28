@@ -1,5 +1,5 @@
 Flow report for binary_8_bits_BCD_board
-Thu Mar 28 10:04:56 2019
+Thu Mar 28 11:14:59 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Mar 28 10:04:56 2019       ;
+; Flow Status                     ; Successful - Thu Mar 28 11:14:59 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; binary_8_bits_BCD_board                     ;
 ; Top-level Entity Name           ; binary_8_bits_BCD_board                     ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+-------------------------+
 ; Option            ; Setting                 ;
 +-------------------+-------------------------+
-; Start date & time ; 03/28/2019 10:01:48     ;
+; Start date & time ; 03/28/2019 11:13:03     ;
 ; Main task         ; Compilation             ;
 ; Revision Name     ; binary_8_bits_BCD_board ;
 +-------------------+-------------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 88491848904580.155376370708912         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 88491848904580.155376798305324         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -96,14 +96,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 4827 MB             ; 00:00:41                           ;
-; Fitter                    ; 00:01:02     ; 1.0                     ; 6270 MB             ; 00:01:48                           ;
-; Assembler                 ; 00:00:09     ; 1.0                     ; 4851 MB             ; 00:00:10                           ;
-; TimeQuest Timing Analyzer ; 00:00:09     ; 1.1                     ; 5124 MB             ; 00:00:09                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4758 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4729 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4738 MB             ; 00:00:02                           ;
-; Total                     ; 00:01:44     ; --                      ; --                  ; 00:02:54                           ;
+; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 4828 MB             ; 00:00:42                           ;
+; Fitter                    ; 00:01:07     ; 1.0                     ; 6270 MB             ; 00:01:57                           ;
+; Assembler                 ; 00:00:12     ; 1.0                     ; 4848 MB             ; 00:00:10                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.1                     ; 5123 MB             ; 00:00:09                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4759 MB             ; 00:00:02                           ;
+; Total                     ; 00:01:50     ; --                      ; --                  ; 00:03:00                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,8 +115,6 @@ refer to the applicable agreement for further details.
 ; Assembler                 ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
 ; TimeQuest Timing Analyzer ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer        ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 
@@ -130,8 +126,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off binary_8_bits_B
 quartus_asm --read_settings_files=off --write_settings_files=off binary_8_bits_BCD_board -c binary_8_bits_BCD_board
 quartus_sta binary_8_bits_BCD_board -c binary_8_bits_BCD_board
 quartus_eda --read_settings_files=off --write_settings_files=off binary_8_bits_BCD_board -c binary_8_bits_BCD_board
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off binary_8_bits_BCD_board -c binary_8_bits_BCD_board --vector_source=D:/Projects/SW/ps3/zad7/Waveform.vwf --testbench_file=D:/Projects/SW/ps3/zad7/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Projects/SW/ps3/zad7/simulation/qsim/ binary_8_bits_BCD_board -c binary_8_bits_BCD_board
 
 
 
