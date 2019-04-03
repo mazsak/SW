@@ -1,0 +1,279 @@
+$comment
+	File created using the following command:
+		vcd file counter_modulo_k.msim.vcd -direction
+$end
+$date
+	Wed Apr 03 22:05:01 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module counter_modulo_k_board_vlg_vec_tst $end
+$var reg 3 ! KEY [2:0] $end
+$var wire 1 " LEDR [9] $end
+$var wire 1 # LEDR [8] $end
+$var wire 1 $ LEDR [7] $end
+$var wire 1 % LEDR [6] $end
+$var wire 1 & LEDR [5] $end
+$var wire 1 ' LEDR [4] $end
+$var wire 1 ( LEDR [3] $end
+$var wire 1 ) LEDR [2] $end
+$var wire 1 * LEDR [1] $end
+$var wire 1 + LEDR [0] $end
+
+$scope module i1 $end
+$var wire 1 , gnd $end
+$var wire 1 - vcc $end
+$var wire 1 . unknown $end
+$var tri1 1 / devclrn $end
+$var tri1 1 0 devpor $end
+$var tri1 1 1 devoe $end
+$var wire 1 2 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 3 KEY[0]~input_o $end
+$var wire 1 4 KEY[0]~inputCLKENA0_outclk $end
+$var wire 1 5 KEY[2]~input_o $end
+$var wire 1 6 ex1|Q[2]~2_combout $end
+$var wire 1 7 KEY[1]~input_o $end
+$var wire 1 8 ex1|Q[1]~1_combout $end
+$var wire 1 9 ex1|Q[3]~3_combout $end
+$var wire 1 : ex1|Q[4]~4_combout $end
+$var wire 1 ; ex1|Q[0]~0_combout $end
+$var wire 1 < ex1|Equal0~0_combout $end
+$var wire 1 = ex1|Q [4] $end
+$var wire 1 > ex1|Q [3] $end
+$var wire 1 ? ex1|Q [2] $end
+$var wire 1 @ ex1|Q [1] $end
+$var wire 1 A ex1|Q [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b111 !
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0,
+1-
+x.
+1/
+10
+11
+02
+13
+14
+15
+06
+17
+08
+09
+0:
+1;
+0<
+0A
+0@
+0?
+0>
+0=
+$end
+#5000
+b101 !
+07
+#10000
+b111 !
+17
+#15000
+b101 !
+07
+#20000
+b111 !
+17
+#25000
+b101 !
+07
+#30000
+b111 !
+17
+#35000
+b101 !
+07
+#40000
+b111 !
+17
+#45000
+b101 !
+07
+#50000
+b111 !
+17
+#55000
+b101 !
+07
+#60000
+b111 !
+17
+#65000
+b101 !
+07
+#70000
+b111 !
+17
+#75000
+b101 !
+07
+#80000
+b111 !
+17
+#85000
+b101 !
+07
+#90000
+b111 !
+17
+#95000
+b101 !
+07
+#100000
+b111 !
+17
+#105000
+b101 !
+07
+#110000
+b111 !
+17
+#115000
+b101 !
+07
+#120000
+b111 !
+17
+#125000
+b101 !
+07
+#130000
+b111 !
+17
+#135000
+b101 !
+07
+#140000
+b111 !
+17
+#145000
+b101 !
+07
+#150000
+b111 !
+17
+#155000
+b101 !
+07
+#160000
+b111 !
+17
+#165000
+b101 !
+07
+#170000
+b111 !
+17
+#175000
+b101 !
+07
+#180000
+b111 !
+17
+#185000
+b101 !
+07
+#190000
+b111 !
+17
+#195000
+b101 !
+07
+#200000
+b111 !
+17
+#205000
+b101 !
+07
+#210000
+b111 !
+17
+#215000
+b101 !
+07
+#220000
+b111 !
+17
+#225000
+b101 !
+07
+#230000
+b111 !
+17
+#235000
+b101 !
+07
+#240000
+b111 !
+17
+#245000
+b101 !
+07
+#250000
+b111 !
+17
+#255000
+b101 !
+07
+#260000
+b111 !
+17
+#265000
+b101 !
+07
+#270000
+b111 !
+17
+#275000
+b101 !
+07
+#280000
+b111 !
+17
+#285000
+b101 !
+07
+#290000
+b111 !
+17
+#295000
+b101 !
+07
+#300000
+b111 !
+17
+#305000
+b101 !
+07
+#310000
+b111 !
+17
+#315000
+b101 !
+07
+#320000
