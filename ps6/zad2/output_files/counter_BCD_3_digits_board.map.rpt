@@ -1,5 +1,5 @@
 Analysis & Synthesis report for counter_BCD_3_digits_board
-Wed Apr 03 22:00:20 2019
+Thu Apr 04 11:11:30 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -52,14 +52,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Apr 03 22:00:20 2019       ;
+; Analysis & Synthesis Status     ; Successful - Thu Apr 04 11:11:30 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; counter_BCD_3_digits_board                  ;
 ; Top-level Entity Name           ; counter_BCD_3_digits_board                  ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 13                                          ;
-; Total pins                      ; 25                                          ;
+; Total registers                 ; 39                                          ;
+; Total pins                      ; 24                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -164,53 +164,52 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                              ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
-; counter_BCD_3_digits_board.v     ; yes             ; User Verilog HDL File  ; E:/Project_Quartus/SW/ps6/zad2/counter_BCD_3_digits_board.v ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                       ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                         ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+; counter_BCD_3_digits_board.v     ; yes             ; User Verilog HDL File  ; D:/Projects/SW/ps6/zad2/counter_BCD_3_digits_board.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                             ;
-+---------------------------------------------+---------------------------+
-; Resource                                    ; Usage                     ;
-+---------------------------------------------+---------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 19                        ;
-;                                             ;                           ;
-; Combinational ALUT usage for logic          ; 37                        ;
-;     -- 7 input functions                    ; 0                         ;
-;     -- 6 input functions                    ; 0                         ;
-;     -- 5 input functions                    ; 2                         ;
-;     -- 4 input functions                    ; 28                        ;
-;     -- <=3 input functions                  ; 7                         ;
-;                                             ;                           ;
-; Dedicated logic registers                   ; 13                        ;
-;                                             ;                           ;
-; I/O pins                                    ; 25                        ;
-;                                             ;                           ;
-; Total DSP Blocks                            ; 0                         ;
-;                                             ;                           ;
-; Maximum fan-out node                        ; counter_modulo_k:ex2|Q[0] ;
-; Maximum fan-out                             ; 12                        ;
-; Total fan-out                               ; 222                       ;
-; Average fan-out                             ; 2.22                      ;
-+---------------------------------------------+---------------------------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 40             ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 72             ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 8              ;
+;     -- 5 input functions                    ; 3              ;
+;     -- 4 input functions                    ; 28             ;
+;     -- <=3 input functions                  ; 33             ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 39             ;
+;                                             ;                ;
+; I/O pins                                    ; 24             ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 27             ;
+; Total fan-out                               ; 404            ;
+; Average fan-out                             ; 2.54           ;
++---------------------------------------------+----------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -218,15 +217,16 @@ refer to the applicable agreement for further details.
 +------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------+----------------------------+--------------+
 ; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                        ; Entity Name                ; Library Name ;
 +------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------+----------------------------+--------------+
-; |counter_BCD_3_digits_board  ; 37 (0)              ; 13 (0)                    ; 0                 ; 0          ; 25   ; 0            ; |counter_BCD_3_digits_board                                ; counter_BCD_3_digits_board ; work         ;
+; |counter_BCD_3_digits_board  ; 72 (0)              ; 39 (0)                    ; 0                 ; 0          ; 24   ; 0            ; |counter_BCD_3_digits_board                                ; counter_BCD_3_digits_board ; work         ;
 ;    |counter_modulo_k:ex2|    ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |counter_BCD_3_digits_board|counter_modulo_k:ex2           ; counter_modulo_k           ; work         ;
 ;    |counter_modulo_k:ex3|    ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |counter_BCD_3_digits_board|counter_modulo_k:ex3           ; counter_modulo_k           ; work         ;
 ;    |counter_modulo_k:ex4|    ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |counter_BCD_3_digits_board|counter_modulo_k:ex4           ; counter_modulo_k           ; work         ;
 ;    |decoder_hex_10:ex5|      ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |counter_BCD_3_digits_board|decoder_hex_10:ex5             ; decoder_hex_10             ; work         ;
 ;    |decoder_hex_10:ex6|      ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |counter_BCD_3_digits_board|decoder_hex_10:ex6             ; decoder_hex_10             ; work         ;
 ;    |decoder_hex_10:ex7|      ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |counter_BCD_3_digits_board|decoder_hex_10:ex7             ; decoder_hex_10             ; work         ;
-;    |delay:ex1|               ; 1 (0)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |counter_BCD_3_digits_board|delay:ex1                      ; delay                      ; work         ;
-;       |counter_mod_M:count1| ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |counter_BCD_3_digits_board|delay:ex1|counter_mod_M:count1 ; counter_mod_M              ; work         ;
+;    |delay:ex1|               ; 36 (0)              ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |counter_BCD_3_digits_board|delay:ex1                      ; delay                      ; work         ;
+;       |counter_mod_M:count0| ; 32 (32)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |counter_BCD_3_digits_board|delay:ex1|counter_mod_M:count0 ; counter_mod_M              ; work         ;
+;       |counter_mod_M:count1| ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |counter_BCD_3_digits_board|delay:ex1|counter_mod_M:count1 ; counter_mod_M              ; work         ;
 +------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -236,8 +236,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 13    ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 39    ;
+; Number of registers using Synchronous Clear  ; 26    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 12    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -325,6 +325,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +------------------------------------------------------------+
 ; Port Connectivity Checks: "delay:ex1|counter_mod_M:count1" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; aclr ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "delay:ex1|counter_mod_M:count0" ;
 +--------+-------+----------+--------------------------------+
 ; Port   ; Type  ; Severity ; Details                        ;
 +--------+-------+----------+--------------------------------+
@@ -333,37 +342,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+--------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "delay:ex1|counter_mod_M:count0"                                                                                          ;
-+--------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                ;
-+--------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
-; aclr   ; Input  ; Info     ; Stuck at VCC                                                                                                           ;
-; enable ; Input  ; Info     ; Stuck at VCC                                                                                                           ;
-; Q      ; Output ; Warning  ; Output or bidir port (26 bits) is wider than the port expression (1 bits) it drives; bit(s) "Q[25..1]" have no fanouts ;
-; Q      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                    ;
-+--------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 13                          ;
+; arriav_ff             ; 39                          ;
 ;     CLR               ; 12                          ;
+;     SCLR              ; 26                          ;
 ;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 40                          ;
-;     normal            ; 40                          ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 2                           ;
+; arriav_lcell_comb     ; 75                          ;
+;     arith             ; 26                          ;
+;         1 data inputs ; 26                          ;
+;     normal            ; 49                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 3                           ;
 ;         3 data inputs ; 3                           ;
 ;         4 data inputs ; 28                          ;
-;         5 data inputs ; 2                           ;
-; boundary_port         ; 25                          ;
+;         5 data inputs ; 3                           ;
+;         6 data inputs ; 8                           ;
+; boundary_port         ; 24                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.47                        ;
+; Max LUT depth         ; 3.50                        ;
+; Average LUT depth     ; 2.21                        ;
 +-----------------------+-----------------------------+
 
 
@@ -382,24 +383,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Apr 03 22:00:09 2019
+    Info: Processing started: Thu Apr 04 11:11:08 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off counter_BCD_3_digits_board -c counter_BCD_3_digits_board
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 5 design units, including 5 entities, in source file counter_bcd_3_digits_board.v
-    Info (12023): Found entity 1: counter_BCD_3_digits_board File: E:/Project_Quartus/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 1
-    Info (12023): Found entity 2: delay File: E:/Project_Quartus/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 22
-    Info (12023): Found entity 3: counter_modulo_k File: E:/Project_Quartus/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 35
-    Info (12023): Found entity 4: counter_mod_M File: E:/Project_Quartus/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 65
-    Info (12023): Found entity 5: decoder_hex_10 File: E:/Project_Quartus/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 86
+    Info (12023): Found entity 1: counter_BCD_3_digits_board File: D:/Projects/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 1
+    Info (12023): Found entity 2: delay File: D:/Projects/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 22
+    Info (12023): Found entity 3: counter_modulo_k File: D:/Projects/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 36
+    Info (12023): Found entity 4: counter_mod_M File: D:/Projects/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 66
+    Info (12023): Found entity 5: decoder_hex_10 File: D:/Projects/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 87
 Info (12127): Elaborating entity "counter_BCD_3_digits_board" for the top level hierarchy
-Info (12128): Elaborating entity "delay" for hierarchy "delay:ex1" File: E:/Project_Quartus/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 10
-Warning (10036): Verilog HDL or VHDL warning at counter_BCD_3_digits_board.v(26): object "e" assigned a value but never read File: E:/Project_Quartus/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 26
-Info (12128): Elaborating entity "counter_mod_M" for hierarchy "delay:ex1|counter_mod_M:count0" File: E:/Project_Quartus/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 28
-Info (12128): Elaborating entity "counter_mod_M" for hierarchy "delay:ex1|counter_mod_M:count1" File: E:/Project_Quartus/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 31
-Info (12128): Elaborating entity "counter_modulo_k" for hierarchy "counter_modulo_k:ex2" File: E:/Project_Quartus/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 12
-Info (12128): Elaborating entity "decoder_hex_10" for hierarchy "decoder_hex_10:ex5" File: E:/Project_Quartus/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 16
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "delay" for hierarchy "delay:ex1" File: D:/Projects/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 10
+Info (12128): Elaborating entity "counter_mod_M" for hierarchy "delay:ex1|counter_mod_M:count0" File: D:/Projects/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 29
+Info (12128): Elaborating entity "counter_mod_M" for hierarchy "delay:ex1|counter_mod_M:count1" File: D:/Projects/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 32
+Info (12128): Elaborating entity "counter_modulo_k" for hierarchy "counter_modulo_k:ex2" File: D:/Projects/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 12
+Info (12128): Elaborating entity "decoder_hex_10" for hierarchy "decoder_hex_10:ex5" File: D:/Projects/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 16
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
@@ -975,16 +974,14 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: E:/Project_Quartus/SW/ps6/zad2/counter_BCD_3_digits_board.v Line: 3
-Info (21057): Implemented 62 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
+Info (21057): Implemented 96 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
     Info (21059): Implemented 22 output pins
-    Info (21061): Implemented 37 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 577 warnings
-    Info: Peak virtual memory: 4910 megabytes
-    Info: Processing ended: Wed Apr 03 22:00:20 2019
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:22
+    Info (21061): Implemented 72 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 573 warnings
+    Info: Peak virtual memory: 4826 megabytes
+    Info: Processing ended: Thu Apr 04 11:11:30 2019
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:47
 
 

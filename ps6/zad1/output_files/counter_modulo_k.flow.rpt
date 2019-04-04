@@ -1,5 +1,5 @@
 Flow report for counter_modulo_k
-Wed Apr 03 22:04:59 2019
+Thu Apr 04 10:36:35 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Apr 03 22:04:59 2019       ;
+; Flow Status                     ; Successful - Thu Apr 04 10:36:35 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; counter_modulo_k                            ;
 ; Top-level Entity Name           ; counter_modulo_k_board                      ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/03/2019 21:48:07 ;
+; Start date & time ; 04/04/2019 10:34:30 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; counter_modulo_k    ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+------------------+------------------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value    ; Entity Name            ; Section Id     ;
 +-------------------------------------+----------------------------------------+------------------+------------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 53447166737537.155432088704572         ; --               ; --                     ; --             ;
+; COMPILER_SIGNATURE_ID               ; 88491848904580.155436686804520         ; --               ; --                     ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --               ; --                     ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>           ; --                     ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --               ; --                     ; eda_simulation ;
@@ -99,14 +99,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4876 MB             ; 00:00:22                           ;
-; Fitter                    ; 00:00:37     ; 1.0                     ; 7391 MB             ; 00:01:56                           ;
-; Assembler                 ; 00:00:07     ; 1.0                     ; 4845 MB             ; 00:00:07                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 5244 MB             ; 00:00:06                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4751 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4729 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4738 MB             ; 00:00:02                           ;
-; Total                     ; 00:01:06     ; --                      ; --                  ; 00:02:37                           ;
+; Analysis & Synthesis      ; 00:00:22     ; 1.0                     ; 4820 MB             ; 00:00:48                           ;
+; Fitter                    ; 00:01:01     ; 1.0                     ; 6282 MB             ; 00:01:35                           ;
+; Assembler                 ; 00:00:19     ; 1.0                     ; 4851 MB             ; 00:00:16                           ;
+; TimeQuest Timing Analyzer ; 00:00:14     ; 1.0                     ; 5133 MB             ; 00:00:13                           ;
+; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4750 MB             ; 00:00:04                           ;
+; Total                     ; 00:02:00     ; --                      ; --                  ; 00:02:56                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,13 +113,11 @@ refer to the applicable agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; Mazsak-PC        ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; Mazsak-PC        ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; Mazsak-PC        ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; Mazsak-PC        ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; Mazsak-PC        ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; Mazsak-PC        ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; Mazsak-PC        ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 
@@ -133,8 +129,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off counter_modulo_
 quartus_asm --read_settings_files=off --write_settings_files=off counter_modulo_k -c counter_modulo_k
 quartus_sta counter_modulo_k -c counter_modulo_k
 quartus_eda --read_settings_files=off --write_settings_files=off counter_modulo_k -c counter_modulo_k
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off counter_modulo_k -c counter_modulo_k --vector_source=E:/Project_Quartus/SW/ps6/zad1/Waveform2.vwf --testbench_file=E:/Project_Quartus/SW/ps6/zad1/simulation/qsim/Waveform2.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/Project_Quartus/SW/ps6/zad1/simulation/qsim/ counter_modulo_k -c counter_modulo_k
 
 
 

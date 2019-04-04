@@ -7,17 +7,22 @@ module real_time_clock_board(
 
 		wire c, c0, c1, c2, c3, c4;
 		wire [3:0] h, h0, h1, h2, h3, h4;
+		wire [3:0] he, he0, he1, he2, he3, he4;
 		
 		assign LEDR[7:0] = SW[7:0];
 		
+		setTime e1(SW[7:0], he, he0);
+		setTime e2(SW[7:0], he1, he2);
+		setTime e3(SW[7:0], he3, he4);
+		
 		delay ex1(CLOCK_50, c);
 		
-		counter_modulo_k #(10) ex2(c,1'd1,KEY[0],h, c0);
-		counter_modulo_k #(10) ex3(c0,1'd1,1'd1,h0,c1);
-		counter_modulo_k #(10) ex4(c1,1'd1,1'd1,h1, c2);
-		counter_modulo_k #(6) ex5(c2,1'd1,1'd1,h1, c3);
-		counter_modulo_k #(10) ex6(c3,1'd1,1'd1,h1, c4);
-		counter_modulo_k #(6) ex7(c4,1'd1,1'd1,h1, LEDR[8]);
+		counter_modulo_k #(10) ex2(c,KEY[1],!KEY[0],he,h, c0);
+		counter_modulo_k #(10) ex3(~c0,KEY[1],1'd1,he0,h0,c1);
+		counter_modulo_k #(10) ex4(~c1,KEY[2],1'd1,he1,h1, c2);
+		counter_modulo_k #(6) ex5(~c2,KEY[2],1'd1,he2,h2, c3);
+		counter_modulo_k #(10) ex6(~c3,KEY[3],1'd1,he3,h3, c4);
+		counter_modulo_k #(6) ex7(~c4,KEY[3],1'd1,he4,h4, LEDR[8]);
 		
 		decoder_hex_10 ex8(h,HEX0);
 		decoder_hex_10 ex9(h0,HEX1);
@@ -28,22 +33,36 @@ module real_time_clock_board(
  
 endmodule
 
+module setTime(
+					input [7:0] x,
+					output reg [3:0] j, d);
+					
+		always @ (*)
+		begin
+			j = x%10;
+			d = (x - x%10)/10;
+		end
+
+endmodule
+
 module delay(
 					input clk,
 					output q);
 					
-		wire A, e;
+		wire [25:0]A;
+		wire e;
 					
 		counter_mod_M #(500000) count0(clk,1'd1,1'd1,A);
 
 		assign e = ~|A;
-		counter_mod_M #(2) count1(clk,1'd1,1'd1,q);
+		counter_mod_M #(2) count1(clk,1'd1, e, q);
 
 endmodule
 
 module counter_modulo_k
 	#(parameter M=20)
 	(input clk,aclr,enable,
+		input [3:0] x,
 	output reg [N-1:0] Q,
 	output reg rollover);
 	
@@ -56,7 +75,7 @@ module counter_modulo_k
 	
 	always @(posedge clk, negedge aclr)
 		if (!aclr) 			
-			Q <= {N{1'b0}};
+			Q <= x;
 		else if (Q == M-1)	
 			Q <= {N{1'b0}};
 		else if (enable) 		

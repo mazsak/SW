@@ -1,7 +1,6 @@
 |counter_BCD_3_digits_board
 CLOCK_50 => CLOCK_50.IN1
 KEY[0] => KEY[0].IN3
-KEY[1] => ~NO_FANOUT~
 HEX0[6] <= decoder_hex_10:ex5.port1
 HEX0[5] <= decoder_hex_10:ex5.port1
 HEX0[4] <= decoder_hex_10:ex5.port1

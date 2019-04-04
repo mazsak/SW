@@ -1,6 +1,6 @@
 module counter_BCD_3_digits_board(
 											input CLOCK_50,
-											input [1:0] KEY,
+											input [0:0] KEY,
 											output [0:6] HEX0,HEX1,HEX2,
 											output [0:0] LEDR);
 
@@ -10,8 +10,8 @@ module counter_BCD_3_digits_board(
 		delay ex1(CLOCK_50, c);
 		
 		counter_modulo_k #(10) ex2(c,KEY[0],1'd1,h, c0);
-		counter_modulo_k #(10) ex3(c0,KEY[0],1'd1,h0,c1);
-		counter_modulo_k #(10) ex4(c1,KEY[0],1'd1,h1, LEDR[0]);
+		counter_modulo_k #(10) ex3(~c0,KEY[0],1'd1,h0,c1);
+		counter_modulo_k #(10) ex4(~c1,KEY[0],1'd1,h1, LEDR[0]);
 		
 		decoder_hex_10 ex5(h,HEX0);
 		decoder_hex_10 ex6(h0,HEX1);
@@ -23,12 +23,13 @@ module delay(
 					input clk,
 					output q);
 					
-		wire A, e;
-					
+		wire [25:0]A;
+		wire e;
+				
 		counter_mod_M #(50000000) count0(clk,1'd1,1'd1,A);
 
 		assign e = ~|A;
-		counter_mod_M #(2) count1(clk,1'd1,1'd1,q);
+		counter_mod_M #(2) count1(clk,1'd1, e, q);
 
 endmodule
 
