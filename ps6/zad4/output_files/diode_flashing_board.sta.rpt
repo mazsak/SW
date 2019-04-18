@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for diode_flashing_board
-Thu Apr 04 11:45:37 2019
+Thu Apr 11 10:58:28 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -97,12 +97,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 2           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.10        ;
+; Average used               ; 1.07        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  10.1%      ;
+;     Processor 2            ;   6.6%      ;
 +----------------------------+-------------+
 
 
@@ -128,15 +128,15 @@ refer to the applicable agreement for further details.
 +------------+-----------------+--------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                           ; Note ;
 +------------+-----------------+--------------------------------------+------+
-; 164.58 MHz ; 164.58 MHz      ; CLOCK_50                             ;      ;
-; 571.1 MHz  ; 571.1 MHz       ; delay:ex10|counter_mod_M:count1|Q[0] ;      ;
-; 599.88 MHz ; 599.88 MHz      ; delay:ex12|counter_mod_M:count1|Q[0] ;      ;
-; 606.43 MHz ; 606.43 MHz      ; delay:ex14|counter_mod_M:count1|Q[0] ;      ;
-; 612.0 MHz  ; 612.0 MHz       ; delay:ex15|counter_mod_M:count1|Q[0] ;      ;
-; 613.5 MHz  ; 613.5 MHz       ; delay:ex11|counter_mod_M:count1|Q[0] ;      ;
-; 615.38 MHz ; 615.38 MHz      ; delay:ex16|counter_mod_M:count1|Q[0] ;      ;
-; 618.43 MHz ; 618.43 MHz      ; delay:ex17|counter_mod_M:count1|Q[0] ;      ;
-; 618.81 MHz ; 618.81 MHz      ; delay:ex13|counter_mod_M:count1|Q[0] ;      ;
+; 184.03 MHz ; 184.03 MHz      ; CLOCK_50                             ;      ;
+; 557.72 MHz ; 557.72 MHz      ; delay:ex10|counter_mod_M:count1|Q[0] ;      ;
+; 563.7 MHz  ; 563.7 MHz       ; delay:ex11|counter_mod_M:count1|Q[0] ;      ;
+; 567.54 MHz ; 567.54 MHz      ; delay:ex15|counter_mod_M:count1|Q[0] ;      ;
+; 571.1 MHz  ; 571.1 MHz       ; delay:ex16|counter_mod_M:count1|Q[0] ;      ;
+; 579.37 MHz ; 579.37 MHz      ; delay:ex14|counter_mod_M:count1|Q[0] ;      ;
+; 589.97 MHz ; 589.97 MHz      ; delay:ex12|counter_mod_M:count1|Q[0] ;      ;
+; 592.07 MHz ; 592.07 MHz      ; delay:ex13|counter_mod_M:count1|Q[0] ;      ;
+; 619.58 MHz ; 619.58 MHz      ; delay:ex17|counter_mod_M:count1|Q[0] ;      ;
 +------------+-----------------+--------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -152,15 +152,15 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------+--------+---------------+
 ; Clock                                ; Slack  ; End Point TNS ;
 +--------------------------------------+--------+---------------+
-; CLOCK_50                             ; -5.076 ; -748.609      ;
-; delay:ex10|counter_mod_M:count1|Q[0] ; -0.751 ; -1.501        ;
-; delay:ex12|counter_mod_M:count1|Q[0] ; -0.667 ; -1.333        ;
-; delay:ex14|counter_mod_M:count1|Q[0] ; -0.649 ; -0.649        ;
-; delay:ex15|counter_mod_M:count1|Q[0] ; -0.634 ; -0.634        ;
-; delay:ex11|counter_mod_M:count1|Q[0] ; -0.630 ; -1.259        ;
-; delay:ex16|counter_mod_M:count1|Q[0] ; -0.625 ; -1.247        ;
-; delay:ex17|counter_mod_M:count1|Q[0] ; -0.617 ; -1.233        ;
-; delay:ex13|counter_mod_M:count1|Q[0] ; -0.616 ; -1.228        ;
+; CLOCK_50                             ; -4.434 ; -750.627      ;
+; delay:ex10|counter_mod_M:count1|Q[0] ; -0.793 ; -0.793        ;
+; delay:ex11|counter_mod_M:count1|Q[0] ; -0.774 ; -0.774        ;
+; delay:ex15|counter_mod_M:count1|Q[0] ; -0.762 ; -0.762        ;
+; delay:ex16|counter_mod_M:count1|Q[0] ; -0.751 ; -1.499        ;
+; delay:ex14|counter_mod_M:count1|Q[0] ; -0.726 ; -0.726        ;
+; delay:ex12|counter_mod_M:count1|Q[0] ; -0.695 ; -0.695        ;
+; delay:ex13|counter_mod_M:count1|Q[0] ; -0.689 ; -0.689        ;
+; delay:ex17|counter_mod_M:count1|Q[0] ; -0.614 ; -1.224        ;
 +--------------------------------------+--------+---------------+
 
 
@@ -169,15 +169,15 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------+-------+---------------+
 ; Clock                                ; Slack ; End Point TNS ;
 +--------------------------------------+-------+---------------+
-; delay:ex14|counter_mod_M:count1|Q[0] ; 0.229 ; 0.000         ;
-; delay:ex15|counter_mod_M:count1|Q[0] ; 0.247 ; 0.000         ;
-; delay:ex17|counter_mod_M:count1|Q[0] ; 0.265 ; 0.000         ;
-; delay:ex13|counter_mod_M:count1|Q[0] ; 0.269 ; 0.000         ;
-; delay:ex11|counter_mod_M:count1|Q[0] ; 0.284 ; 0.000         ;
-; delay:ex16|counter_mod_M:count1|Q[0] ; 0.288 ; 0.000         ;
-; delay:ex12|counter_mod_M:count1|Q[0] ; 0.311 ; 0.000         ;
-; delay:ex10|counter_mod_M:count1|Q[0] ; 0.389 ; 0.000         ;
-; CLOCK_50                             ; 0.402 ; 0.000         ;
+; delay:ex14|counter_mod_M:count1|Q[0] ; 0.139 ; 0.000         ;
+; delay:ex10|counter_mod_M:count1|Q[0] ; 0.149 ; 0.000         ;
+; delay:ex11|counter_mod_M:count1|Q[0] ; 0.159 ; 0.000         ;
+; delay:ex17|counter_mod_M:count1|Q[0] ; 0.269 ; 0.000         ;
+; delay:ex13|counter_mod_M:count1|Q[0] ; 0.278 ; 0.000         ;
+; delay:ex12|counter_mod_M:count1|Q[0] ; 0.285 ; 0.000         ;
+; CLOCK_50                             ; 0.403 ; 0.000         ;
+; delay:ex16|counter_mod_M:count1|Q[0] ; 0.403 ; 0.000         ;
+; delay:ex15|counter_mod_M:count1|Q[0] ; 0.408 ; 0.000         ;
 +--------------------------------------+-------+---------------+
 
 
@@ -198,15 +198,15 @@ No paths to report.
 +--------------------------------------+--------+---------------+
 ; Clock                                ; Slack  ; End Point TNS ;
 +--------------------------------------+--------+---------------+
-; CLOCK_50                             ; -0.500 ; -154.873      ;
-; delay:ex16|counter_mod_M:count1|Q[0] ; -0.394 ; -1.312        ;
-; delay:ex13|counter_mod_M:count1|Q[0] ; -0.394 ; -1.311        ;
-; delay:ex11|counter_mod_M:count1|Q[0] ; -0.394 ; -1.040        ;
-; delay:ex12|counter_mod_M:count1|Q[0] ; -0.394 ; -1.036        ;
-; delay:ex17|counter_mod_M:count1|Q[0] ; -0.394 ; -1.036        ;
-; delay:ex10|counter_mod_M:count1|Q[0] ; -0.394 ; -1.018        ;
-; delay:ex15|counter_mod_M:count1|Q[0] ; -0.394 ; -0.658        ;
-; delay:ex14|counter_mod_M:count1|Q[0] ; -0.394 ; -0.618        ;
+; CLOCK_50                             ; -0.449 ; -158.939      ;
+; delay:ex17|counter_mod_M:count1|Q[0] ; -0.394 ; -1.221        ;
+; delay:ex16|counter_mod_M:count1|Q[0] ; -0.394 ; -1.075        ;
+; delay:ex10|counter_mod_M:count1|Q[0] ; -0.394 ; -0.540        ;
+; delay:ex14|counter_mod_M:count1|Q[0] ; -0.394 ; -0.534        ;
+; delay:ex11|counter_mod_M:count1|Q[0] ; -0.394 ; -0.533        ;
+; delay:ex12|counter_mod_M:count1|Q[0] ; -0.394 ; -0.518        ;
+; delay:ex13|counter_mod_M:count1|Q[0] ; -0.394 ; -0.517        ;
+; delay:ex15|counter_mod_M:count1|Q[0] ; -0.394 ; -0.514        ;
 +--------------------------------------+--------+---------------+
 
 
@@ -221,14 +221,14 @@ No synchronizer chains to report.
 +------------+-----------------+--------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                           ; Note ;
 +------------+-----------------+--------------------------------------+------+
-; 165.59 MHz ; 165.59 MHz      ; CLOCK_50                             ;      ;
-; 588.24 MHz ; 588.24 MHz      ; delay:ex10|counter_mod_M:count1|Q[0] ;      ;
-; 630.52 MHz ; 630.52 MHz      ; delay:ex12|counter_mod_M:count1|Q[0] ;      ;
-; 634.92 MHz ; 634.92 MHz      ; delay:ex14|counter_mod_M:count1|Q[0] ;      ;
-; 640.61 MHz ; 640.61 MHz      ; delay:ex15|counter_mod_M:count1|Q[0] ;      ;
-; 643.5 MHz  ; 643.5 MHz       ; delay:ex11|counter_mod_M:count1|Q[0] ;      ;
-; 643.09 MHz ; 643.09 MHz      ; delay:ex16|counter_mod_M:count1|Q[0] ;      ;
-; 647.25 MHz ; 647.25 MHz      ; delay:ex13|counter_mod_M:count1|Q[0] ;      ;
+; 181.32 MHz ; 181.32 MHz      ; CLOCK_50                             ;      ;
+; 584.11 MHz ; 584.11 MHz      ; delay:ex15|counter_mod_M:count1|Q[0] ;      ;
+; 587.54 MHz ; 587.54 MHz      ; delay:ex16|counter_mod_M:count1|Q[0] ;      ;
+; 593.12 MHz ; 593.12 MHz      ; delay:ex10|counter_mod_M:count1|Q[0] ;      ;
+; 593.82 MHz ; 593.82 MHz      ; delay:ex11|counter_mod_M:count1|Q[0] ;      ;
+; 608.27 MHz ; 608.27 MHz      ; delay:ex14|counter_mod_M:count1|Q[0] ;      ;
+; 622.28 MHz ; 622.28 MHz      ; delay:ex13|counter_mod_M:count1|Q[0] ;      ;
+; 623.05 MHz ; 623.05 MHz      ; delay:ex12|counter_mod_M:count1|Q[0] ;      ;
 ; 649.77 MHz ; 649.77 MHz      ; delay:ex17|counter_mod_M:count1|Q[0] ;      ;
 +------------+-----------------+--------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
@@ -239,14 +239,14 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------+--------+---------------+
 ; Clock                                ; Slack  ; End Point TNS ;
 +--------------------------------------+--------+---------------+
-; CLOCK_50                             ; -5.039 ; -734.283      ;
-; delay:ex10|counter_mod_M:count1|Q[0] ; -0.700 ; -1.398        ;
-; delay:ex12|counter_mod_M:count1|Q[0] ; -0.586 ; -1.167        ;
-; delay:ex14|counter_mod_M:count1|Q[0] ; -0.575 ; -0.575        ;
-; delay:ex15|counter_mod_M:count1|Q[0] ; -0.561 ; -0.561        ;
-; delay:ex16|counter_mod_M:count1|Q[0] ; -0.555 ; -1.106        ;
-; delay:ex11|counter_mod_M:count1|Q[0] ; -0.554 ; -1.104        ;
-; delay:ex13|counter_mod_M:count1|Q[0] ; -0.545 ; -1.085        ;
+; CLOCK_50                             ; -4.515 ; -735.399      ;
+; delay:ex15|counter_mod_M:count1|Q[0] ; -0.712 ; -0.712        ;
+; delay:ex16|counter_mod_M:count1|Q[0] ; -0.702 ; -1.400        ;
+; delay:ex10|counter_mod_M:count1|Q[0] ; -0.686 ; -0.686        ;
+; delay:ex11|counter_mod_M:count1|Q[0] ; -0.684 ; -0.684        ;
+; delay:ex14|counter_mod_M:count1|Q[0] ; -0.644 ; -0.644        ;
+; delay:ex13|counter_mod_M:count1|Q[0] ; -0.607 ; -0.607        ;
+; delay:ex12|counter_mod_M:count1|Q[0] ; -0.605 ; -0.605        ;
 ; delay:ex17|counter_mod_M:count1|Q[0] ; -0.539 ; -1.073        ;
 +--------------------------------------+--------+---------------+
 
@@ -256,15 +256,15 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------+-------+---------------+
 ; Clock                                ; Slack ; End Point TNS ;
 +--------------------------------------+-------+---------------+
-; delay:ex14|counter_mod_M:count1|Q[0] ; 0.240 ; 0.000         ;
-; delay:ex15|counter_mod_M:count1|Q[0] ; 0.262 ; 0.000         ;
-; delay:ex17|counter_mod_M:count1|Q[0] ; 0.277 ; 0.000         ;
-; delay:ex13|counter_mod_M:count1|Q[0] ; 0.281 ; 0.000         ;
-; delay:ex16|counter_mod_M:count1|Q[0] ; 0.291 ; 0.000         ;
-; delay:ex11|counter_mod_M:count1|Q[0] ; 0.292 ; 0.000         ;
-; delay:ex12|counter_mod_M:count1|Q[0] ; 0.316 ; 0.000         ;
-; CLOCK_50                             ; 0.400 ; 0.000         ;
-; delay:ex10|counter_mod_M:count1|Q[0] ; 0.427 ; 0.000         ;
+; delay:ex14|counter_mod_M:count1|Q[0] ; 0.160 ; 0.000         ;
+; delay:ex11|counter_mod_M:count1|Q[0] ; 0.170 ; 0.000         ;
+; delay:ex10|counter_mod_M:count1|Q[0] ; 0.177 ; 0.000         ;
+; delay:ex17|counter_mod_M:count1|Q[0] ; 0.281 ; 0.000         ;
+; delay:ex13|counter_mod_M:count1|Q[0] ; 0.296 ; 0.000         ;
+; delay:ex12|counter_mod_M:count1|Q[0] ; 0.300 ; 0.000         ;
+; CLOCK_50                             ; 0.397 ; 0.000         ;
+; delay:ex16|counter_mod_M:count1|Q[0] ; 0.438 ; 0.000         ;
+; delay:ex15|counter_mod_M:count1|Q[0] ; 0.439 ; 0.000         ;
 +--------------------------------------+-------+---------------+
 
 
@@ -285,15 +285,15 @@ No paths to report.
 +--------------------------------------+--------+---------------+
 ; Clock                                ; Slack  ; End Point TNS ;
 +--------------------------------------+--------+---------------+
-; CLOCK_50                             ; -0.508 ; -167.443      ;
-; delay:ex13|counter_mod_M:count1|Q[0] ; -0.394 ; -1.212        ;
-; delay:ex16|counter_mod_M:count1|Q[0] ; -0.394 ; -1.212        ;
-; delay:ex12|counter_mod_M:count1|Q[0] ; -0.394 ; -1.156        ;
-; delay:ex17|counter_mod_M:count1|Q[0] ; -0.394 ; -1.146        ;
-; delay:ex11|counter_mod_M:count1|Q[0] ; -0.394 ; -1.030        ;
-; delay:ex10|counter_mod_M:count1|Q[0] ; -0.394 ; -1.016        ;
-; delay:ex15|counter_mod_M:count1|Q[0] ; -0.394 ; -0.614        ;
-; delay:ex14|counter_mod_M:count1|Q[0] ; -0.394 ; -0.567        ;
+; CLOCK_50                             ; -0.469 ; -172.709      ;
+; delay:ex17|counter_mod_M:count1|Q[0] ; -0.394 ; -1.098        ;
+; delay:ex16|counter_mod_M:count1|Q[0] ; -0.394 ; -1.033        ;
+; delay:ex12|counter_mod_M:count1|Q[0] ; -0.394 ; -0.573        ;
+; delay:ex13|counter_mod_M:count1|Q[0] ; -0.394 ; -0.568        ;
+; delay:ex11|counter_mod_M:count1|Q[0] ; -0.394 ; -0.532        ;
+; delay:ex14|counter_mod_M:count1|Q[0] ; -0.394 ; -0.530        ;
+; delay:ex10|counter_mod_M:count1|Q[0] ; -0.394 ; -0.527        ;
+; delay:ex15|counter_mod_M:count1|Q[0] ; -0.394 ; -0.515        ;
 +--------------------------------------+--------+---------------+
 
 
@@ -308,15 +308,15 @@ No synchronizer chains to report.
 +--------------------------------------+--------+---------------+
 ; Clock                                ; Slack  ; End Point TNS ;
 +--------------------------------------+--------+---------------+
-; CLOCK_50                             ; -3.213 ; -339.003      ;
-; delay:ex10|counter_mod_M:count1|Q[0] ; -0.125 ; -0.250        ;
-; delay:ex12|counter_mod_M:count1|Q[0] ; -0.117 ; -0.232        ;
-; delay:ex14|counter_mod_M:count1|Q[0] ; -0.096 ; -0.096        ;
-; delay:ex11|counter_mod_M:count1|Q[0] ; -0.089 ; -0.177        ;
-; delay:ex15|counter_mod_M:count1|Q[0] ; -0.089 ; -0.089        ;
-; delay:ex16|counter_mod_M:count1|Q[0] ; -0.088 ; -0.175        ;
-; delay:ex13|counter_mod_M:count1|Q[0] ; -0.081 ; -0.160        ;
-; delay:ex17|counter_mod_M:count1|Q[0] ; -0.080 ; -0.158        ;
+; CLOCK_50                             ; -2.932 ; -337.370      ;
+; delay:ex10|counter_mod_M:count1|Q[0] ; -0.214 ; -0.214        ;
+; delay:ex11|counter_mod_M:count1|Q[0] ; -0.185 ; -0.185        ;
+; delay:ex14|counter_mod_M:count1|Q[0] ; -0.141 ; -0.141        ;
+; delay:ex15|counter_mod_M:count1|Q[0] ; -0.138 ; -0.138        ;
+; delay:ex16|counter_mod_M:count1|Q[0] ; -0.128 ; -0.255        ;
+; delay:ex12|counter_mod_M:count1|Q[0] ; -0.125 ; -0.125        ;
+; delay:ex13|counter_mod_M:count1|Q[0] ; -0.121 ; -0.121        ;
+; delay:ex17|counter_mod_M:count1|Q[0] ; -0.076 ; -0.150        ;
 +--------------------------------------+--------+---------------+
 
 
@@ -325,15 +325,15 @@ No synchronizer chains to report.
 +--------------------------------------+-------+---------------+
 ; Clock                                ; Slack ; End Point TNS ;
 +--------------------------------------+-------+---------------+
-; delay:ex14|counter_mod_M:count1|Q[0] ; 0.123 ; 0.000         ;
-; delay:ex15|counter_mod_M:count1|Q[0] ; 0.136 ; 0.000         ;
-; delay:ex13|counter_mod_M:count1|Q[0] ; 0.145 ; 0.000         ;
-; delay:ex17|counter_mod_M:count1|Q[0] ; 0.146 ; 0.000         ;
-; delay:ex11|counter_mod_M:count1|Q[0] ; 0.154 ; 0.000         ;
-; delay:ex16|counter_mod_M:count1|Q[0] ; 0.154 ; 0.000         ;
-; delay:ex12|counter_mod_M:count1|Q[0] ; 0.182 ; 0.000         ;
-; CLOCK_50                             ; 0.213 ; 0.000         ;
-; delay:ex10|counter_mod_M:count1|Q[0] ; 0.240 ; 0.000         ;
+; delay:ex10|counter_mod_M:count1|Q[0] ; 0.063 ; 0.000         ;
+; delay:ex14|counter_mod_M:count1|Q[0] ; 0.069 ; 0.000         ;
+; delay:ex11|counter_mod_M:count1|Q[0] ; 0.085 ; 0.000         ;
+; delay:ex17|counter_mod_M:count1|Q[0] ; 0.147 ; 0.000         ;
+; delay:ex12|counter_mod_M:count1|Q[0] ; 0.153 ; 0.000         ;
+; delay:ex13|counter_mod_M:count1|Q[0] ; 0.157 ; 0.000         ;
+; CLOCK_50                             ; 0.218 ; 0.000         ;
+; delay:ex16|counter_mod_M:count1|Q[0] ; 0.246 ; 0.000         ;
+; delay:ex15|counter_mod_M:count1|Q[0] ; 0.252 ; 0.000         ;
 +--------------------------------------+-------+---------------+
 
 
@@ -354,15 +354,15 @@ No paths to report.
 +--------------------------------------+--------+---------------+
 ; Clock                                ; Slack  ; End Point TNS ;
 +--------------------------------------+--------+---------------+
-; CLOCK_50                             ; -0.510 ; -29.437       ;
-; delay:ex13|counter_mod_M:count1|Q[0] ; 0.091  ; 0.000         ;
-; delay:ex15|counter_mod_M:count1|Q[0] ; 0.091  ; 0.000         ;
-; delay:ex16|counter_mod_M:count1|Q[0] ; 0.091  ; 0.000         ;
-; delay:ex12|counter_mod_M:count1|Q[0] ; 0.117  ; 0.000         ;
-; delay:ex14|counter_mod_M:count1|Q[0] ; 0.117  ; 0.000         ;
-; delay:ex17|counter_mod_M:count1|Q[0] ; 0.118  ; 0.000         ;
-; delay:ex10|counter_mod_M:count1|Q[0] ; 0.124  ; 0.000         ;
-; delay:ex11|counter_mod_M:count1|Q[0] ; 0.128  ; 0.000         ;
+; CLOCK_50                             ; -0.488 ; -29.525       ;
+; delay:ex10|counter_mod_M:count1|Q[0] ; 0.066  ; 0.000         ;
+; delay:ex14|counter_mod_M:count1|Q[0] ; 0.107  ; 0.000         ;
+; delay:ex11|counter_mod_M:count1|Q[0] ; 0.115  ; 0.000         ;
+; delay:ex12|counter_mod_M:count1|Q[0] ; 0.119  ; 0.000         ;
+; delay:ex13|counter_mod_M:count1|Q[0] ; 0.119  ; 0.000         ;
+; delay:ex16|counter_mod_M:count1|Q[0] ; 0.128  ; 0.000         ;
+; delay:ex17|counter_mod_M:count1|Q[0] ; 0.137  ; 0.000         ;
+; delay:ex15|counter_mod_M:count1|Q[0] ; 0.160  ; 0.000         ;
 +--------------------------------------+--------+---------------+
 
 
@@ -377,15 +377,15 @@ No synchronizer chains to report.
 +--------------------------------------+--------+---------------+
 ; Clock                                ; Slack  ; End Point TNS ;
 +--------------------------------------+--------+---------------+
-; CLOCK_50                             ; -2.838 ; -288.689      ;
-; delay:ex10|counter_mod_M:count1|Q[0] ; -0.077 ; -0.153        ;
-; delay:ex12|counter_mod_M:count1|Q[0] ; -0.056 ; -0.111        ;
-; delay:ex14|counter_mod_M:count1|Q[0] ; -0.040 ; -0.040        ;
-; delay:ex15|counter_mod_M:count1|Q[0] ; -0.034 ; -0.034        ;
-; delay:ex11|counter_mod_M:count1|Q[0] ; -0.032 ; -0.064        ;
-; delay:ex16|counter_mod_M:count1|Q[0] ; -0.031 ; -0.061        ;
-; delay:ex17|counter_mod_M:count1|Q[0] ; -0.026 ; -0.051        ;
-; delay:ex13|counter_mod_M:count1|Q[0] ; -0.025 ; -0.049        ;
+; CLOCK_50                             ; -2.425 ; -286.007      ;
+; delay:ex10|counter_mod_M:count1|Q[0] ; -0.128 ; -0.128        ;
+; delay:ex11|counter_mod_M:count1|Q[0] ; -0.112 ; -0.112        ;
+; delay:ex15|counter_mod_M:count1|Q[0] ; -0.082 ; -0.082        ;
+; delay:ex14|counter_mod_M:count1|Q[0] ; -0.078 ; -0.078        ;
+; delay:ex16|counter_mod_M:count1|Q[0] ; -0.077 ; -0.154        ;
+; delay:ex13|counter_mod_M:count1|Q[0] ; -0.064 ; -0.064        ;
+; delay:ex12|counter_mod_M:count1|Q[0] ; -0.062 ; -0.062        ;
+; delay:ex17|counter_mod_M:count1|Q[0] ; -0.023 ; -0.045        ;
 +--------------------------------------+--------+---------------+
 
 
@@ -394,15 +394,15 @@ No synchronizer chains to report.
 +--------------------------------------+-------+---------------+
 ; Clock                                ; Slack ; End Point TNS ;
 +--------------------------------------+-------+---------------+
-; delay:ex14|counter_mod_M:count1|Q[0] ; 0.111 ; 0.000         ;
-; delay:ex15|counter_mod_M:count1|Q[0] ; 0.124 ; 0.000         ;
-; delay:ex13|counter_mod_M:count1|Q[0] ; 0.133 ; 0.000         ;
-; delay:ex17|counter_mod_M:count1|Q[0] ; 0.133 ; 0.000         ;
-; delay:ex11|counter_mod_M:count1|Q[0] ; 0.136 ; 0.000         ;
-; delay:ex16|counter_mod_M:count1|Q[0] ; 0.136 ; 0.000         ;
-; delay:ex12|counter_mod_M:count1|Q[0] ; 0.162 ; 0.000         ;
+; delay:ex14|counter_mod_M:count1|Q[0] ; 0.066 ; 0.000         ;
+; delay:ex10|counter_mod_M:count1|Q[0] ; 0.069 ; 0.000         ;
+; delay:ex11|counter_mod_M:count1|Q[0] ; 0.078 ; 0.000         ;
+; delay:ex17|counter_mod_M:count1|Q[0] ; 0.134 ; 0.000         ;
+; delay:ex12|counter_mod_M:count1|Q[0] ; 0.139 ; 0.000         ;
+; delay:ex13|counter_mod_M:count1|Q[0] ; 0.144 ; 0.000         ;
 ; CLOCK_50                             ; 0.201 ; 0.000         ;
-; delay:ex10|counter_mod_M:count1|Q[0] ; 0.226 ; 0.000         ;
+; delay:ex16|counter_mod_M:count1|Q[0] ; 0.233 ; 0.000         ;
+; delay:ex15|counter_mod_M:count1|Q[0] ; 0.238 ; 0.000         ;
 +--------------------------------------+-------+---------------+
 
 
@@ -423,15 +423,15 @@ No paths to report.
 +--------------------------------------+--------+---------------+
 ; Clock                                ; Slack  ; End Point TNS ;
 +--------------------------------------+--------+---------------+
-; CLOCK_50                             ; -0.497 ; -29.066       ;
-; delay:ex15|counter_mod_M:count1|Q[0] ; 0.111  ; 0.000         ;
-; delay:ex13|counter_mod_M:count1|Q[0] ; 0.113  ; 0.000         ;
-; delay:ex16|counter_mod_M:count1|Q[0] ; 0.113  ; 0.000         ;
-; delay:ex11|counter_mod_M:count1|Q[0] ; 0.114  ; 0.000         ;
-; delay:ex10|counter_mod_M:count1|Q[0] ; 0.118  ; 0.000         ;
-; delay:ex14|counter_mod_M:count1|Q[0] ; 0.135  ; 0.000         ;
-; delay:ex12|counter_mod_M:count1|Q[0] ; 0.139  ; 0.000         ;
-; delay:ex17|counter_mod_M:count1|Q[0] ; 0.140  ; 0.000         ;
+; CLOCK_50                             ; -0.488 ; -29.546       ;
+; delay:ex10|counter_mod_M:count1|Q[0] ; 0.086  ; 0.000         ;
+; delay:ex14|counter_mod_M:count1|Q[0] ; 0.096  ; 0.000         ;
+; delay:ex11|counter_mod_M:count1|Q[0] ; 0.109  ; 0.000         ;
+; delay:ex16|counter_mod_M:count1|Q[0] ; 0.124  ; 0.000         ;
+; delay:ex12|counter_mod_M:count1|Q[0] ; 0.140  ; 0.000         ;
+; delay:ex13|counter_mod_M:count1|Q[0] ; 0.140  ; 0.000         ;
+; delay:ex15|counter_mod_M:count1|Q[0] ; 0.149  ; 0.000         ;
+; delay:ex17|counter_mod_M:count1|Q[0] ; 0.154  ; 0.000         ;
 +--------------------------------------+--------+---------------+
 
 
@@ -446,26 +446,26 @@ No synchronizer chains to report.
 +---------------------------------------+----------+-------+----------+---------+---------------------+
 ; Clock                                 ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +---------------------------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack                      ; -5.076   ; 0.111 ; N/A      ; N/A     ; -0.510              ;
-;  CLOCK_50                             ; -5.076   ; 0.201 ; N/A      ; N/A     ; -0.510              ;
-;  delay:ex10|counter_mod_M:count1|Q[0] ; -0.751   ; 0.226 ; N/A      ; N/A     ; -0.394              ;
-;  delay:ex11|counter_mod_M:count1|Q[0] ; -0.630   ; 0.136 ; N/A      ; N/A     ; -0.394              ;
-;  delay:ex12|counter_mod_M:count1|Q[0] ; -0.667   ; 0.162 ; N/A      ; N/A     ; -0.394              ;
-;  delay:ex13|counter_mod_M:count1|Q[0] ; -0.616   ; 0.133 ; N/A      ; N/A     ; -0.394              ;
-;  delay:ex14|counter_mod_M:count1|Q[0] ; -0.649   ; 0.111 ; N/A      ; N/A     ; -0.394              ;
-;  delay:ex15|counter_mod_M:count1|Q[0] ; -0.634   ; 0.124 ; N/A      ; N/A     ; -0.394              ;
-;  delay:ex16|counter_mod_M:count1|Q[0] ; -0.625   ; 0.136 ; N/A      ; N/A     ; -0.394              ;
-;  delay:ex17|counter_mod_M:count1|Q[0] ; -0.617   ; 0.133 ; N/A      ; N/A     ; -0.394              ;
-; Design-wide TNS                       ; -757.693 ; 0.0   ; 0.0      ; 0.0     ; -175.396            ;
-;  CLOCK_50                             ; -748.609 ; 0.000 ; N/A      ; N/A     ; -167.443            ;
-;  delay:ex10|counter_mod_M:count1|Q[0] ; -1.501   ; 0.000 ; N/A      ; N/A     ; -1.018              ;
-;  delay:ex11|counter_mod_M:count1|Q[0] ; -1.259   ; 0.000 ; N/A      ; N/A     ; -1.040              ;
-;  delay:ex12|counter_mod_M:count1|Q[0] ; -1.333   ; 0.000 ; N/A      ; N/A     ; -1.156              ;
-;  delay:ex13|counter_mod_M:count1|Q[0] ; -1.228   ; 0.000 ; N/A      ; N/A     ; -1.311              ;
-;  delay:ex14|counter_mod_M:count1|Q[0] ; -0.649   ; 0.000 ; N/A      ; N/A     ; -0.618              ;
-;  delay:ex15|counter_mod_M:count1|Q[0] ; -0.634   ; 0.000 ; N/A      ; N/A     ; -0.658              ;
-;  delay:ex16|counter_mod_M:count1|Q[0] ; -1.247   ; 0.000 ; N/A      ; N/A     ; -1.312              ;
-;  delay:ex17|counter_mod_M:count1|Q[0] ; -1.233   ; 0.000 ; N/A      ; N/A     ; -1.146              ;
+; Worst-case Slack                      ; -4.515   ; 0.063 ; N/A      ; N/A     ; -0.488              ;
+;  CLOCK_50                             ; -4.515   ; 0.201 ; N/A      ; N/A     ; -0.488              ;
+;  delay:ex10|counter_mod_M:count1|Q[0] ; -0.793   ; 0.063 ; N/A      ; N/A     ; -0.394              ;
+;  delay:ex11|counter_mod_M:count1|Q[0] ; -0.774   ; 0.078 ; N/A      ; N/A     ; -0.394              ;
+;  delay:ex12|counter_mod_M:count1|Q[0] ; -0.695   ; 0.139 ; N/A      ; N/A     ; -0.394              ;
+;  delay:ex13|counter_mod_M:count1|Q[0] ; -0.689   ; 0.144 ; N/A      ; N/A     ; -0.394              ;
+;  delay:ex14|counter_mod_M:count1|Q[0] ; -0.726   ; 0.066 ; N/A      ; N/A     ; -0.394              ;
+;  delay:ex15|counter_mod_M:count1|Q[0] ; -0.762   ; 0.238 ; N/A      ; N/A     ; -0.394              ;
+;  delay:ex16|counter_mod_M:count1|Q[0] ; -0.751   ; 0.233 ; N/A      ; N/A     ; -0.394              ;
+;  delay:ex17|counter_mod_M:count1|Q[0] ; -0.614   ; 0.134 ; N/A      ; N/A     ; -0.394              ;
+; Design-wide TNS                       ; -757.789 ; 0.0   ; 0.0      ; 0.0     ; -178.085            ;
+;  CLOCK_50                             ; -750.627 ; 0.000 ; N/A      ; N/A     ; -172.709            ;
+;  delay:ex10|counter_mod_M:count1|Q[0] ; -0.793   ; 0.000 ; N/A      ; N/A     ; -0.540              ;
+;  delay:ex11|counter_mod_M:count1|Q[0] ; -0.774   ; 0.000 ; N/A      ; N/A     ; -0.533              ;
+;  delay:ex12|counter_mod_M:count1|Q[0] ; -0.695   ; 0.000 ; N/A      ; N/A     ; -0.573              ;
+;  delay:ex13|counter_mod_M:count1|Q[0] ; -0.689   ; 0.000 ; N/A      ; N/A     ; -0.568              ;
+;  delay:ex14|counter_mod_M:count1|Q[0] ; -0.726   ; 0.000 ; N/A      ; N/A     ; -0.534              ;
+;  delay:ex15|counter_mod_M:count1|Q[0] ; -0.762   ; 0.000 ; N/A      ; N/A     ; -0.515              ;
+;  delay:ex16|counter_mod_M:count1|Q[0] ; -1.499   ; 0.000 ; N/A      ; N/A     ; -1.075              ;
+;  delay:ex17|counter_mod_M:count1|Q[0] ; -1.224   ; 0.000 ; N/A      ; N/A     ; -1.221              ;
 +---------------------------------------+----------+-------+----------+---------+---------------------+
 
 
@@ -563,7 +563,7 @@ No synchronizer chains to report.
 +--------------------------------------+--------------------------------------+----------+----------+----------+----------+
 ; From Clock                           ; To Clock                             ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------------------------------+--------------------------------------+----------+----------+----------+----------+
-; CLOCK_50                             ; CLOCK_50                             ; 11250    ; 0        ; 0        ; 0        ;
+; CLOCK_50                             ; CLOCK_50                             ; 11596    ; 0        ; 0        ; 0        ;
 ; delay:ex10|counter_mod_M:count1|Q[0] ; CLOCK_50                             ; 1        ; 1        ; 0        ; 0        ;
 ; delay:ex11|counter_mod_M:count1|Q[0] ; CLOCK_50                             ; 1        ; 1        ; 0        ; 0        ;
 ; delay:ex12|counter_mod_M:count1|Q[0] ; CLOCK_50                             ; 1        ; 1        ; 0        ; 0        ;
@@ -572,10 +572,10 @@ No synchronizer chains to report.
 ; delay:ex15|counter_mod_M:count1|Q[0] ; CLOCK_50                             ; 1        ; 1        ; 0        ; 0        ;
 ; delay:ex16|counter_mod_M:count1|Q[0] ; CLOCK_50                             ; 1        ; 1        ; 0        ; 0        ;
 ; delay:ex17|counter_mod_M:count1|Q[0] ; CLOCK_50                             ; 1        ; 1        ; 0        ; 0        ;
-; delay:ex10|counter_mod_M:count1|Q[0] ; delay:ex10|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 2        ;
-; delay:ex11|counter_mod_M:count1|Q[0] ; delay:ex11|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 2        ;
-; delay:ex12|counter_mod_M:count1|Q[0] ; delay:ex12|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 2        ;
-; delay:ex13|counter_mod_M:count1|Q[0] ; delay:ex13|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 2        ;
+; delay:ex10|counter_mod_M:count1|Q[0] ; delay:ex10|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 1        ;
+; delay:ex11|counter_mod_M:count1|Q[0] ; delay:ex11|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 1        ;
+; delay:ex12|counter_mod_M:count1|Q[0] ; delay:ex12|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 1        ;
+; delay:ex13|counter_mod_M:count1|Q[0] ; delay:ex13|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 1        ;
 ; delay:ex14|counter_mod_M:count1|Q[0] ; delay:ex14|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 1        ;
 ; delay:ex15|counter_mod_M:count1|Q[0] ; delay:ex15|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 1        ;
 ; delay:ex16|counter_mod_M:count1|Q[0] ; delay:ex16|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 2        ;
@@ -589,7 +589,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +--------------------------------------+--------------------------------------+----------+----------+----------+----------+
 ; From Clock                           ; To Clock                             ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------------------------------+--------------------------------------+----------+----------+----------+----------+
-; CLOCK_50                             ; CLOCK_50                             ; 11250    ; 0        ; 0        ; 0        ;
+; CLOCK_50                             ; CLOCK_50                             ; 11596    ; 0        ; 0        ; 0        ;
 ; delay:ex10|counter_mod_M:count1|Q[0] ; CLOCK_50                             ; 1        ; 1        ; 0        ; 0        ;
 ; delay:ex11|counter_mod_M:count1|Q[0] ; CLOCK_50                             ; 1        ; 1        ; 0        ; 0        ;
 ; delay:ex12|counter_mod_M:count1|Q[0] ; CLOCK_50                             ; 1        ; 1        ; 0        ; 0        ;
@@ -598,10 +598,10 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; delay:ex15|counter_mod_M:count1|Q[0] ; CLOCK_50                             ; 1        ; 1        ; 0        ; 0        ;
 ; delay:ex16|counter_mod_M:count1|Q[0] ; CLOCK_50                             ; 1        ; 1        ; 0        ; 0        ;
 ; delay:ex17|counter_mod_M:count1|Q[0] ; CLOCK_50                             ; 1        ; 1        ; 0        ; 0        ;
-; delay:ex10|counter_mod_M:count1|Q[0] ; delay:ex10|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 2        ;
-; delay:ex11|counter_mod_M:count1|Q[0] ; delay:ex11|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 2        ;
-; delay:ex12|counter_mod_M:count1|Q[0] ; delay:ex12|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 2        ;
-; delay:ex13|counter_mod_M:count1|Q[0] ; delay:ex13|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 2        ;
+; delay:ex10|counter_mod_M:count1|Q[0] ; delay:ex10|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 1        ;
+; delay:ex11|counter_mod_M:count1|Q[0] ; delay:ex11|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 1        ;
+; delay:ex12|counter_mod_M:count1|Q[0] ; delay:ex12|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 1        ;
+; delay:ex13|counter_mod_M:count1|Q[0] ; delay:ex13|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 1        ;
 ; delay:ex14|counter_mod_M:count1|Q[0] ; delay:ex14|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 1        ;
 ; delay:ex15|counter_mod_M:count1|Q[0] ; delay:ex15|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 1        ;
 ; delay:ex16|counter_mod_M:count1|Q[0] ; delay:ex16|counter_mod_M:count1|Q[0] ; 0        ; 0        ; 0        ; 2        ;
@@ -691,7 +691,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Apr 04 11:45:21 2019
+    Info: Processing started: Thu Apr 11 10:57:56 2019
 Info: Command: quartus_sta diode_flashing_board -c diode_flashing_board
 Info: qsta_default_script.tcl version: #3
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
@@ -1288,180 +1288,180 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -5.076
+Info (332146): Worst-case setup slack is -4.434
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.076            -748.609 CLOCK_50 
-    Info (332119):    -0.751              -1.501 delay:ex10|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.667              -1.333 delay:ex12|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.649              -0.649 delay:ex14|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.634              -0.634 delay:ex15|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.630              -1.259 delay:ex11|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.625              -1.247 delay:ex16|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.617              -1.233 delay:ex17|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.616              -1.228 delay:ex13|counter_mod_M:count1|Q[0] 
-Info (332146): Worst-case hold slack is 0.229
+    Info (332119):    -4.434            -750.627 CLOCK_50 
+    Info (332119):    -0.793              -0.793 delay:ex10|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.774              -0.774 delay:ex11|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.762              -0.762 delay:ex15|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.751              -1.499 delay:ex16|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.726              -0.726 delay:ex14|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.695              -0.695 delay:ex12|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.689              -0.689 delay:ex13|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.614              -1.224 delay:ex17|counter_mod_M:count1|Q[0] 
+Info (332146): Worst-case hold slack is 0.139
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.229               0.000 delay:ex14|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.247               0.000 delay:ex15|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.265               0.000 delay:ex17|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.269               0.000 delay:ex13|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.284               0.000 delay:ex11|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.288               0.000 delay:ex16|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.311               0.000 delay:ex12|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.389               0.000 delay:ex10|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.402               0.000 CLOCK_50 
+    Info (332119):     0.139               0.000 delay:ex14|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.149               0.000 delay:ex10|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.159               0.000 delay:ex11|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.269               0.000 delay:ex17|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.278               0.000 delay:ex13|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.285               0.000 delay:ex12|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.403               0.000 CLOCK_50 
+    Info (332119):     0.403               0.000 delay:ex16|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.408               0.000 delay:ex15|counter_mod_M:count1|Q[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.500
+Info (332146): Worst-case minimum pulse width slack is -0.449
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.500            -154.873 CLOCK_50 
-    Info (332119):    -0.394              -1.312 delay:ex16|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.394              -1.311 delay:ex13|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.394              -1.040 delay:ex11|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.394              -1.036 delay:ex12|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.394              -1.036 delay:ex17|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.394              -1.018 delay:ex10|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.394              -0.658 delay:ex15|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.394              -0.618 delay:ex14|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.449            -158.939 CLOCK_50 
+    Info (332119):    -0.394              -1.221 delay:ex17|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.394              -1.075 delay:ex16|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.394              -0.540 delay:ex10|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.394              -0.534 delay:ex14|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.394              -0.533 delay:ex11|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.394              -0.518 delay:ex12|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.394              -0.517 delay:ex13|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.394              -0.514 delay:ex15|counter_mod_M:count1|Q[0] 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -5.039
+Info (332146): Worst-case setup slack is -4.515
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.039            -734.283 CLOCK_50 
-    Info (332119):    -0.700              -1.398 delay:ex10|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.586              -1.167 delay:ex12|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.575              -0.575 delay:ex14|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.561              -0.561 delay:ex15|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.555              -1.106 delay:ex16|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.554              -1.104 delay:ex11|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.545              -1.085 delay:ex13|counter_mod_M:count1|Q[0] 
+    Info (332119):    -4.515            -735.399 CLOCK_50 
+    Info (332119):    -0.712              -0.712 delay:ex15|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.702              -1.400 delay:ex16|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.686              -0.686 delay:ex10|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.684              -0.684 delay:ex11|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.644              -0.644 delay:ex14|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.607              -0.607 delay:ex13|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.605              -0.605 delay:ex12|counter_mod_M:count1|Q[0] 
     Info (332119):    -0.539              -1.073 delay:ex17|counter_mod_M:count1|Q[0] 
-Info (332146): Worst-case hold slack is 0.240
+Info (332146): Worst-case hold slack is 0.160
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.240               0.000 delay:ex14|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.262               0.000 delay:ex15|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.277               0.000 delay:ex17|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.281               0.000 delay:ex13|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.291               0.000 delay:ex16|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.292               0.000 delay:ex11|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.316               0.000 delay:ex12|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.400               0.000 CLOCK_50 
-    Info (332119):     0.427               0.000 delay:ex10|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.160               0.000 delay:ex14|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.170               0.000 delay:ex11|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.177               0.000 delay:ex10|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.281               0.000 delay:ex17|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.296               0.000 delay:ex13|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.300               0.000 delay:ex12|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.397               0.000 CLOCK_50 
+    Info (332119):     0.438               0.000 delay:ex16|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.439               0.000 delay:ex15|counter_mod_M:count1|Q[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.508
+Info (332146): Worst-case minimum pulse width slack is -0.469
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.508            -167.443 CLOCK_50 
-    Info (332119):    -0.394              -1.212 delay:ex13|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.394              -1.212 delay:ex16|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.394              -1.156 delay:ex12|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.394              -1.146 delay:ex17|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.394              -1.030 delay:ex11|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.394              -1.016 delay:ex10|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.394              -0.614 delay:ex15|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.394              -0.567 delay:ex14|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.469            -172.709 CLOCK_50 
+    Info (332119):    -0.394              -1.098 delay:ex17|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.394              -1.033 delay:ex16|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.394              -0.573 delay:ex12|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.394              -0.568 delay:ex13|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.394              -0.532 delay:ex11|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.394              -0.530 delay:ex14|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.394              -0.527 delay:ex10|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.394              -0.515 delay:ex15|counter_mod_M:count1|Q[0] 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.213
+Info (332146): Worst-case setup slack is -2.932
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.213            -339.003 CLOCK_50 
-    Info (332119):    -0.125              -0.250 delay:ex10|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.117              -0.232 delay:ex12|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.096              -0.096 delay:ex14|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.089              -0.177 delay:ex11|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.089              -0.089 delay:ex15|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.088              -0.175 delay:ex16|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.081              -0.160 delay:ex13|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.080              -0.158 delay:ex17|counter_mod_M:count1|Q[0] 
-Info (332146): Worst-case hold slack is 0.123
+    Info (332119):    -2.932            -337.370 CLOCK_50 
+    Info (332119):    -0.214              -0.214 delay:ex10|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.185              -0.185 delay:ex11|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.141              -0.141 delay:ex14|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.138              -0.138 delay:ex15|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.128              -0.255 delay:ex16|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.125              -0.125 delay:ex12|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.121              -0.121 delay:ex13|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.076              -0.150 delay:ex17|counter_mod_M:count1|Q[0] 
+Info (332146): Worst-case hold slack is 0.063
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.123               0.000 delay:ex14|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.136               0.000 delay:ex15|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.145               0.000 delay:ex13|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.146               0.000 delay:ex17|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.154               0.000 delay:ex11|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.154               0.000 delay:ex16|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.182               0.000 delay:ex12|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.213               0.000 CLOCK_50 
-    Info (332119):     0.240               0.000 delay:ex10|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.063               0.000 delay:ex10|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.069               0.000 delay:ex14|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.085               0.000 delay:ex11|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.147               0.000 delay:ex17|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.153               0.000 delay:ex12|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.157               0.000 delay:ex13|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.218               0.000 CLOCK_50 
+    Info (332119):     0.246               0.000 delay:ex16|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.252               0.000 delay:ex15|counter_mod_M:count1|Q[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.510
+Info (332146): Worst-case minimum pulse width slack is -0.488
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.510             -29.437 CLOCK_50 
-    Info (332119):     0.091               0.000 delay:ex13|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.091               0.000 delay:ex15|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.091               0.000 delay:ex16|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.117               0.000 delay:ex12|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.117               0.000 delay:ex14|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.118               0.000 delay:ex17|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.124               0.000 delay:ex10|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.128               0.000 delay:ex11|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.488             -29.525 CLOCK_50 
+    Info (332119):     0.066               0.000 delay:ex10|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.107               0.000 delay:ex14|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.115               0.000 delay:ex11|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.119               0.000 delay:ex12|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.119               0.000 delay:ex13|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.128               0.000 delay:ex16|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.137               0.000 delay:ex17|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.160               0.000 delay:ex15|counter_mod_M:count1|Q[0] 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.838
+Info (332146): Worst-case setup slack is -2.425
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.838            -288.689 CLOCK_50 
-    Info (332119):    -0.077              -0.153 delay:ex10|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.056              -0.111 delay:ex12|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.040              -0.040 delay:ex14|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.034              -0.034 delay:ex15|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.032              -0.064 delay:ex11|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.031              -0.061 delay:ex16|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.026              -0.051 delay:ex17|counter_mod_M:count1|Q[0] 
-    Info (332119):    -0.025              -0.049 delay:ex13|counter_mod_M:count1|Q[0] 
-Info (332146): Worst-case hold slack is 0.111
+    Info (332119):    -2.425            -286.007 CLOCK_50 
+    Info (332119):    -0.128              -0.128 delay:ex10|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.112              -0.112 delay:ex11|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.082              -0.082 delay:ex15|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.078              -0.078 delay:ex14|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.077              -0.154 delay:ex16|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.064              -0.064 delay:ex13|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.062              -0.062 delay:ex12|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.023              -0.045 delay:ex17|counter_mod_M:count1|Q[0] 
+Info (332146): Worst-case hold slack is 0.066
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.111               0.000 delay:ex14|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.124               0.000 delay:ex15|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.133               0.000 delay:ex13|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.133               0.000 delay:ex17|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.136               0.000 delay:ex11|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.136               0.000 delay:ex16|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.162               0.000 delay:ex12|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.066               0.000 delay:ex14|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.069               0.000 delay:ex10|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.078               0.000 delay:ex11|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.134               0.000 delay:ex17|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.139               0.000 delay:ex12|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.144               0.000 delay:ex13|counter_mod_M:count1|Q[0] 
     Info (332119):     0.201               0.000 CLOCK_50 
-    Info (332119):     0.226               0.000 delay:ex10|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.233               0.000 delay:ex16|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.238               0.000 delay:ex15|counter_mod_M:count1|Q[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.497
+Info (332146): Worst-case minimum pulse width slack is -0.488
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.497             -29.066 CLOCK_50 
-    Info (332119):     0.111               0.000 delay:ex15|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.113               0.000 delay:ex13|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.113               0.000 delay:ex16|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.114               0.000 delay:ex11|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.118               0.000 delay:ex10|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.135               0.000 delay:ex14|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.139               0.000 delay:ex12|counter_mod_M:count1|Q[0] 
-    Info (332119):     0.140               0.000 delay:ex17|counter_mod_M:count1|Q[0] 
+    Info (332119):    -0.488             -29.546 CLOCK_50 
+    Info (332119):     0.086               0.000 delay:ex10|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.096               0.000 delay:ex14|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.109               0.000 delay:ex11|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.124               0.000 delay:ex16|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.140               0.000 delay:ex12|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.140               0.000 delay:ex13|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.149               0.000 delay:ex15|counter_mod_M:count1|Q[0] 
+    Info (332119):     0.154               0.000 delay:ex17|counter_mod_M:count1|Q[0] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 578 warnings
-    Info: Peak virtual memory: 5103 megabytes
-    Info: Processing ended: Thu Apr 04 11:45:37 2019
-    Info: Elapsed time: 00:00:16
+    Info: Peak virtual memory: 5106 megabytes
+    Info: Processing ended: Thu Apr 11 10:58:28 2019
+    Info: Elapsed time: 00:00:32
     Info: Total CPU time (on all processors): 00:00:14
 
 

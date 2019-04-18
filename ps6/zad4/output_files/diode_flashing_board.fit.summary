@@ -1,4 +1,4 @@
-Fitter Status : Successful - Thu Apr 04 11:45:01 2019
+Fitter Status : Successful - Thu Apr 11 10:56:17 2019
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : diode_flashing_board
 Top-level Entity Name : diode_flashing_board
@@ -6,7 +6,7 @@ Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
 Logic utilization (in ALMs) : 174 / 32,070 ( < 1 % )
-Total registers : 308
+Total registers : 312
 Total pins : 9 / 457 ( 2 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )

@@ -4,36 +4,38 @@ module accum_N_bits_board(
 									output [9:0] LEDR,
 									output [0:6] HEX0, HEX1, HEX2, HEX3);
 		
-		assign LEDR[7:0] = SW[7:0];
-		
-		decoder_hex_16 ex1(SW[3:0], HEX2[0:6]);
-		decoder_hex_16 ex2(SW[7:4], HEX3[0:6]);
+	
+	accumulator_N_bits 
+	#(8) ex(SW[7:0], KEY[1], !KEY[0], LEDR[7:0], LEDR[8], LEDR[9]);
+	
+	decoder_hex_16 d3(SW[7:4],HEX3[0:6]);
+	decoder_hex_16 d2(SW[3:0],HEX2[0:6]);
+	decoder_hex_16 d1(LEDR[7:4],HEX0[0:6]);
+	decoder_hex_16 d0(LEDR[3:0],HEX1[0:6]);	
 		
 endmodule
 
 module adder_carry
-						#(parameter N=8)(
+						#(N=8)(
 						input [N-1:0] x, y, input [0:0] carryi,
 						output [N-1:0] q,
 						output [0:0] carryo);
 		
 		wire[N-1:0] carry;
 		
-		assign carry[0] = carryi[0];
-		
-		adder_1_bit ex1(x[0],y[0],carry[0],q[0],carry[1]);
-		
 		generate 
 			
 			genvar i;
-			for(i = 1; i < N-1; i = i + 1)
-			begin:cc
-				adder_1_bit ex2(x[i],y[i],carry[i-1],q[i],carry[i]);
-			end
+			for(i = 0; i < N-1; i = i + 1)
+				begin: adder
+      			case(i)
+         			0:	adder_1_bit ex0(x[i], y[i], carryi, q[i], carry[i]);
+         			N-1:	adder_1_bit ex1(x[i], y[i], carry[i-1], q[i], carryo);
+         			default: 	adder_1_bit ex2(x[i], y[i], carry[i-1], q[i], carry[i]);
+      			endcase
+				end
 			
 		endgenerate
-		
-		assign carryo[0] = carry[N-1];
 		
 endmodule
 
@@ -46,16 +48,54 @@ module adder_1_bit(
 
 endmodule
 
-module latch_D (
-					input Clk, D,
-					output reg Q);
+
+module adder 
+				#(N=8)(
+				input [N-1:0]x,y, input carryi,
+				output [N-1:0] q, output carryo);
+							
+		assign {carryo,q} = x + y + carryi;
+
+endmodule
 		
-		always @ (D, Clk)
-		begin
-			if (Clk)
-				Q = D;
-		end
+module FlipFlopD(
+	input D,clk,
+	output reg Q);
+	
+	always @(posedge clk)
+		Q <= D;
+endmodule
+
+module register_N_bits
+	#(N=8)
+	(input [N-1:0] D,
+	input clk,
+	input reset,
+	output reg [N-1:0] Q);
+	
+	always @(posedge clk)
+	begin
+		if(reset)
+			Q <= 0;
+		else	
+			Q <= D;
+	end
 		
+endmodule
+
+module accumulator_N_bits	
+	#(N=8)
+	(input [N-1:0] A,
+	input clk, aclr,
+	output [N-1:0] S,
+	output overflow, carry);
+	
+	wire [N-1:0] B;
+	
+	adder sum(A[N-1:0],S[N-1:0], 1'd1, B[N-1:0], carry);
+	
+	register_N_bits r(B[N-1],clk,aclr,S[N-1:0]);
+	
 endmodule
 
 module decoder_hex_16(

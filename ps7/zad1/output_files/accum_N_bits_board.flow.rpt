@@ -1,5 +1,5 @@
 Flow report for accum_N_bits_board
-Thu Apr 11 09:40:11 2019
+Thu Apr 11 15:16:21 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Apr 11 09:40:11 2019       ;
+; Flow Status                     ; Successful - Thu Apr 11 15:16:21 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; accum_N_bits_board                          ;
 ; Top-level Entity Name           ; accum_N_bits_board                          ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 8 / 32,070 ( < 1 % )                        ;
-; Total registers                 ; 0                                           ;
+; Logic utilization (in ALMs)     ; 13 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 1                                           ;
 ; Total pins                      ; 48 / 457 ( 11 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/11/2019 09:38:23 ;
+; Start date & time ; 04/11/2019 15:13:47 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; accum_N_bits_board  ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 88491848904580.155496830205668         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 35775002756364.155498842610012         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -96,12 +96,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:21     ; 1.0                     ; 4818 MB             ; 00:00:47                           ;
-; Fitter                    ; 00:00:58     ; 1.0                     ; 6265 MB             ; 00:01:27                           ;
-; Assembler                 ; 00:00:11     ; 1.0                     ; 4850 MB             ; 00:00:11                           ;
-; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 5123 MB             ; 00:00:10                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4752 MB             ; 00:00:03                           ;
-; Total                     ; 00:01:43     ; --                      ; --                  ; 00:02:38                           ;
+; Analysis & Synthesis      ; 00:00:30     ; 1.0                     ; 4795 MB             ; 00:00:44                           ;
+; Fitter                    ; 00:01:21     ; 1.0                     ; 6180 MB             ; 00:01:40                           ;
+; Assembler                 ; 00:00:16     ; 1.0                     ; 4835 MB             ; 00:00:15                           ;
+; TimeQuest Timing Analyzer ; 00:00:14     ; 1.0                     ; 5094 MB             ; 00:00:13                           ;
+; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4742 MB             ; 00:00:04                           ;
+; Total                     ; 00:02:25     ; --                      ; --                  ; 00:02:56                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -110,11 +110,11 @@ refer to the applicable agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; MazsakLaptop     ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 

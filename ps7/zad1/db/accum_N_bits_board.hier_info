@@ -1,55 +1,142 @@
 |accum_N_bits_board
-SW[0] => SW[0].IN1
-SW[1] => SW[1].IN1
-SW[2] => SW[2].IN1
-SW[3] => SW[3].IN1
-SW[4] => SW[4].IN1
-SW[5] => SW[5].IN1
-SW[6] => SW[6].IN1
-SW[7] => SW[7].IN1
-KEY[0] => ~NO_FANOUT~
-KEY[1] => ~NO_FANOUT~
-LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[2] <= SW[2].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[3] <= SW[3].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[4] <= SW[4].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[5] <= SW[5].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[6] <= SW[6].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[7] <= SW[7].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[8] <= <GND>
-LEDR[9] <= <GND>
-HEX0[6] <= decoder_hex_16:ex1.port1
-HEX0[5] <= decoder_hex_16:ex1.port1
-HEX0[4] <= decoder_hex_16:ex1.port1
-HEX0[3] <= decoder_hex_16:ex1.port1
-HEX0[2] <= decoder_hex_16:ex1.port1
-HEX0[1] <= decoder_hex_16:ex1.port1
-HEX0[0] <= decoder_hex_16:ex1.port1
-HEX1[6] <= decoder_hex_16:ex2.port1
-HEX1[5] <= decoder_hex_16:ex2.port1
-HEX1[4] <= decoder_hex_16:ex2.port1
-HEX1[3] <= decoder_hex_16:ex2.port1
-HEX1[2] <= decoder_hex_16:ex2.port1
-HEX1[1] <= decoder_hex_16:ex2.port1
-HEX1[0] <= decoder_hex_16:ex2.port1
-HEX2[6] <= <GND>
-HEX2[5] <= <GND>
-HEX2[4] <= <GND>
-HEX2[3] <= <GND>
-HEX2[2] <= <GND>
-HEX2[1] <= <GND>
-HEX2[0] <= <GND>
-HEX3[6] <= <GND>
-HEX3[5] <= <GND>
-HEX3[4] <= <GND>
-HEX3[3] <= <GND>
-HEX3[2] <= <GND>
-HEX3[1] <= <GND>
-HEX3[0] <= <GND>
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+SW[3] => SW[3].IN2
+SW[4] => SW[4].IN2
+SW[5] => SW[5].IN2
+SW[6] => SW[6].IN2
+SW[7] => SW[7].IN2
+KEY[0] => _.IN1
+KEY[1] => KEY[1].IN1
+LEDR[0] <= LEDR[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= LEDR[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= LEDR[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= LEDR[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= LEDR[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= LEDR[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= LEDR[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= LEDR[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= accumulator_N_bits:ex.port4
+LEDR[9] <= accumulator_N_bits:ex.port5
+HEX0[6] <= decoder_hex_16:d1.port1
+HEX0[5] <= decoder_hex_16:d1.port1
+HEX0[4] <= decoder_hex_16:d1.port1
+HEX0[3] <= decoder_hex_16:d1.port1
+HEX0[2] <= decoder_hex_16:d1.port1
+HEX0[1] <= decoder_hex_16:d1.port1
+HEX0[0] <= decoder_hex_16:d1.port1
+HEX1[6] <= decoder_hex_16:d0.port1
+HEX1[5] <= decoder_hex_16:d0.port1
+HEX1[4] <= decoder_hex_16:d0.port1
+HEX1[3] <= decoder_hex_16:d0.port1
+HEX1[2] <= decoder_hex_16:d0.port1
+HEX1[1] <= decoder_hex_16:d0.port1
+HEX1[0] <= decoder_hex_16:d0.port1
+HEX2[6] <= decoder_hex_16:d2.port1
+HEX2[5] <= decoder_hex_16:d2.port1
+HEX2[4] <= decoder_hex_16:d2.port1
+HEX2[3] <= decoder_hex_16:d2.port1
+HEX2[2] <= decoder_hex_16:d2.port1
+HEX2[1] <= decoder_hex_16:d2.port1
+HEX2[0] <= decoder_hex_16:d2.port1
+HEX3[6] <= decoder_hex_16:d3.port1
+HEX3[5] <= decoder_hex_16:d3.port1
+HEX3[4] <= decoder_hex_16:d3.port1
+HEX3[3] <= decoder_hex_16:d3.port1
+HEX3[2] <= decoder_hex_16:d3.port1
+HEX3[1] <= decoder_hex_16:d3.port1
+HEX3[0] <= decoder_hex_16:d3.port1
 
 
-|accum_N_bits_board|decoder_hex_16:ex1
+|accum_N_bits_board|accumulator_N_bits:ex
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+clk => clk.IN1
+aclr => aclr.IN1
+S[0] <= S[0].DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S[1].DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S[2].DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S[3].DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S[4].DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S[5].DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S[6].DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S[7].DB_MAX_OUTPUT_PORT_TYPE
+overflow <= <GND>
+carry <= adder:sum.port4
+
+
+|accum_N_bits_board|accumulator_N_bits:ex|adder:sum
+x[0] => _.DATAD
+x[1] => _.DATAD
+x[2] => _.DATAD
+x[3] => _.DATAD
+x[4] => _.DATAD
+x[5] => _.DATAD
+x[6] => _.DATAD
+x[7] => _.DATAD
+y[0] => _.DATAC
+y[1] => _.DATAC
+y[2] => _.DATAC
+y[3] => _.DATAC
+y[4] => _.DATAC
+y[5] => _.DATAC
+y[6] => _.DATAC
+y[7] => _.DATAC
+carryi => _.DATAB
+q[0] <= _.SUM_OUT
+q[1] <= _.SUM_OUT
+q[2] <= _.SUM_OUT
+q[3] <= _.SUM_OUT
+q[4] <= _.SUM_OUT
+q[5] <= _.SUM_OUT
+q[6] <= _.SUM_OUT
+q[7] <= _.SUM_OUT
+carryo <= _.SUM_OUT
+
+
+|accum_N_bits_board|accumulator_N_bits:ex|register_N_bits:r
+D[0] => Q.DATAA
+D[1] => Q.DATAA
+D[2] => Q.DATAA
+D[3] => Q.DATAA
+D[4] => Q.DATAA
+D[5] => Q.DATAA
+D[6] => Q.DATAA
+D[7] => Q.DATAA
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+clk => Q[4]~reg0.CLK
+clk => Q[5]~reg0.CLK
+clk => Q[6]~reg0.CLK
+clk => Q[7]~reg0.CLK
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accum_N_bits_board|decoder_hex_16:d3
 x[0] => Decoder0.IN3
 x[1] => Decoder0.IN2
 x[2] => Decoder0.IN1
@@ -63,7 +150,35 @@ h[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 h[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|accum_N_bits_board|decoder_hex_16:ex2
+|accum_N_bits_board|decoder_hex_16:d2
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+h[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accum_N_bits_board|decoder_hex_16:d1
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+h[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accum_N_bits_board|decoder_hex_16:d0
 x[0] => Decoder0.IN3
 x[1] => Decoder0.IN2
 x[2] => Decoder0.IN1

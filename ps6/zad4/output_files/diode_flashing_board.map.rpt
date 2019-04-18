@@ -1,5 +1,5 @@
 Analysis & Synthesis report for diode_flashing_board
-Thu Apr 04 11:43:25 2019
+Thu Apr 11 10:53:29 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -98,7 +98,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Apr 04 11:43:25 2019       ;
+; Analysis & Synthesis Status     ; Successful - Thu Apr 11 10:53:29 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; diode_flashing_board                        ;
 ; Top-level Entity Name           ; diode_flashing_board                        ;
@@ -218,7 +218,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -236,13 +236,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 171            ;
+; Estimate of Logic utilization (ALMs needed) ; 172            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 289            ;
+; Combinational ALUT usage for logic          ; 290            ;
 ;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 52             ;
-;     -- 5 input functions                    ; 15             ;
-;     -- 4 input functions                    ; 5              ;
+;     -- 6 input functions                    ; 53             ;
+;     -- 5 input functions                    ; 14             ;
+;     -- 4 input functions                    ; 6              ;
 ;     -- <=3 input functions                  ; 217            ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 221            ;
@@ -253,7 +253,7 @@ refer to the applicable agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 213            ;
-; Total fan-out                               ; 1492           ;
+; Total fan-out                               ; 1496           ;
 ; Average fan-out                             ; 2.83           ;
 +---------------------------------------------+----------------+
 
@@ -263,7 +263,7 @@ refer to the applicable agreement for further details.
 +------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name          ; Library Name ;
 +------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+----------------------+--------------+
-; |diode_flashing_board        ; 289 (0)             ; 221 (0)                   ; 0                 ; 0          ; 9    ; 0            ; |diode_flashing_board                                 ; diode_flashing_board ; work         ;
+; |diode_flashing_board        ; 290 (0)             ; 221 (0)                   ; 0                 ; 0          ; 9    ; 0            ; |diode_flashing_board                                 ; diode_flashing_board ; work         ;
 ;    |counter_modulo_k:count1| ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count1         ; counter_modulo_k     ; work         ;
 ;    |counter_modulo_k:count2| ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count2         ; counter_modulo_k     ; work         ;
 ;    |counter_modulo_k:count3| ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count3         ; counter_modulo_k     ; work         ;
@@ -293,9 +293,9 @@ refer to the applicable agreement for further details.
 ;    |delay:ex16|              ; 37 (0)              ; 28 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex16                      ; delay                ; work         ;
 ;       |counter_mod_M:count0| ; 33 (33)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex16|counter_mod_M:count0 ; counter_mod_M        ; work         ;
 ;       |counter_mod_M:count1| ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex16|counter_mod_M:count1 ; counter_mod_M        ; work         ;
-;    |delay:ex17|              ; 37 (0)              ; 28 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex17                      ; delay                ; work         ;
+;    |delay:ex17|              ; 38 (0)              ; 28 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex17                      ; delay                ; work         ;
 ;       |counter_mod_M:count0| ; 33 (33)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex17|counter_mod_M:count0 ; counter_mod_M        ; work         ;
-;       |counter_mod_M:count1| ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex17|counter_mod_M:count1 ; counter_mod_M        ; work         ;
+;       |counter_mod_M:count1| ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex17|counter_mod_M:count1 ; counter_mod_M        ; work         ;
 +------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -740,15 +740,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-----------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "delay:ex17|counter_mod_M:count0"                                                                                           ;
-+--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                  ;
-+--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; aclr   ; Input  ; Info     ; Stuck at VCC                                                                                                             ;
-; enable ; Input  ; Info     ; Stuck at VCC                                                                                                             ;
-; Q      ; Output ; Warning  ; Output or bidir port (27 bits) is wider than the port expression (26 bits) it drives; bit(s) "Q[26..26]" have no fanouts ;
-+--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "delay:ex17|counter_mod_M:count0" ;
++--------+-------+----------+---------------------------------+
+; Port   ; Type  ; Severity ; Details                         ;
++--------+-------+----------+---------------------------------+
+; aclr   ; Input ; Info     ; Stuck at VCC                    ;
+; enable ; Input ; Info     ; Stuck at VCC                    ;
++--------+-------+----------+---------------------------------+
 
 
 +-------------------------------------------------------------+
@@ -760,15 +759,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-----------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "delay:ex16|counter_mod_M:count0"                                                                                           ;
-+--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                  ;
-+--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; aclr   ; Input  ; Info     ; Stuck at VCC                                                                                                             ;
-; enable ; Input  ; Info     ; Stuck at VCC                                                                                                             ;
-; Q      ; Output ; Warning  ; Output or bidir port (27 bits) is wider than the port expression (26 bits) it drives; bit(s) "Q[26..26]" have no fanouts ;
-+--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "delay:ex16|counter_mod_M:count0" ;
++--------+-------+----------+---------------------------------+
+; Port   ; Type  ; Severity ; Details                         ;
++--------+-------+----------+---------------------------------+
+; aclr   ; Input ; Info     ; Stuck at VCC                    ;
+; enable ; Input ; Info     ; Stuck at VCC                    ;
++--------+-------+----------+---------------------------------+
 
 
 +-------------------------------------------------------------+
@@ -780,15 +778,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-----------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "delay:ex15|counter_mod_M:count0"                                                                                           ;
-+--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                  ;
-+--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; aclr   ; Input  ; Info     ; Stuck at VCC                                                                                                             ;
-; enable ; Input  ; Info     ; Stuck at VCC                                                                                                             ;
-; Q      ; Output ; Warning  ; Output or bidir port (27 bits) is wider than the port expression (26 bits) it drives; bit(s) "Q[26..26]" have no fanouts ;
-+--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "delay:ex15|counter_mod_M:count0" ;
++--------+-------+----------+---------------------------------+
+; Port   ; Type  ; Severity ; Details                         ;
++--------+-------+----------+---------------------------------+
+; aclr   ; Input ; Info     ; Stuck at VCC                    ;
+; enable ; Input ; Info     ; Stuck at VCC                    ;
++--------+-------+----------+---------------------------------+
 
 
 +-------------------------------------------------------------+
@@ -800,14 +797,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-----------------------------------+
 
 
-+-------------------------------------------------------------+
-; Port Connectivity Checks: "delay:ex14|counter_mod_M:count0" ;
-+--------+-------+----------+---------------------------------+
-; Port   ; Type  ; Severity ; Details                         ;
-+--------+-------+----------+---------------------------------+
-; aclr   ; Input ; Info     ; Stuck at VCC                    ;
-; enable ; Input ; Info     ; Stuck at VCC                    ;
-+--------+-------+----------+---------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:ex14|counter_mod_M:count0"                                                                                                                                          ;
++--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                                                 ;
++--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; aclr   ; Input  ; Info     ; Stuck at VCC                                                                                                                                                            ;
+; enable ; Input  ; Info     ; Stuck at VCC                                                                                                                                                            ;
+; Q      ; Output ; Warning  ; Output or bidir port (26 bits) is smaller than the port expression (27 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------+
@@ -819,14 +817,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-----------------------------------+
 
 
-+-------------------------------------------------------------+
-; Port Connectivity Checks: "delay:ex13|counter_mod_M:count0" ;
-+--------+-------+----------+---------------------------------+
-; Port   ; Type  ; Severity ; Details                         ;
-+--------+-------+----------+---------------------------------+
-; aclr   ; Input ; Info     ; Stuck at VCC                    ;
-; enable ; Input ; Info     ; Stuck at VCC                    ;
-+--------+-------+----------+---------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "delay:ex13|counter_mod_M:count0"                                                                                                                                          ;
++--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                                                 ;
++--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; aclr   ; Input  ; Info     ; Stuck at VCC                                                                                                                                                            ;
+; enable ; Input  ; Info     ; Stuck at VCC                                                                                                                                                            ;
+; Q      ; Output ; Warning  ; Output or bidir port (26 bits) is smaller than the port expression (27 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------+
@@ -845,7 +844,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; aclr   ; Input  ; Info     ; Stuck at VCC                                                                                                                                                            ;
 ; enable ; Input  ; Info     ; Stuck at VCC                                                                                                                                                            ;
-; Q      ; Output ; Warning  ; Output or bidir port (25 bits) is smaller than the port expression (26 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
+; Q      ; Output ; Warning  ; Output or bidir port (25 bits) is smaller than the port expression (27 bits) it drives.  The 2 most-significant bit(s) in the port expression will be connected to GND. ;
 +--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -865,7 +864,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; aclr   ; Input  ; Info     ; Stuck at VCC                                                                                                                                                            ;
 ; enable ; Input  ; Info     ; Stuck at VCC                                                                                                                                                            ;
-; Q      ; Output ; Warning  ; Output or bidir port (24 bits) is smaller than the port expression (26 bits) it drives.  The 2 most-significant bit(s) in the port expression will be connected to GND. ;
+; Q      ; Output ; Warning  ; Output or bidir port (24 bits) is smaller than the port expression (27 bits) it drives.  The 3 most-significant bit(s) in the port expression will be connected to GND. ;
 +--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -885,7 +884,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; aclr   ; Input  ; Info     ; Stuck at VCC                                                                                                                                                            ;
 ; enable ; Input  ; Info     ; Stuck at VCC                                                                                                                                                            ;
-; Q      ; Output ; Warning  ; Output or bidir port (23 bits) is smaller than the port expression (26 bits) it drives.  The 3 most-significant bit(s) in the port expression will be connected to GND. ;
+; Q      ; Output ; Warning  ; Output or bidir port (23 bits) is smaller than the port expression (27 bits) it drives.  The 4 most-significant bit(s) in the port expression will be connected to GND. ;
 +--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -897,16 +896,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 221                         ;
 ;     SCLR              ; 205                         ;
 ;     plain             ; 16                          ;
-; arriav_lcell_comb     ; 289                         ;
+; arriav_lcell_comb     ; 290                         ;
 ;     arith             ; 205                         ;
 ;         1 data inputs ; 205                         ;
-;     normal            ; 84                          ;
+;     normal            ; 85                          ;
 ;         1 data inputs ; 8                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 5                           ;
-;         5 data inputs ; 15                          ;
-;         6 data inputs ; 52                          ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 6                           ;
+;         5 data inputs ; 14                          ;
+;         6 data inputs ; 53                          ;
 ; boundary_port         ; 9                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.60                        ;
@@ -919,7 +918,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -929,7 +928,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Apr 04 11:42:55 2019
+    Info: Processing started: Thu Apr 11 10:52:45 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off diode_flashing_board -c diode_flashing_board
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -957,7 +956,7 @@ Info (12128): Elaborating entity "counter_mod_M" for hierarchy "delay:ex16|count
 Info (12128): Elaborating entity "delay" for hierarchy "delay:ex17" File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps6/zad4/diode_flashing_board.sv Line: 15
 Info (12128): Elaborating entity "counter_mod_M" for hierarchy "delay:ex17|counter_mod_M:count0" File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps6/zad4/diode_flashing_board.sv Line: 38
 Info (12128): Elaborating entity "counter_modulo_k" for hierarchy "counter_modulo_k:count1" File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps6/zad4/diode_flashing_board.sv Line: 17
-Warning (12241): 14 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 13 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
@@ -1533,14 +1532,14 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 298 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 299 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 289 logic cells
+    Info (21061): Implemented 290 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 574 warnings
-    Info: Peak virtual memory: 4820 megabytes
-    Info: Processing ended: Thu Apr 04 11:43:25 2019
-    Info: Elapsed time: 00:00:30
+    Info: Peak virtual memory: 4823 megabytes
+    Info: Processing ended: Thu Apr 11 10:53:29 2019
+    Info: Elapsed time: 00:00:44
     Info: Total CPU time (on all processors): 00:00:47
 
 

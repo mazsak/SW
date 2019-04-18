@@ -1,0 +1,66 @@
+|FSM_one_hot_board
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+KEY[0] => KEY[0].IN1
+KEY[1] => ~NO_FANOUT~
+LEDR[0] <= FSM_one_hot:ex1.port4
+LEDR[1] <= FSM_one_hot:ex1.port4
+LEDR[2] <= FSM_one_hot:ex1.port4
+LEDR[3] <= FSM_one_hot:ex1.port4
+LEDR[4] <= FSM_one_hot:ex1.port4
+LEDR[5] <= FSM_one_hot:ex1.port4
+LEDR[6] <= FSM_one_hot:ex1.port4
+LEDR[7] <= FSM_one_hot:ex1.port4
+LEDR[8] <= FSM_one_hot:ex1.port4
+LEDR[9] <= FSM_one_hot:ex1.port3
+
+
+|FSM_one_hot_board|FSM_one_hot:ex1
+w => d.IN1
+w => d.IN1
+w => d.IN1
+w => d.IN1
+w => d[6].IN1
+w => d[7].IN1
+w => d.IN1
+w => d.IN1
+w => d.IN1
+w => d.IN1
+w => d[3].IN1
+w => d[2].IN1
+w => d.IN1
+w => d.IN1
+w => d.IN1
+w => d.IN1
+w => d.IN1
+clk => y[0]~reg0.CLK
+clk => y[1]~reg0.CLK
+clk => y[2]~reg0.CLK
+clk => y[3]~reg0.CLK
+clk => y[4]~reg0.CLK
+clk => y[5]~reg0.CLK
+clk => y[6]~reg0.CLK
+clk => y[7]~reg0.CLK
+clk => y[8]~reg0.CLK
+aclr => y[0]~reg0.DATAIN
+aclr => y[0]~reg0.PRESET
+aclr => y[1]~reg0.ACLR
+aclr => y[2]~reg0.ACLR
+aclr => y[3]~reg0.ACLR
+aclr => y[4]~reg0.ACLR
+aclr => y[5]~reg0.ACLR
+aclr => y[6]~reg0.ACLR
+aclr => y[7]~reg0.ACLR
+aclr => y[8]~reg0.ACLR
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+y[0] <= y[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= y[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[8] <= y[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

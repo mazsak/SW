@@ -1,5 +1,5 @@
 Fitter report for diode_flashing_board
-Thu Apr 04 11:45:01 2019
+Thu Apr 11 10:56:17 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Thu Apr 04 11:45:01 2019       ;
+; Fitter Status                   ; Successful - Thu Apr 11 10:56:17 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; diode_flashing_board                        ;
 ; Top-level Entity Name           ; diode_flashing_board                        ;
@@ -71,7 +71,7 @@ refer to the applicable agreement for further details.
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; 174 / 32,070 ( < 1 % )                      ;
-; Total registers                 ; 308                                         ;
+; Total registers                 ; 312                                         ;
 ; Total pins                      ; 9 / 457 ( 2 % )                             ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
@@ -153,12 +153,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 2           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.1%      ;
+;     Processor 2            ;   1.7%      ;
 +----------------------------+-------------+
 
 
@@ -168,93 +168,97 @@ refer to the applicable agreement for further details.
 ; Node                                  ; Action     ; Operation                                         ; Reason                     ; Node Port ; Node Port Name ; Destination Node                                ; Destination Port ; Destination Port Name ;
 +---------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+-------------------------------------------------+------------------+-----------------------+
 ; CLOCK_50~inputCLKENA0                 ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                                                 ;                  ;                       ;
-; counter_modulo_k:count1|Q[0]          ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; counter_modulo_k:count1|Q[0]~DUPLICATE          ;                  ;                       ;
-; counter_modulo_k:count2|Q[0]          ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; counter_modulo_k:count2|Q[0]~DUPLICATE          ;                  ;                       ;
-; counter_modulo_k:count3|Q[0]          ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; counter_modulo_k:count3|Q[0]~DUPLICATE          ;                  ;                       ;
-; counter_modulo_k:count4|Q[0]          ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; counter_modulo_k:count4|Q[0]~DUPLICATE          ;                  ;                       ;
 ; counter_modulo_k:count7|Q[0]          ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; counter_modulo_k:count7|Q[0]~DUPLICATE          ;                  ;                       ;
 ; counter_modulo_k:count8|Q[0]          ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; counter_modulo_k:count8|Q[0]~DUPLICATE          ;                  ;                       ;
 ; delay:ex10|counter_mod_M:count0|Q[0]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[0]~DUPLICATE  ;                  ;                       ;
 ; delay:ex10|counter_mod_M:count0|Q[1]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[1]~DUPLICATE  ;                  ;                       ;
+; delay:ex10|counter_mod_M:count0|Q[3]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[3]~DUPLICATE  ;                  ;                       ;
 ; delay:ex10|counter_mod_M:count0|Q[4]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[4]~DUPLICATE  ;                  ;                       ;
-; delay:ex10|counter_mod_M:count0|Q[8]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[8]~DUPLICATE  ;                  ;                       ;
-; delay:ex10|counter_mod_M:count0|Q[9]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[9]~DUPLICATE  ;                  ;                       ;
-; delay:ex10|counter_mod_M:count0|Q[10] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[10]~DUPLICATE ;                  ;                       ;
-; delay:ex10|counter_mod_M:count0|Q[11] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[11]~DUPLICATE ;                  ;                       ;
+; delay:ex10|counter_mod_M:count0|Q[7]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[7]~DUPLICATE  ;                  ;                       ;
 ; delay:ex10|counter_mod_M:count0|Q[12] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[12]~DUPLICATE ;                  ;                       ;
-; delay:ex10|counter_mod_M:count0|Q[14] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[14]~DUPLICATE ;                  ;                       ;
-; delay:ex10|counter_mod_M:count0|Q[15] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[15]~DUPLICATE ;                  ;                       ;
-; delay:ex10|counter_mod_M:count0|Q[17] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[17]~DUPLICATE ;                  ;                       ;
+; delay:ex10|counter_mod_M:count0|Q[18] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[18]~DUPLICATE ;                  ;                       ;
+; delay:ex10|counter_mod_M:count0|Q[21] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[21]~DUPLICATE ;                  ;                       ;
+; delay:ex10|counter_mod_M:count0|Q[22] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex10|counter_mod_M:count0|Q[22]~DUPLICATE ;                  ;                       ;
 ; delay:ex11|counter_mod_M:count0|Q[0]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[0]~DUPLICATE  ;                  ;                       ;
-; delay:ex11|counter_mod_M:count0|Q[1]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[1]~DUPLICATE  ;                  ;                       ;
-; delay:ex11|counter_mod_M:count0|Q[5]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[5]~DUPLICATE  ;                  ;                       ;
-; delay:ex11|counter_mod_M:count0|Q[6]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[6]~DUPLICATE  ;                  ;                       ;
 ; delay:ex11|counter_mod_M:count0|Q[7]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[7]~DUPLICATE  ;                  ;                       ;
-; delay:ex11|counter_mod_M:count0|Q[14] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[14]~DUPLICATE ;                  ;                       ;
-; delay:ex11|counter_mod_M:count0|Q[20] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[20]~DUPLICATE ;                  ;                       ;
-; delay:ex11|counter_mod_M:count0|Q[21] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[21]~DUPLICATE ;                  ;                       ;
-; delay:ex11|counter_mod_M:count0|Q[22] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[22]~DUPLICATE ;                  ;                       ;
+; delay:ex11|counter_mod_M:count0|Q[9]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[9]~DUPLICATE  ;                  ;                       ;
+; delay:ex11|counter_mod_M:count0|Q[11] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[11]~DUPLICATE ;                  ;                       ;
+; delay:ex11|counter_mod_M:count0|Q[13] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[13]~DUPLICATE ;                  ;                       ;
+; delay:ex11|counter_mod_M:count0|Q[15] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[15]~DUPLICATE ;                  ;                       ;
+; delay:ex11|counter_mod_M:count0|Q[16] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[16]~DUPLICATE ;                  ;                       ;
+; delay:ex11|counter_mod_M:count0|Q[18] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[18]~DUPLICATE ;                  ;                       ;
+; delay:ex11|counter_mod_M:count0|Q[19] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[19]~DUPLICATE ;                  ;                       ;
+; delay:ex11|counter_mod_M:count0|Q[23] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex11|counter_mod_M:count0|Q[23]~DUPLICATE ;                  ;                       ;
 ; delay:ex12|counter_mod_M:count0|Q[0]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[0]~DUPLICATE  ;                  ;                       ;
-; delay:ex12|counter_mod_M:count0|Q[1]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[1]~DUPLICATE  ;                  ;                       ;
+; delay:ex12|counter_mod_M:count0|Q[2]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[2]~DUPLICATE  ;                  ;                       ;
 ; delay:ex12|counter_mod_M:count0|Q[3]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[3]~DUPLICATE  ;                  ;                       ;
-; delay:ex12|counter_mod_M:count0|Q[4]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[4]~DUPLICATE  ;                  ;                       ;
-; delay:ex12|counter_mod_M:count0|Q[5]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[5]~DUPLICATE  ;                  ;                       ;
-; delay:ex12|counter_mod_M:count0|Q[12] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[12]~DUPLICATE ;                  ;                       ;
+; delay:ex12|counter_mod_M:count0|Q[7]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[7]~DUPLICATE  ;                  ;                       ;
+; delay:ex12|counter_mod_M:count0|Q[11] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[11]~DUPLICATE ;                  ;                       ;
+; delay:ex12|counter_mod_M:count0|Q[14] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[14]~DUPLICATE ;                  ;                       ;
 ; delay:ex12|counter_mod_M:count0|Q[15] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[15]~DUPLICATE ;                  ;                       ;
-; delay:ex12|counter_mod_M:count0|Q[16] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[16]~DUPLICATE ;                  ;                       ;
-; delay:ex12|counter_mod_M:count0|Q[19] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[19]~DUPLICATE ;                  ;                       ;
+; delay:ex12|counter_mod_M:count0|Q[18] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[18]~DUPLICATE ;                  ;                       ;
 ; delay:ex12|counter_mod_M:count0|Q[20] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[20]~DUPLICATE ;                  ;                       ;
 ; delay:ex12|counter_mod_M:count0|Q[22] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[22]~DUPLICATE ;                  ;                       ;
+; delay:ex12|counter_mod_M:count0|Q[23] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex12|counter_mod_M:count0|Q[23]~DUPLICATE ;                  ;                       ;
 ; delay:ex13|counter_mod_M:count0|Q[0]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex13|counter_mod_M:count0|Q[0]~DUPLICATE  ;                  ;                       ;
 ; delay:ex13|counter_mod_M:count0|Q[1]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex13|counter_mod_M:count0|Q[1]~DUPLICATE  ;                  ;                       ;
 ; delay:ex13|counter_mod_M:count0|Q[2]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex13|counter_mod_M:count0|Q[2]~DUPLICATE  ;                  ;                       ;
+; delay:ex13|counter_mod_M:count0|Q[3]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex13|counter_mod_M:count0|Q[3]~DUPLICATE  ;                  ;                       ;
 ; delay:ex13|counter_mod_M:count0|Q[6]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex13|counter_mod_M:count0|Q[6]~DUPLICATE  ;                  ;                       ;
 ; delay:ex13|counter_mod_M:count0|Q[8]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex13|counter_mod_M:count0|Q[8]~DUPLICATE  ;                  ;                       ;
+; delay:ex13|counter_mod_M:count0|Q[11] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex13|counter_mod_M:count0|Q[11]~DUPLICATE ;                  ;                       ;
 ; delay:ex13|counter_mod_M:count0|Q[12] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex13|counter_mod_M:count0|Q[12]~DUPLICATE ;                  ;                       ;
 ; delay:ex13|counter_mod_M:count0|Q[14] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex13|counter_mod_M:count0|Q[14]~DUPLICATE ;                  ;                       ;
+; delay:ex13|counter_mod_M:count0|Q[15] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex13|counter_mod_M:count0|Q[15]~DUPLICATE ;                  ;                       ;
 ; delay:ex13|counter_mod_M:count0|Q[16] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex13|counter_mod_M:count0|Q[16]~DUPLICATE ;                  ;                       ;
-; delay:ex13|counter_mod_M:count0|Q[18] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex13|counter_mod_M:count0|Q[18]~DUPLICATE ;                  ;                       ;
-; delay:ex13|counter_mod_M:count0|Q[19] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex13|counter_mod_M:count0|Q[19]~DUPLICATE ;                  ;                       ;
 ; delay:ex13|counter_mod_M:count0|Q[21] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex13|counter_mod_M:count0|Q[21]~DUPLICATE ;                  ;                       ;
-; delay:ex13|counter_mod_M:count0|Q[22] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex13|counter_mod_M:count0|Q[22]~DUPLICATE ;                  ;                       ;
+; delay:ex14|counter_mod_M:count0|Q[0]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex14|counter_mod_M:count0|Q[0]~DUPLICATE  ;                  ;                       ;
 ; delay:ex14|counter_mod_M:count0|Q[1]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex14|counter_mod_M:count0|Q[1]~DUPLICATE  ;                  ;                       ;
 ; delay:ex14|counter_mod_M:count0|Q[2]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex14|counter_mod_M:count0|Q[2]~DUPLICATE  ;                  ;                       ;
-; delay:ex14|counter_mod_M:count0|Q[4]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex14|counter_mod_M:count0|Q[4]~DUPLICATE  ;                  ;                       ;
-; delay:ex14|counter_mod_M:count0|Q[7]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex14|counter_mod_M:count0|Q[7]~DUPLICATE  ;                  ;                       ;
-; delay:ex14|counter_mod_M:count0|Q[9]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex14|counter_mod_M:count0|Q[9]~DUPLICATE  ;                  ;                       ;
+; delay:ex14|counter_mod_M:count0|Q[6]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex14|counter_mod_M:count0|Q[6]~DUPLICATE  ;                  ;                       ;
+; delay:ex14|counter_mod_M:count0|Q[11] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex14|counter_mod_M:count0|Q[11]~DUPLICATE ;                  ;                       ;
 ; delay:ex14|counter_mod_M:count0|Q[16] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex14|counter_mod_M:count0|Q[16]~DUPLICATE ;                  ;                       ;
 ; delay:ex14|counter_mod_M:count0|Q[17] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex14|counter_mod_M:count0|Q[17]~DUPLICATE ;                  ;                       ;
-; delay:ex14|counter_mod_M:count0|Q[19] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex14|counter_mod_M:count0|Q[19]~DUPLICATE ;                  ;                       ;
-; delay:ex14|counter_mod_M:count0|Q[23] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex14|counter_mod_M:count0|Q[23]~DUPLICATE ;                  ;                       ;
+; delay:ex14|counter_mod_M:count0|Q[20] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex14|counter_mod_M:count0|Q[20]~DUPLICATE ;                  ;                       ;
+; delay:ex14|counter_mod_M:count0|Q[22] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex14|counter_mod_M:count0|Q[22]~DUPLICATE ;                  ;                       ;
 ; delay:ex14|counter_mod_M:count0|Q[25] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex14|counter_mod_M:count0|Q[25]~DUPLICATE ;                  ;                       ;
 ; delay:ex15|counter_mod_M:count0|Q[0]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex15|counter_mod_M:count0|Q[0]~DUPLICATE  ;                  ;                       ;
 ; delay:ex15|counter_mod_M:count0|Q[1]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex15|counter_mod_M:count0|Q[1]~DUPLICATE  ;                  ;                       ;
-; delay:ex15|counter_mod_M:count0|Q[2]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex15|counter_mod_M:count0|Q[2]~DUPLICATE  ;                  ;                       ;
-; delay:ex15|counter_mod_M:count0|Q[4]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex15|counter_mod_M:count0|Q[4]~DUPLICATE  ;                  ;                       ;
+; delay:ex15|counter_mod_M:count0|Q[3]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex15|counter_mod_M:count0|Q[3]~DUPLICATE  ;                  ;                       ;
+; delay:ex15|counter_mod_M:count0|Q[12] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex15|counter_mod_M:count0|Q[12]~DUPLICATE ;                  ;                       ;
+; delay:ex15|counter_mod_M:count0|Q[13] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex15|counter_mod_M:count0|Q[13]~DUPLICATE ;                  ;                       ;
 ; delay:ex15|counter_mod_M:count0|Q[14] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex15|counter_mod_M:count0|Q[14]~DUPLICATE ;                  ;                       ;
-; delay:ex15|counter_mod_M:count0|Q[15] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex15|counter_mod_M:count0|Q[15]~DUPLICATE ;                  ;                       ;
-; delay:ex15|counter_mod_M:count0|Q[21] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex15|counter_mod_M:count0|Q[21]~DUPLICATE ;                  ;                       ;
-; delay:ex15|counter_mod_M:count0|Q[22] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex15|counter_mod_M:count0|Q[22]~DUPLICATE ;                  ;                       ;
-; delay:ex15|counter_mod_M:count0|Q[25] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex15|counter_mod_M:count0|Q[25]~DUPLICATE ;                  ;                       ;
+; delay:ex15|counter_mod_M:count0|Q[19] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex15|counter_mod_M:count0|Q[19]~DUPLICATE ;                  ;                       ;
 ; delay:ex16|counter_mod_M:count0|Q[0]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[0]~DUPLICATE  ;                  ;                       ;
-; delay:ex16|counter_mod_M:count0|Q[4]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[4]~DUPLICATE  ;                  ;                       ;
+; delay:ex16|counter_mod_M:count0|Q[1]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[1]~DUPLICATE  ;                  ;                       ;
+; delay:ex16|counter_mod_M:count0|Q[3]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[3]~DUPLICATE  ;                  ;                       ;
 ; delay:ex16|counter_mod_M:count0|Q[5]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[5]~DUPLICATE  ;                  ;                       ;
-; delay:ex16|counter_mod_M:count0|Q[8]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[8]~DUPLICATE  ;                  ;                       ;
-; delay:ex16|counter_mod_M:count0|Q[9]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[9]~DUPLICATE  ;                  ;                       ;
+; delay:ex16|counter_mod_M:count0|Q[6]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[6]~DUPLICATE  ;                  ;                       ;
+; delay:ex16|counter_mod_M:count0|Q[7]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[7]~DUPLICATE  ;                  ;                       ;
+; delay:ex16|counter_mod_M:count0|Q[12] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[12]~DUPLICATE ;                  ;                       ;
+; delay:ex16|counter_mod_M:count0|Q[13] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[13]~DUPLICATE ;                  ;                       ;
 ; delay:ex16|counter_mod_M:count0|Q[14] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[14]~DUPLICATE ;                  ;                       ;
+; delay:ex16|counter_mod_M:count0|Q[16] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[16]~DUPLICATE ;                  ;                       ;
 ; delay:ex16|counter_mod_M:count0|Q[17] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[17]~DUPLICATE ;                  ;                       ;
+; delay:ex16|counter_mod_M:count0|Q[18] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[18]~DUPLICATE ;                  ;                       ;
+; delay:ex16|counter_mod_M:count0|Q[19] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[19]~DUPLICATE ;                  ;                       ;
 ; delay:ex16|counter_mod_M:count0|Q[21] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[21]~DUPLICATE ;                  ;                       ;
-; delay:ex16|counter_mod_M:count0|Q[22] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex16|counter_mod_M:count0|Q[22]~DUPLICATE ;                  ;                       ;
-; delay:ex17|counter_mod_M:count0|Q[0]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[0]~DUPLICATE  ;                  ;                       ;
 ; delay:ex17|counter_mod_M:count0|Q[1]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[1]~DUPLICATE  ;                  ;                       ;
+; delay:ex17|counter_mod_M:count0|Q[2]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[2]~DUPLICATE  ;                  ;                       ;
+; delay:ex17|counter_mod_M:count0|Q[3]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[3]~DUPLICATE  ;                  ;                       ;
 ; delay:ex17|counter_mod_M:count0|Q[5]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[5]~DUPLICATE  ;                  ;                       ;
-; delay:ex17|counter_mod_M:count0|Q[7]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[7]~DUPLICATE  ;                  ;                       ;
-; delay:ex17|counter_mod_M:count0|Q[8]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[8]~DUPLICATE  ;                  ;                       ;
-; delay:ex17|counter_mod_M:count0|Q[12] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[12]~DUPLICATE ;                  ;                       ;
-; delay:ex17|counter_mod_M:count0|Q[15] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[15]~DUPLICATE ;                  ;                       ;
+; delay:ex17|counter_mod_M:count0|Q[6]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[6]~DUPLICATE  ;                  ;                       ;
+; delay:ex17|counter_mod_M:count0|Q[9]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[9]~DUPLICATE  ;                  ;                       ;
+; delay:ex17|counter_mod_M:count0|Q[10] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[10]~DUPLICATE ;                  ;                       ;
+; delay:ex17|counter_mod_M:count0|Q[11] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[11]~DUPLICATE ;                  ;                       ;
+; delay:ex17|counter_mod_M:count0|Q[14] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[14]~DUPLICATE ;                  ;                       ;
+; delay:ex17|counter_mod_M:count0|Q[16] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[16]~DUPLICATE ;                  ;                       ;
 ; delay:ex17|counter_mod_M:count0|Q[18] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[18]~DUPLICATE ;                  ;                       ;
+; delay:ex17|counter_mod_M:count0|Q[19] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[19]~DUPLICATE ;                  ;                       ;
+; delay:ex17|counter_mod_M:count0|Q[20] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[20]~DUPLICATE ;                  ;                       ;
 ; delay:ex17|counter_mod_M:count0|Q[21] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[21]~DUPLICATE ;                  ;                       ;
-; delay:ex17|counter_mod_M:count0|Q[22] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[22]~DUPLICATE ;                  ;                       ;
+; delay:ex17|counter_mod_M:count0|Q[25] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[25]~DUPLICATE ;                  ;                       ;
+; delay:ex17|counter_mod_M:count0|Q[26] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:ex17|counter_mod_M:count0|Q[26]~DUPLICATE ;                  ;                       ;
 +---------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+-------------------------------------------------+------------------+-----------------------+
 
 
@@ -521,8 +525,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 530 ) ; 0.00 % ( 0 / 530 )         ; 0.00 % ( 0 / 530 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 530 ) ; 0.00 % ( 0 / 530 )         ; 0.00 % ( 0 / 530 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 531 ) ; 0.00 % ( 0 / 531 )         ; 0.00 % ( 0 / 531 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 531 ) ; 0.00 % ( 0 / 531 )         ; 0.00 % ( 0 / 531 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -545,7 +549,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 530 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 531 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -563,16 +567,16 @@ The pin-out file can be found in C:/Users/Acerek/Desktop/SWrepo2/SW/ps6/zad4/out
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 174 / 32,070       ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 174                ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 182 / 32,070       ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 104                ;       ;
-;         [b] ALMs used for LUT logic                         ; 71                 ;       ;
-;         [c] ALMs used for registers                         ; 7                  ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 181 / 32,070       ; < 1 % ;
+;         [a] ALMs used for LUT logic and registers           ; 106                ;       ;
+;         [b] ALMs used for LUT logic                         ; 70                 ;       ;
+;         [c] ALMs used for registers                         ; 5                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 10 / 32,070        ; < 1 % ;
-;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 2 / 32,070         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 8 / 32,070         ; < 1 % ;
+;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 1 / 32,070         ; < 1 % ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
-;         [c] Due to LAB input limits                         ; 2                  ;       ;
+;         [c] Due to LAB input limits                         ; 1                  ;       ;
 ;         [d] Due to virtual I/Os                             ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
@@ -581,21 +585,21 @@ The pin-out file can be found in C:/Users/Acerek/Desktop/SWrepo2/SW/ps6/zad4/out
 ;     -- Logic LABs                                           ; 26                 ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 290                ;       ;
+; Combinational ALUT usage for logic                          ; 291                ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
-;     -- 6 input functions                                    ; 52                 ;       ;
-;     -- 5 input functions                                    ; 15                 ;       ;
-;     -- 4 input functions                                    ; 5                  ;       ;
+;     -- 6 input functions                                    ; 53                 ;       ;
+;     -- 5 input functions                                    ; 14                 ;       ;
+;     -- 4 input functions                                    ; 6                  ;       ;
 ;     -- <=3 input functions                                  ; 218                ;       ;
-; Combinational ALUT usage for route-throughs                 ; 9                  ;       ;
+; Combinational ALUT usage for route-throughs                 ; 6                  ;       ;
 ;                                                             ;                    ;       ;
-; Dedicated logic registers                                   ; 308                ;       ;
+; Dedicated logic registers                                   ; 312                ;       ;
 ;     -- By type:                                             ;                    ;       ;
 ;         -- Primary logic registers                          ; 221 / 64,140       ; < 1 % ;
-;         -- Secondary logic registers                        ; 87 / 64,140        ; < 1 % ;
+;         -- Secondary logic registers                        ; 91 / 64,140        ; < 1 % ;
 ;     -- By function:                                         ;                    ;       ;
 ;         -- Design implementation registers                  ; 221                ;       ;
-;         -- Routing optimization registers                   ; 87                 ;       ;
+;         -- Routing optimization registers                   ; 91                 ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 9 / 457            ; 2 %   ;
@@ -651,11 +655,11 @@ The pin-out file can be found in C:/Users/Acerek/Desktop/SWrepo2/SW/ps6/zad4/out
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.2% / 0.2% / 0.1% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 2.3% / 2.6% / 1.9% ;       ;
-; Maximum fan-out                                             ; 286                ;       ;
-; Highest non-global fan-out                                  ; 38                 ;       ;
-; Total fan-out                                               ; 1757               ;       ;
-; Average fan-out                                             ; 2.81               ;       ;
+; Peak interconnect usage (total/H/V)                         ; 1.6% / 1.7% / 1.1% ;       ;
+; Maximum fan-out                                             ; 294                ;       ;
+; Highest non-global fan-out                                  ; 43                 ;       ;
+; Total fan-out                                               ; 1774               ;       ;
+; Average fan-out                                             ; 2.82               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -666,16 +670,16 @@ The pin-out file can be found in C:/Users/Acerek/Desktop/SWrepo2/SW/ps6/zad4/out
 +-------------------------------------------------------------+-----------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 174 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 174                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 182 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 104                   ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 71                    ; 0                              ;
-;         [c] ALMs used for registers                         ; 7                     ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 181 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 106                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 70                    ; 0                              ;
+;         [c] ALMs used for registers                         ; 5                     ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 10 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
-;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 2 / 32070 ( < 1 % )   ; 0 / 32070 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 8 / 32070 ( < 1 % )   ; 0 / 32070 ( 0 % )              ;
+;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 1 / 32070 ( < 1 % )   ; 0 / 32070 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                     ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                     ; 0                              ;
-;         [c] Due to LAB input limits                         ; 2                     ; 0                              ;
+;         [c] Due to LAB input limits                         ; 1                     ; 0                              ;
 ;         [d] Due to virtual I/Os                             ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Difficulty packing design                                   ; Low                   ; Low                            ;
@@ -684,13 +688,13 @@ The pin-out file can be found in C:/Users/Acerek/Desktop/SWrepo2/SW/ps6/zad4/out
 ;     -- Logic LABs                                           ; 26                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
-; Combinational ALUT usage for logic                          ; 290                   ; 0                              ;
+; Combinational ALUT usage for logic                          ; 291                   ; 0                              ;
 ;     -- 7 input functions                                    ; 0                     ; 0                              ;
-;     -- 6 input functions                                    ; 52                    ; 0                              ;
-;     -- 5 input functions                                    ; 15                    ; 0                              ;
-;     -- 4 input functions                                    ; 5                     ; 0                              ;
+;     -- 6 input functions                                    ; 53                    ; 0                              ;
+;     -- 5 input functions                                    ; 14                    ; 0                              ;
+;     -- 4 input functions                                    ; 6                     ; 0                              ;
 ;     -- <=3 input functions                                  ; 218                   ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 9                     ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 6                     ; 0                              ;
 ; Memory ALUT usage                                           ; 0                     ; 0                              ;
 ;     -- 64-address deep                                      ; 0                     ; 0                              ;
 ;     -- 32-address deep                                      ; 0                     ; 0                              ;
@@ -698,10 +702,10 @@ The pin-out file can be found in C:/Users/Acerek/Desktop/SWrepo2/SW/ps6/zad4/out
 ; Dedicated logic registers                                   ; 0                     ; 0                              ;
 ;     -- By type:                                             ;                       ;                                ;
 ;         -- Primary logic registers                          ; 221 / 64140 ( < 1 % ) ; 0 / 64140 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 87 / 64140 ( < 1 % )  ; 0 / 64140 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 91 / 64140 ( < 1 % )  ; 0 / 64140 ( 0 % )              ;
 ;     -- By function:                                         ;                       ;                                ;
 ;         -- Design implementation registers                  ; 221                   ; 0                              ;
-;         -- Routing optimization registers                   ; 87                    ; 0                              ;
+;         -- Routing optimization registers                   ; 91                    ; 0                              ;
 ;                                                             ;                       ;                                ;
 ;                                                             ;                       ;                                ;
 ; Virtual pins                                                ; 0                     ; 0                              ;
@@ -718,8 +722,8 @@ The pin-out file can be found in C:/Users/Acerek/Desktop/SWrepo2/SW/ps6/zad4/out
 ;     -- Registered Output Connections                        ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Internal Connections                                        ;                       ;                                ;
-;     -- Total Connections                                    ; 1757                  ; 0                              ;
-;     -- Registered Connections                               ; 579                   ; 0                              ;
+;     -- Total Connections                                    ; 1774                  ; 0                              ;
+;     -- Registered Connections                               ; 578                   ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; External Connections                                        ;                       ;                                ;
 ;     -- Top                                                  ; 0                     ; 0                              ;
@@ -751,7 +755,7 @@ The pin-out file can be found in C:/Users/Acerek/Desktop/SWrepo2/SW/ps6/zad4/out
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; CLOCK_50 ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 294                   ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; CLOCK_50 ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 302                   ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -1720,39 +1724,39 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node   ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name          ; Library Name ;
 +------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------+----------------------+--------------+
-; |diode_flashing_board        ; 174.0 (0.5)          ; 181.0 (0.5)                      ; 9.0 (0.0)                                         ; 2.0 (0.0)                        ; 0.0 (0.0)            ; 290 (1)             ; 308 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 9    ; 0            ; |diode_flashing_board                                 ; diode_flashing_board ; work         ;
-;    |counter_modulo_k:count1| ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count1         ; counter_modulo_k     ; work         ;
-;    |counter_modulo_k:count2| ; 0.3 (0.3)            ; 1.0 (1.0)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count2         ; counter_modulo_k     ; work         ;
-;    |counter_modulo_k:count3| ; 0.8 (0.8)            ; 1.0 (1.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count3         ; counter_modulo_k     ; work         ;
-;    |counter_modulo_k:count4| ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.2 (0.2)                                         ; 0.2 (0.2)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count4         ; counter_modulo_k     ; work         ;
+; |diode_flashing_board        ; 174.0 (0.5)          ; 180.5 (0.5)                      ; 7.5 (0.0)                                         ; 1.0 (0.0)                        ; 0.0 (0.0)            ; 291 (1)             ; 312 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 9    ; 0            ; |diode_flashing_board                                 ; diode_flashing_board ; work         ;
+;    |counter_modulo_k:count1| ; 0.8 (0.8)            ; 1.0 (1.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count1         ; counter_modulo_k     ; work         ;
+;    |counter_modulo_k:count2| ; 0.3 (0.3)            ; 1.0 (1.0)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count2         ; counter_modulo_k     ; work         ;
+;    |counter_modulo_k:count3| ; 0.8 (0.8)            ; 1.0 (1.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count3         ; counter_modulo_k     ; work         ;
+;    |counter_modulo_k:count4| ; 0.9 (0.9)            ; 1.0 (1.0)                        ; 0.2 (0.2)                                         ; 0.1 (0.1)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count4         ; counter_modulo_k     ; work         ;
 ;    |counter_modulo_k:count5| ; 0.8 (0.8)            ; 1.0 (1.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count5         ; counter_modulo_k     ; work         ;
-;    |counter_modulo_k:count6| ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.2 (0.2)                                         ; 0.2 (0.2)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count6         ; counter_modulo_k     ; work         ;
-;    |counter_modulo_k:count7| ; 0.8 (0.8)            ; 1.0 (1.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count7         ; counter_modulo_k     ; work         ;
-;    |counter_modulo_k:count8| ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.2 (0.2)                                         ; 0.2 (0.2)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count8         ; counter_modulo_k     ; work         ;
-;    |delay:ex10|              ; 18.5 (0.0)           ; 18.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 31 (0)              ; 35 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex10                      ; delay                ; work         ;
-;       |counter_mod_M:count0| ; 15.5 (15.5)          ; 15.5 (15.5)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 28 (28)             ; 34 (34)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex10|counter_mod_M:count0 ; counter_mod_M        ; work         ;
-;       |counter_mod_M:count1| ; 2.7 (2.7)            ; 3.0 (3.0)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex10|counter_mod_M:count1 ; counter_mod_M        ; work         ;
-;    |delay:ex11|              ; 19.7 (0.0)           ; 20.5 (0.0)                       ; 0.8 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 33 (0)              ; 34 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex11                      ; delay                ; work         ;
-;       |counter_mod_M:count0| ; 15.7 (15.7)          ; 16.5 (16.5)                      ; 0.8 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 29 (29)             ; 33 (33)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex11|counter_mod_M:count0 ; counter_mod_M        ; work         ;
-;       |counter_mod_M:count1| ; 4.0 (4.0)            ; 4.0 (4.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex11|counter_mod_M:count1 ; counter_mod_M        ; work         ;
-;    |delay:ex12|              ; 20.7 (0.0)           ; 22.0 (0.0)                       ; 1.3 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 34 (0)              ; 37 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex12                      ; delay                ; work         ;
-;       |counter_mod_M:count0| ; 16.7 (16.7)          ; 18.0 (18.0)                      ; 1.3 (1.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 30 (30)             ; 36 (36)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex12|counter_mod_M:count0 ; counter_mod_M        ; work         ;
+;    |counter_modulo_k:count6| ; 0.9 (0.9)            ; 1.0 (1.0)                        ; 0.2 (0.2)                                         ; 0.1 (0.1)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count6         ; counter_modulo_k     ; work         ;
+;    |counter_modulo_k:count7| ; 0.9 (0.9)            ; 1.0 (1.0)                        ; 0.2 (0.2)                                         ; 0.1 (0.1)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count7         ; counter_modulo_k     ; work         ;
+;    |counter_modulo_k:count8| ; 0.9 (0.9)            ; 1.0 (1.0)                        ; 0.2 (0.2)                                         ; 0.1 (0.1)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|counter_modulo_k:count8         ; counter_modulo_k     ; work         ;
+;    |delay:ex10|              ; 18.7 (0.0)           ; 19.0 (0.0)                       ; 0.3 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 31 (0)              ; 33 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex10                      ; delay                ; work         ;
+;       |counter_mod_M:count0| ; 15.7 (15.7)          ; 16.0 (16.0)                      ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 28 (28)             ; 32 (32)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex10|counter_mod_M:count0 ; counter_mod_M        ; work         ;
+;       |counter_mod_M:count1| ; 3.0 (3.0)            ; 3.0 (3.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex10|counter_mod_M:count1 ; counter_mod_M        ; work         ;
+;    |delay:ex11|              ; 19.7 (0.0)           ; 20.0 (0.0)                       ; 0.3 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 33 (0)              ; 35 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex11                      ; delay                ; work         ;
+;       |counter_mod_M:count0| ; 16.0 (16.0)          ; 16.0 (16.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 29 (29)             ; 34 (34)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex11|counter_mod_M:count0 ; counter_mod_M        ; work         ;
+;       |counter_mod_M:count1| ; 3.7 (3.7)            ; 4.0 (4.0)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex11|counter_mod_M:count1 ; counter_mod_M        ; work         ;
+;    |delay:ex12|              ; 20.7 (0.0)           ; 21.5 (0.0)                       ; 0.8 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 34 (0)              ; 37 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex12                      ; delay                ; work         ;
+;       |counter_mod_M:count0| ; 16.7 (16.7)          ; 17.5 (17.5)                      ; 0.8 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 30 (30)             ; 36 (36)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex12|counter_mod_M:count0 ; counter_mod_M        ; work         ;
 ;       |counter_mod_M:count1| ; 4.0 (4.0)            ; 4.0 (4.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex12|counter_mod_M:count1 ; counter_mod_M        ; work         ;
 ;    |delay:ex13|              ; 20.7 (0.0)           ; 22.0 (0.0)                       ; 1.3 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (0)              ; 39 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex13                      ; delay                ; work         ;
 ;       |counter_mod_M:count0| ; 17.2 (17.2)          ; 18.0 (18.0)                      ; 0.8 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 32 (32)             ; 38 (38)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex13|counter_mod_M:count0 ; counter_mod_M        ; work         ;
 ;       |counter_mod_M:count1| ; 3.5 (3.5)            ; 4.0 (4.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex13|counter_mod_M:count1 ; counter_mod_M        ; work         ;
-;    |delay:ex14|              ; 21.2 (0.0)           ; 22.5 (0.0)                       ; 1.3 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (0)              ; 37 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex14                      ; delay                ; work         ;
-;       |counter_mod_M:count0| ; 17.7 (17.7)          ; 18.5 (18.5)                      ; 0.8 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 32 (32)             ; 36 (36)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex14|counter_mod_M:count0 ; counter_mod_M        ; work         ;
-;       |counter_mod_M:count1| ; 3.5 (3.5)            ; 4.0 (4.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex14|counter_mod_M:count1 ; counter_mod_M        ; work         ;
-;    |delay:ex15|              ; 21.5 (0.0)           ; 22.5 (0.0)                       ; 1.3 (0.0)                                         ; 0.3 (0.0)                        ; 0.0 (0.0)            ; 37 (0)              ; 37 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex15                      ; delay                ; work         ;
-;       |counter_mod_M:count0| ; 18.3 (18.3)          ; 19.0 (19.0)                      ; 0.8 (0.8)                                         ; 0.2 (0.2)                        ; 0.0 (0.0)            ; 33 (33)             ; 36 (36)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex15|counter_mod_M:count0 ; counter_mod_M        ; work         ;
-;       |counter_mod_M:count1| ; 3.2 (3.2)            ; 3.5 (3.5)                        ; 0.5 (0.5)                                         ; 0.2 (0.2)                        ; 0.0 (0.0)            ; 4 (4)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex15|counter_mod_M:count1 ; counter_mod_M        ; work         ;
-;    |delay:ex16|              ; 21.2 (0.0)           ; 22.0 (0.0)                       ; 1.3 (0.0)                                         ; 0.5 (0.0)                        ; 0.0 (0.0)            ; 37 (0)              ; 37 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex16                      ; delay                ; work         ;
-;       |counter_mod_M:count0| ; 17.8 (17.8)          ; 18.5 (18.5)                      ; 0.8 (0.8)                                         ; 0.2 (0.2)                        ; 0.0 (0.0)            ; 33 (33)             ; 36 (36)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex16|counter_mod_M:count0 ; counter_mod_M        ; work         ;
-;       |counter_mod_M:count1| ; 3.3 (3.3)            ; 3.5 (3.5)                        ; 0.5 (0.5)                                         ; 0.3 (0.3)                        ; 0.0 (0.0)            ; 4 (4)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex16|counter_mod_M:count1 ; counter_mod_M        ; work         ;
-;    |delay:ex17|              ; 23.3 (0.0)           ; 23.0 (0.0)                       ; 0.3 (0.0)                                         ; 0.7 (0.0)                        ; 0.0 (0.0)            ; 37 (0)              ; 38 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex17                      ; delay                ; work         ;
-;       |counter_mod_M:count0| ; 19.3 (19.3)          ; 19.0 (19.0)                      ; 0.3 (0.3)                                         ; 0.7 (0.7)                        ; 0.0 (0.0)            ; 33 (33)             ; 37 (37)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex17|counter_mod_M:count0 ; counter_mod_M        ; work         ;
-;       |counter_mod_M:count1| ; 4.0 (4.0)            ; 4.0 (4.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex17|counter_mod_M:count1 ; counter_mod_M        ; work         ;
+;    |delay:ex14|              ; 21.0 (0.0)           ; 21.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (0)              ; 37 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex14                      ; delay                ; work         ;
+;       |counter_mod_M:count0| ; 17.5 (17.5)          ; 17.5 (17.5)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 32 (32)             ; 36 (36)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex14|counter_mod_M:count0 ; counter_mod_M        ; work         ;
+;       |counter_mod_M:count1| ; 3.2 (3.2)            ; 3.5 (3.5)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex14|counter_mod_M:count1 ; counter_mod_M        ; work         ;
+;    |delay:ex15|              ; 21.3 (0.0)           ; 22.5 (0.0)                       ; 1.3 (0.0)                                         ; 0.1 (0.0)                        ; 0.0 (0.0)            ; 37 (0)              ; 35 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex15                      ; delay                ; work         ;
+;       |counter_mod_M:count0| ; 18.2 (18.2)          ; 19.0 (19.0)                      ; 0.8 (0.8)                                         ; 0.1 (0.1)                        ; 0.0 (0.0)            ; 33 (33)             ; 34 (34)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex15|counter_mod_M:count0 ; counter_mod_M        ; work         ;
+;       |counter_mod_M:count1| ; 3.1 (3.1)            ; 3.5 (3.5)                        ; 0.5 (0.5)                                         ; 0.1 (0.1)                        ; 0.0 (0.0)            ; 4 (4)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex15|counter_mod_M:count1 ; counter_mod_M        ; work         ;
+;    |delay:ex16|              ; 21.4 (0.0)           ; 23.0 (0.0)                       ; 1.8 (0.0)                                         ; 0.3 (0.0)                        ; 0.0 (0.0)            ; 37 (0)              ; 42 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex16                      ; delay                ; work         ;
+;       |counter_mod_M:count0| ; 17.9 (17.9)          ; 19.0 (19.0)                      ; 1.3 (1.3)                                         ; 0.2 (0.2)                        ; 0.0 (0.0)            ; 33 (33)             ; 41 (41)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex16|counter_mod_M:count0 ; counter_mod_M        ; work         ;
+;       |counter_mod_M:count1| ; 3.6 (3.6)            ; 4.0 (4.0)                        ; 0.5 (0.5)                                         ; 0.1 (0.1)                        ; 0.0 (0.0)            ; 4 (4)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex16|counter_mod_M:count1 ; counter_mod_M        ; work         ;
+;    |delay:ex17|              ; 23.3 (0.0)           ; 23.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.3 (0.0)                        ; 0.0 (0.0)            ; 38 (0)              ; 44 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex17                      ; delay                ; work         ;
+;       |counter_mod_M:count0| ; 18.9 (18.9)          ; 19.0 (19.0)                      ; 0.3 (0.3)                                         ; 0.2 (0.2)                        ; 0.0 (0.0)            ; 33 (33)             ; 43 (43)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex17|counter_mod_M:count0 ; counter_mod_M        ; work         ;
+;       |counter_mod_M:count1| ; 4.1 (4.1)            ; 4.0 (4.0)                        ; 0.0 (0.0)                                         ; 0.1 (0.1)                        ; 0.0 (0.0)            ; 5 (5)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |diode_flashing_board|delay:ex17|counter_mod_M:count1 ; counter_mod_M        ; work         ;
 +------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1782,7 +1786,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLOCK_50                                    ;                   ;         ;
 ;      - delay:ex10|counter_mod_M:count1|Q[0] ; 1                 ; 0       ;
 ;      - delay:ex11|counter_mod_M:count1|Q[0] ; 1                 ; 0       ;
-;      - delay:ex12|counter_mod_M:count1|Q[0] ; 0                 ; 0       ;
+;      - delay:ex12|counter_mod_M:count1|Q[0] ; 1                 ; 0       ;
 ;      - delay:ex13|counter_mod_M:count1|Q[0] ; 0                 ; 0       ;
 ;      - delay:ex14|counter_mod_M:count1|Q[0] ; 0                 ; 0       ;
 ;      - delay:ex15|counter_mod_M:count1|Q[0] ; 0                 ; 0       ;
@@ -1797,23 +1801,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                     ; Location            ; Fan-Out ; Usage       ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------------------------+---------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
 ; CLOCK_50                                 ; PIN_AF14            ; 9       ; Clock       ; no     ; --                   ; --               ; --                        ;
-; CLOCK_50                                 ; PIN_AF14            ; 286     ; Clock       ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; delay:ex10|counter_mod_M:count0|Equal0~4 ; LABCELL_X36_Y3_N18  ; 34      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-; delay:ex10|counter_mod_M:count1|Q[0]     ; FF_X36_Y2_N50       ; 3       ; Clock       ; no     ; --                   ; --               ; --                        ;
-; delay:ex11|counter_mod_M:count0|Equal0~4 ; LABCELL_X37_Y2_N24  ; 33      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-; delay:ex11|counter_mod_M:count1|Q[0]     ; FF_X37_Y1_N56       ; 3       ; Clock       ; no     ; --                   ; --               ; --                        ;
-; delay:ex12|counter_mod_M:count0|Equal0~4 ; LABCELL_X43_Y4_N12  ; 36      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-; delay:ex12|counter_mod_M:count1|Q[0]     ; FF_X42_Y4_N20       ; 3       ; Clock       ; no     ; --                   ; --               ; --                        ;
-; delay:ex13|counter_mod_M:count0|Equal0~5 ; LABCELL_X64_Y9_N54  ; 38      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-; delay:ex13|counter_mod_M:count1|Q[0]     ; FF_X63_Y10_N23      ; 3       ; Clock       ; no     ; --                   ; --               ; --                        ;
-; delay:ex14|counter_mod_M:count0|Equal0~5 ; LABCELL_X40_Y4_N54  ; 36      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-; delay:ex14|counter_mod_M:count1|Q[0]     ; FF_X40_Y5_N2        ; 2       ; Clock       ; no     ; --                   ; --               ; --                        ;
-; delay:ex15|counter_mod_M:count0|Equal0~5 ; LABCELL_X62_Y9_N12  ; 36      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-; delay:ex15|counter_mod_M:count1|Q[0]     ; FF_X61_Y9_N56       ; 2       ; Clock       ; no     ; --                   ; --               ; --                        ;
-; delay:ex16|counter_mod_M:count0|Equal0~5 ; LABCELL_X63_Y8_N12  ; 36      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-; delay:ex16|counter_mod_M:count1|Q[0]     ; FF_X64_Y8_N23       ; 3       ; Clock       ; no     ; --                   ; --               ; --                        ;
-; delay:ex17|counter_mod_M:count0|Equal0~5 ; LABCELL_X62_Y11_N24 ; 37      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-; delay:ex17|counter_mod_M:count1|Q[0]     ; FF_X61_Y11_N50      ; 3       ; Clock       ; no     ; --                   ; --               ; --                        ;
+; CLOCK_50                                 ; PIN_AF14            ; 294     ; Clock       ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; delay:ex10|counter_mod_M:count0|Equal0~4 ; LABCELL_X43_Y1_N42  ; 32      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
+; delay:ex10|counter_mod_M:count1|Q[0]     ; FF_X43_Y2_N20       ; 2       ; Clock       ; no     ; --                   ; --               ; --                        ;
+; delay:ex11|counter_mod_M:count0|Equal0~4 ; LABCELL_X42_Y2_N24  ; 34      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
+; delay:ex11|counter_mod_M:count1|Q[0]     ; FF_X42_Y1_N50       ; 2       ; Clock       ; no     ; --                   ; --               ; --                        ;
+; delay:ex12|counter_mod_M:count0|Equal0~4 ; LABCELL_X56_Y9_N12  ; 36      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
+; delay:ex12|counter_mod_M:count1|Q[0]     ; FF_X55_Y9_N20       ; 2       ; Clock       ; no     ; --                   ; --               ; --                        ;
+; delay:ex13|counter_mod_M:count0|Equal0~5 ; LABCELL_X81_Y10_N54 ; 38      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
+; delay:ex13|counter_mod_M:count1|Q[0]     ; FF_X79_Y11_N53      ; 2       ; Clock       ; no     ; --                   ; --               ; --                        ;
+; delay:ex14|counter_mod_M:count0|Equal0~5 ; LABCELL_X57_Y9_N54  ; 36      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
+; delay:ex14|counter_mod_M:count1|Q[0]     ; FF_X57_Y10_N20      ; 2       ; Clock       ; no     ; --                   ; --               ; --                        ;
+; delay:ex15|counter_mod_M:count0|Equal0~5 ; LABCELL_X73_Y12_N36 ; 34      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
+; delay:ex15|counter_mod_M:count1|Q[0]     ; FF_X73_Y12_N47      ; 2       ; Clock       ; no     ; --                   ; --               ; --                        ;
+; delay:ex16|counter_mod_M:count0|Equal0~5 ; LABCELL_X74_Y10_N18 ; 41      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
+; delay:ex16|counter_mod_M:count1|Q[0]     ; FF_X74_Y11_N50      ; 3       ; Clock       ; no     ; --                   ; --               ; --                        ;
+; delay:ex17|counter_mod_M:count0|Equal0~5 ; LABCELL_X74_Y10_N57 ; 43      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
+; delay:ex17|counter_mod_M:count1|Q[0]     ; FF_X73_Y11_N20      ; 3       ; Clock       ; no     ; --                   ; --               ; --                        ;
 +------------------------------------------+---------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1822,7 +1826,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+----------+---------+----------------------+------------------+---------------------------+
 ; Name     ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------+----------+---------+----------------------+------------------+---------------------------+
-; CLOCK_50 ; PIN_AF14 ; 286     ; Global Clock         ; GCLK6            ; --                        ;
+; CLOCK_50 ; PIN_AF14 ; 294     ; Global Clock         ; GCLK6            ; --                        ;
 +----------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1831,14 +1835,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------------+
 ; Routing Resource Type                       ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Block interconnects                         ; 437 / 289,320 ( < 1 % ) ;
-; C12 interconnects                           ; 15 / 13,420 ( < 1 % )   ;
-; C2 interconnects                            ; 145 / 119,108 ( < 1 % ) ;
-; C4 interconnects                            ; 90 / 56,300 ( < 1 % )   ;
+; Block interconnects                         ; 426 / 289,320 ( < 1 % ) ;
+; C12 interconnects                           ; 17 / 13,420 ( < 1 % )   ;
+; C2 interconnects                            ; 139 / 119,108 ( < 1 % ) ;
+; C4 interconnects                            ; 123 / 56,300 ( < 1 % )  ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )          ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )          ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )          ;
-; Direct links                                ; 136 / 289,320 ( < 1 % ) ;
+; Direct links                                ; 128 / 289,320 ( < 1 % ) ;
 ; Global clocks                               ; 1 / 16 ( 6 % )          ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )           ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )           ;
@@ -1894,13 +1898,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )           ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )          ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )          ;
-; Local interconnects                         ; 158 / 84,580 ( < 1 % )  ;
+; Local interconnects                         ; 154 / 84,580 ( < 1 % )  ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )          ;
-; R14 interconnects                           ; 70 / 12,676 ( < 1 % )   ;
-; R14/C12 interconnect drivers                ; 83 / 20,720 ( < 1 % )   ;
-; R3 interconnects                            ; 222 / 130,992 ( < 1 % ) ;
-; R6 interconnects                            ; 245 / 266,960 ( < 1 % ) ;
-; Spine clocks                                ; 2 / 360 ( < 1 % )       ;
+; R14 interconnects                           ; 90 / 12,676 ( < 1 % )   ;
+; R14/C12 interconnect drivers                ; 105 / 20,720 ( < 1 % )  ;
+; R3 interconnects                            ; 262 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 264 / 266,960 ( < 1 % ) ;
+; Spine clocks                                ; 3 / 360 ( < 1 % )       ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )      ;
 +---------------------------------------------+-------------------------+
 
@@ -2024,7 +2028,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; CLOCK_50        ; CLOCK_50             ; 154.9             ;
+; CLOCK_50        ; CLOCK_50             ; 187.3             ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
@@ -2035,106 +2039,106 @@ This will disable optimization of problematic paths and expose them for further 
 +---------------------------------------+--------------------------------------+-------------------+
 ; Source Register                       ; Destination Register                 ; Delay Added in ns ;
 +---------------------------------------+--------------------------------------+-------------------+
-; delay:ex16|counter_mod_M:count1|Q[0]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 6.407             ;
-; delay:ex17|counter_mod_M:count1|Q[0]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 6.323             ;
-; delay:ex15|counter_mod_M:count1|Q[0]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 6.135             ;
-; delay:ex12|counter_mod_M:count1|Q[0]  ; delay:ex12|counter_mod_M:count1|Q[0] ; 5.878             ;
-; delay:ex14|counter_mod_M:count1|Q[0]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 5.831             ;
-; delay:ex13|counter_mod_M:count1|Q[0]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 5.788             ;
-; delay:ex11|counter_mod_M:count1|Q[0]  ; delay:ex11|counter_mod_M:count1|Q[0] ; 5.522             ;
-; delay:ex10|counter_mod_M:count1|Q[0]  ; delay:ex10|counter_mod_M:count1|Q[0] ; 4.735             ;
-; delay:ex16|counter_mod_M:count0|Q[6]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 3.190             ;
-; delay:ex16|counter_mod_M:count0|Q[5]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 3.190             ;
-; delay:ex16|counter_mod_M:count0|Q[4]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 3.190             ;
-; delay:ex16|counter_mod_M:count0|Q[3]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 3.190             ;
-; delay:ex16|counter_mod_M:count0|Q[2]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 3.190             ;
-; delay:ex17|counter_mod_M:count0|Q[15] ; delay:ex17|counter_mod_M:count1|Q[0] ; 3.116             ;
-; delay:ex17|counter_mod_M:count0|Q[5]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 3.116             ;
-; delay:ex17|counter_mod_M:count0|Q[4]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 3.116             ;
-; delay:ex17|counter_mod_M:count0|Q[3]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 3.116             ;
-; delay:ex17|counter_mod_M:count0|Q[2]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 3.116             ;
-; delay:ex15|counter_mod_M:count0|Q[7]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 3.042             ;
-; delay:ex15|counter_mod_M:count0|Q[5]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 3.042             ;
-; delay:ex15|counter_mod_M:count0|Q[4]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 3.042             ;
-; delay:ex15|counter_mod_M:count0|Q[3]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 3.042             ;
-; delay:ex15|counter_mod_M:count0|Q[2]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 3.042             ;
-; delay:ex14|counter_mod_M:count0|Q[7]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 2.900             ;
-; delay:ex14|counter_mod_M:count0|Q[6]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 2.900             ;
-; delay:ex14|counter_mod_M:count0|Q[5]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 2.900             ;
-; delay:ex14|counter_mod_M:count0|Q[4]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 2.900             ;
-; delay:ex14|counter_mod_M:count0|Q[3]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 2.900             ;
-; delay:ex13|counter_mod_M:count0|Q[8]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 2.894             ;
-; delay:ex13|counter_mod_M:count0|Q[7]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 2.894             ;
-; delay:ex13|counter_mod_M:count0|Q[6]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 2.894             ;
-; delay:ex13|counter_mod_M:count0|Q[5]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 2.894             ;
-; delay:ex13|counter_mod_M:count0|Q[4]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 2.894             ;
-; delay:ex12|counter_mod_M:count0|Q[21] ; delay:ex12|counter_mod_M:count1|Q[0] ; 2.861             ;
-; delay:ex12|counter_mod_M:count0|Q[14] ; delay:ex12|counter_mod_M:count1|Q[0] ; 2.861             ;
-; delay:ex12|counter_mod_M:count0|Q[13] ; delay:ex12|counter_mod_M:count1|Q[0] ; 2.861             ;
-; delay:ex12|counter_mod_M:count0|Q[12] ; delay:ex12|counter_mod_M:count1|Q[0] ; 2.861             ;
-; delay:ex12|counter_mod_M:count0|Q[11] ; delay:ex12|counter_mod_M:count1|Q[0] ; 2.861             ;
-; delay:ex11|counter_mod_M:count0|Q[4]  ; delay:ex11|counter_mod_M:count1|Q[0] ; 2.678             ;
-; delay:ex11|counter_mod_M:count0|Q[3]  ; delay:ex11|counter_mod_M:count1|Q[0] ; 2.678             ;
-; delay:ex11|counter_mod_M:count0|Q[2]  ; delay:ex11|counter_mod_M:count1|Q[0] ; 2.678             ;
-; delay:ex11|counter_mod_M:count0|Q[1]  ; delay:ex11|counter_mod_M:count1|Q[0] ; 2.678             ;
-; delay:ex11|counter_mod_M:count0|Q[0]  ; delay:ex11|counter_mod_M:count1|Q[0] ; 2.678             ;
-; delay:ex10|counter_mod_M:count0|Q[8]  ; delay:ex10|counter_mod_M:count1|Q[0] ; 2.368             ;
-; delay:ex10|counter_mod_M:count0|Q[5]  ; delay:ex10|counter_mod_M:count1|Q[0] ; 2.368             ;
-; delay:ex10|counter_mod_M:count0|Q[4]  ; delay:ex10|counter_mod_M:count1|Q[0] ; 2.368             ;
-; delay:ex10|counter_mod_M:count0|Q[3]  ; delay:ex10|counter_mod_M:count1|Q[0] ; 2.368             ;
-; delay:ex10|counter_mod_M:count0|Q[1]  ; delay:ex10|counter_mod_M:count1|Q[0] ; 2.368             ;
-; delay:ex16|counter_mod_M:count0|Q[7]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.826             ;
-; delay:ex16|counter_mod_M:count0|Q[12] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.814             ;
-; delay:ex16|counter_mod_M:count0|Q[0]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.691             ;
-; delay:ex17|counter_mod_M:count0|Q[9]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.619             ;
-; delay:ex17|counter_mod_M:count0|Q[1]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.613             ;
-; delay:ex17|counter_mod_M:count0|Q[0]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.578             ;
-; delay:ex16|counter_mod_M:count0|Q[8]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.578             ;
-; delay:ex17|counter_mod_M:count0|Q[6]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.569             ;
-; delay:ex16|counter_mod_M:count0|Q[21] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.565             ;
-; delay:ex16|counter_mod_M:count0|Q[1]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.544             ;
-; delay:ex17|counter_mod_M:count0|Q[8]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.535             ;
-; delay:ex16|counter_mod_M:count0|Q[23] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.535             ;
-; delay:ex16|counter_mod_M:count0|Q[15] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.511             ;
-; delay:ex13|counter_mod_M:count0|Q[3]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.511             ;
-; delay:ex13|counter_mod_M:count0|Q[0]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.506             ;
-; delay:ex16|counter_mod_M:count0|Q[19] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.497             ;
-; delay:ex16|counter_mod_M:count0|Q[10] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.492             ;
-; delay:ex13|counter_mod_M:count0|Q[1]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.488             ;
-; delay:ex17|counter_mod_M:count0|Q[16] ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.479             ;
-; delay:ex15|counter_mod_M:count0|Q[6]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.478             ;
-; delay:ex15|counter_mod_M:count0|Q[1]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.434             ;
-; delay:ex16|counter_mod_M:count0|Q[17] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.424             ;
-; delay:ex16|counter_mod_M:count0|Q[9]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.423             ;
-; delay:ex15|counter_mod_M:count0|Q[0]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.400             ;
-; delay:ex16|counter_mod_M:count0|Q[25] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.389             ;
-; delay:ex15|counter_mod_M:count0|Q[9]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.382             ;
-; delay:ex16|counter_mod_M:count0|Q[13] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.372             ;
-; delay:ex12|counter_mod_M:count0|Q[7]  ; delay:ex12|counter_mod_M:count1|Q[0] ; 1.368             ;
-; delay:ex17|counter_mod_M:count0|Q[12] ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.358             ;
-; delay:ex17|counter_mod_M:count0|Q[7]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.345             ;
-; delay:ex16|counter_mod_M:count0|Q[22] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.329             ;
-; delay:ex16|counter_mod_M:count0|Q[24] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.311             ;
-; delay:ex12|counter_mod_M:count0|Q[15] ; delay:ex12|counter_mod_M:count1|Q[0] ; 1.310             ;
-; delay:ex13|counter_mod_M:count0|Q[2]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.299             ;
-; delay:ex17|counter_mod_M:count0|Q[23] ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.295             ;
-; delay:ex17|counter_mod_M:count0|Q[24] ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.293             ;
-; delay:ex13|counter_mod_M:count0|Q[22] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.286             ;
-; delay:ex15|counter_mod_M:count0|Q[8]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.282             ;
-; delay:ex14|counter_mod_M:count0|Q[0]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 1.273             ;
-; delay:ex13|counter_mod_M:count0|Q[20] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.258             ;
-; delay:ex13|counter_mod_M:count0|Q[24] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.258             ;
-; delay:ex14|counter_mod_M:count0|Q[1]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 1.256             ;
-; delay:ex17|counter_mod_M:count0|Q[19] ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.246             ;
-; delay:ex16|counter_mod_M:count0|Q[20] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.243             ;
-; delay:ex17|counter_mod_M:count0|Q[17] ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.238             ;
-; delay:ex13|counter_mod_M:count0|Q[23] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.227             ;
-; delay:ex16|counter_mod_M:count0|Q[11] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.220             ;
-; delay:ex15|counter_mod_M:count0|Q[19] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.211             ;
-; delay:ex13|counter_mod_M:count0|Q[18] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.202             ;
-; delay:ex17|counter_mod_M:count0|Q[25] ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.187             ;
-; delay:ex11|counter_mod_M:count0|Q[14] ; delay:ex11|counter_mod_M:count1|Q[0] ; 1.185             ;
-; delay:ex17|counter_mod_M:count0|Q[22] ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.177             ;
+; delay:ex17|counter_mod_M:count1|Q[0]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 6.618             ;
+; delay:ex13|counter_mod_M:count1|Q[0]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 6.269             ;
+; delay:ex16|counter_mod_M:count1|Q[0]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 6.215             ;
+; delay:ex12|counter_mod_M:count1|Q[0]  ; delay:ex12|counter_mod_M:count1|Q[0] ; 6.121             ;
+; delay:ex14|counter_mod_M:count1|Q[0]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 6.051             ;
+; delay:ex10|counter_mod_M:count1|Q[0]  ; delay:ex10|counter_mod_M:count1|Q[0] ; 5.596             ;
+; delay:ex15|counter_mod_M:count1|Q[0]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 5.462             ;
+; delay:ex11|counter_mod_M:count1|Q[0]  ; delay:ex11|counter_mod_M:count1|Q[0] ; 5.266             ;
+; delay:ex17|counter_mod_M:count0|Q[18] ; delay:ex17|counter_mod_M:count1|Q[0] ; 3.112             ;
+; delay:ex17|counter_mod_M:count0|Q[7]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 3.112             ;
+; delay:ex17|counter_mod_M:count0|Q[6]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 3.112             ;
+; delay:ex17|counter_mod_M:count0|Q[5]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 3.112             ;
+; delay:ex17|counter_mod_M:count0|Q[4]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 3.112             ;
+; delay:ex13|counter_mod_M:count0|Q[8]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 3.055             ;
+; delay:ex13|counter_mod_M:count0|Q[7]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 3.055             ;
+; delay:ex13|counter_mod_M:count0|Q[6]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 3.055             ;
+; delay:ex13|counter_mod_M:count0|Q[5]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 3.055             ;
+; delay:ex13|counter_mod_M:count0|Q[4]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 3.055             ;
+; delay:ex16|counter_mod_M:count0|Q[6]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 3.036             ;
+; delay:ex16|counter_mod_M:count0|Q[5]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 3.036             ;
+; delay:ex16|counter_mod_M:count0|Q[4]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 3.036             ;
+; delay:ex16|counter_mod_M:count0|Q[3]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 3.036             ;
+; delay:ex16|counter_mod_M:count0|Q[2]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 3.036             ;
+; delay:ex14|counter_mod_M:count0|Q[7]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 2.874             ;
+; delay:ex14|counter_mod_M:count0|Q[6]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 2.874             ;
+; delay:ex14|counter_mod_M:count0|Q[5]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 2.874             ;
+; delay:ex14|counter_mod_M:count0|Q[4]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 2.874             ;
+; delay:ex14|counter_mod_M:count0|Q[3]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 2.874             ;
+; delay:ex12|counter_mod_M:count0|Q[21] ; delay:ex12|counter_mod_M:count1|Q[0] ; 2.826             ;
+; delay:ex12|counter_mod_M:count0|Q[14] ; delay:ex12|counter_mod_M:count1|Q[0] ; 2.826             ;
+; delay:ex12|counter_mod_M:count0|Q[13] ; delay:ex12|counter_mod_M:count1|Q[0] ; 2.826             ;
+; delay:ex12|counter_mod_M:count0|Q[12] ; delay:ex12|counter_mod_M:count1|Q[0] ; 2.826             ;
+; delay:ex12|counter_mod_M:count0|Q[11] ; delay:ex12|counter_mod_M:count1|Q[0] ; 2.826             ;
+; delay:ex15|counter_mod_M:count0|Q[7]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 2.673             ;
+; delay:ex15|counter_mod_M:count0|Q[5]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 2.673             ;
+; delay:ex15|counter_mod_M:count0|Q[4]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 2.673             ;
+; delay:ex15|counter_mod_M:count0|Q[3]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 2.673             ;
+; delay:ex15|counter_mod_M:count0|Q[2]  ; delay:ex15|counter_mod_M:count1|Q[0] ; 2.673             ;
+; delay:ex10|counter_mod_M:count0|Q[8]  ; delay:ex10|counter_mod_M:count1|Q[0] ; 2.632             ;
+; delay:ex10|counter_mod_M:count0|Q[5]  ; delay:ex10|counter_mod_M:count1|Q[0] ; 2.632             ;
+; delay:ex10|counter_mod_M:count0|Q[4]  ; delay:ex10|counter_mod_M:count1|Q[0] ; 2.632             ;
+; delay:ex10|counter_mod_M:count0|Q[3]  ; delay:ex10|counter_mod_M:count1|Q[0] ; 2.632             ;
+; delay:ex10|counter_mod_M:count0|Q[1]  ; delay:ex10|counter_mod_M:count1|Q[0] ; 2.632             ;
+; delay:ex11|counter_mod_M:count0|Q[4]  ; delay:ex11|counter_mod_M:count1|Q[0] ; 2.527             ;
+; delay:ex11|counter_mod_M:count0|Q[3]  ; delay:ex11|counter_mod_M:count1|Q[0] ; 2.527             ;
+; delay:ex11|counter_mod_M:count0|Q[2]  ; delay:ex11|counter_mod_M:count1|Q[0] ; 2.527             ;
+; delay:ex11|counter_mod_M:count0|Q[1]  ; delay:ex11|counter_mod_M:count1|Q[0] ; 2.527             ;
+; delay:ex11|counter_mod_M:count0|Q[0]  ; delay:ex11|counter_mod_M:count1|Q[0] ; 2.527             ;
+; delay:ex17|counter_mod_M:count0|Q[3]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 2.099             ;
+; delay:ex17|counter_mod_M:count0|Q[0]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 2.091             ;
+; delay:ex13|counter_mod_M:count0|Q[3]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.964             ;
+; delay:ex13|counter_mod_M:count0|Q[0]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.958             ;
+; delay:ex13|counter_mod_M:count0|Q[1]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.941             ;
+; delay:ex16|counter_mod_M:count0|Q[1]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.940             ;
+; delay:ex17|counter_mod_M:count0|Q[2]  ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.924             ;
+; delay:ex16|counter_mod_M:count0|Q[0]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.918             ;
+; delay:ex15|counter_mod_M:count0|Q[20] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.881             ;
+; delay:ex13|counter_mod_M:count0|Q[24] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.830             ;
+; delay:ex13|counter_mod_M:count0|Q[22] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.822             ;
+; delay:ex13|counter_mod_M:count0|Q[20] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.811             ;
+; delay:ex13|counter_mod_M:count0|Q[23] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.793             ;
+; delay:ex15|counter_mod_M:count0|Q[16] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.788             ;
+; delay:ex15|counter_mod_M:count0|Q[25] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.786             ;
+; delay:ex13|counter_mod_M:count0|Q[15] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.771             ;
+; delay:ex13|counter_mod_M:count0|Q[10] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.764             ;
+; delay:ex13|counter_mod_M:count0|Q[18] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.758             ;
+; delay:ex13|counter_mod_M:count0|Q[13] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.747             ;
+; delay:ex13|counter_mod_M:count0|Q[19] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.710             ;
+; delay:ex13|counter_mod_M:count0|Q[2]  ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.709             ;
+; delay:ex15|counter_mod_M:count0|Q[23] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.702             ;
+; delay:ex17|counter_mod_M:count0|Q[26] ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.702             ;
+; delay:ex15|counter_mod_M:count0|Q[12] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.661             ;
+; delay:ex16|counter_mod_M:count0|Q[20] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.660             ;
+; delay:ex15|counter_mod_M:count0|Q[21] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.659             ;
+; delay:ex16|counter_mod_M:count0|Q[23] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.658             ;
+; delay:ex15|counter_mod_M:count0|Q[17] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.656             ;
+; delay:ex15|counter_mod_M:count0|Q[15] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.647             ;
+; delay:ex13|counter_mod_M:count0|Q[16] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.622             ;
+; delay:ex15|counter_mod_M:count0|Q[18] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.602             ;
+; delay:ex16|counter_mod_M:count0|Q[21] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.594             ;
+; delay:ex15|counter_mod_M:count0|Q[24] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.585             ;
+; delay:ex15|counter_mod_M:count0|Q[14] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.567             ;
+; delay:ex17|counter_mod_M:count0|Q[10] ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.562             ;
+; delay:ex15|counter_mod_M:count0|Q[10] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.557             ;
+; delay:ex12|counter_mod_M:count0|Q[7]  ; delay:ex12|counter_mod_M:count1|Q[0] ; 1.554             ;
+; delay:ex13|counter_mod_M:count0|Q[11] ; delay:ex13|counter_mod_M:count1|Q[0] ; 1.553             ;
+; delay:ex17|counter_mod_M:count0|Q[25] ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.551             ;
+; delay:ex15|counter_mod_M:count0|Q[13] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.551             ;
+; delay:ex11|counter_mod_M:count0|Q[14] ; delay:ex11|counter_mod_M:count1|Q[0] ; 1.543             ;
+; delay:ex17|counter_mod_M:count0|Q[23] ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.538             ;
+; delay:ex17|counter_mod_M:count0|Q[24] ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.533             ;
+; delay:ex15|counter_mod_M:count0|Q[26] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.533             ;
+; delay:ex14|counter_mod_M:count0|Q[0]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 1.532             ;
+; delay:ex17|counter_mod_M:count0|Q[22] ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.527             ;
+; delay:ex14|counter_mod_M:count0|Q[1]  ; delay:ex14|counter_mod_M:count1|Q[0] ; 1.526             ;
+; delay:ex17|counter_mod_M:count0|Q[20] ; delay:ex17|counter_mod_M:count1|Q[0] ; 1.521             ;
+; delay:ex16|counter_mod_M:count0|Q[9]  ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.513             ;
+; delay:ex16|counter_mod_M:count0|Q[14] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.511             ;
+; delay:ex15|counter_mod_M:count0|Q[22] ; delay:ex15|counter_mod_M:count1|Q[0] ; 1.490             ;
+; delay:ex16|counter_mod_M:count0|Q[16] ; delay:ex16|counter_mod_M:count1|Q[0] ; 1.490             ;
 +---------------------------------------+--------------------------------------+-------------------+
 Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
 
@@ -2412,31 +2416,31 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_SYNC_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:26
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:45
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:04
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:07
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X56_Y0 to location X66_Y10
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X67_Y11 to location X77_Y22
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:06
-Info (11888): Total time spent on timing analysis during the Fitter is 1.42 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:14
+Info (11888): Total time spent on timing analysis during the Fitter is 2.02 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:07
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:14
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Acerek/Desktop/SWrepo2/SW/ps6/zad4/output_files/diode_flashing_board.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 255 warnings
-    Info: Peak virtual memory: 6194 megabytes
-    Info: Processing ended: Thu Apr 04 11:45:02 2019
-    Info: Elapsed time: 00:01:35
+    Info: Peak virtual memory: 6188 megabytes
+    Info: Processing ended: Thu Apr 11 10:56:21 2019
+    Info: Elapsed time: 00:02:47
     Info: Total CPU time (on all processors): 00:02:02
 
 

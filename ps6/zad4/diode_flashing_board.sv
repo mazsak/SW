@@ -32,7 +32,7 @@ module delay
 				(input clk,
 				output q);
 					
-		wire [25:0] A;
+		wire [26:0] A;
 		wire	e, q1;
 					
 		counter_mod_M #(M) count0(clk,1'd1,1'd1,A);
