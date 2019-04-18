@@ -1,0 +1,12 @@
+
+State Machine - |FSM_user_coding_board|FSM_user_coding:ex1|y_Q
+Name y_Q~7 y_Q~6 y_Q~5 y_Q~4 
+y_Q.A 0 0 0 0 
+y_Q.B 0 0 0 1 
+y_Q.C 0 0 1 0 
+y_Q.D 0 0 1 1 
+y_Q.E 0 1 0 0 
+y_Q.F 0 1 0 1 
+y_Q.G 0 1 1 0 
+y_Q.H 0 1 1 1 
+y_Q.I 1 0 0 0 

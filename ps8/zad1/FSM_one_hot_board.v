@@ -1,43 +1,58 @@
 module FSM_one_hot_board(
 		input [1:0] SW,
 		input [1:0] KEY,
-		output [9:0] LEDR);
+		output [8:0] LEDR);
 	
-	FSM_one_hot ex1(SW[1],KEY[0],SW[0],LEDR[9],LEDR[8:0]);
+	FSM_one_hot ex1(SW[1],KEY[0],SW[0],LEDR[8], LEDR[7:0]);
 	
 endmodule
 
 
 module FSM_one_hot(
 		input w, clk, aclr,
-		output reg z,
-		output reg [8:0] y);
+		output reg z, output reg [7:0] stan);
 		
-	reg [8:0] d;
+	reg [8:0] y, d, c; //y - stan obecny, d- stan nastepny
+	
+	localparam [7:0] A = 8'd1, 
+		B = 8'd2,
+		C = 8'd4,
+		D = 8'd8,
+		E = 8'd16,
+		F = 8'd32,
+		G = 8'd64,
+		H = 8'd128,
+		I = 8'd256;
 	
 	always @(*) 
 		begin
-			d[0] = ~aclr;
-			d[1] = y[0] & ~w | y[5] & ~w | y[6] & ~w | y[7] & ~w | y[8] & ~w;
-			d[2] = y[1] & ~w; 
-			d[3] = y[2] & ~w;
-			d[4] = y[3] & ~w | y[4] & ~w;
-			d[5] = y[0] & w | y[2] & w | y[3] & w | y[4] & w | y[5] & w;
-			d[6] = y[5] & w; 
-			d[7] = y[6] & w;
-			d[8] = y[7] & w | y[8] & w;
+			case (y)
+				A: if (!w) d = B; 	else d = F;
+				B: if (!w) d = C; 	else d = F;
+				C: if (!w) d = D; 	else d = F;
+				D: if (!w) d = E; 	else d = F;
+				E: if (!w) d = E; 	else d = F;
+				F: if (!w) d = G; 	else d = B;
+				G: if (!w) d = H; 	else d = B;
+				H: if (!w) d = I; 	else d = B;
+				I: if (!w) d = I; 	else d = B;
+				default: d = A;
+			endcase
 		end
 		
 	always @(*)
 		z = y[4] | y[8];
 		
 	always @(posedge clk, negedge aclr)
-		if (~aclr) 	
-			begin 
+		if (~aclr) 
+			begin
 				y <= 0; 
-				y[0] <= 1'b1;
+				stan <= 0;
 			end
 		else 
-			y <= d;
+			begin
+				y <= d;
+				stan <= 0;
+			end
 		
 endmodule
