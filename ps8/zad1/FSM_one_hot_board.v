@@ -1,58 +1,51 @@
 module FSM_one_hot_board(
 		input [1:0] SW,
 		input [1:0] KEY,
-		output [8:0] LEDR);
+		output [9:0] LEDR);
 	
-	FSM_one_hot ex1(SW[1],KEY[0],SW[0],LEDR[8], LEDR[7:0]);
+	FSM_one_hot ex1(SW[1],KEY[0],SW[0],LEDR[9], LEDR[8:0]);
 	
 endmodule
 
 
 module FSM_one_hot(
 		input w, clk, aclr,
-		output reg z, output reg [7:0] stan);
+		output reg z, output reg [8:0] stan);
+			
+	reg [8:0] y_Q, Y_D; 	// aktualny stan, nastepny stan
+			
+	localparam [7:0] A = 8'b00000000, 
+		B = 8'b00000001,
+		C = 8'b00000010,
+		D = 8'b00000100,
+		E = 8'b00001000,
+		F = 8'b00010000,
+		G = 8'b00100000,
+		H = 8'b01000000,
+		I = 8'b10000000;
+			
+	always @(*)		// definicja przejsc
+		case (y_Q)
+			A: 	if (!w) Y_D = B; 	else Y_D = F;
+			B: 	if (!w) Y_D = C; 	else Y_D = F;
+			C: 	if (!w) Y_D = D; 	else Y_D = F;
+			D: 	if (!w) Y_D = E; 	else Y_D = F;
+			E: 	if (!w) Y_D = E; 	else Y_D = F;
+			F: 	if (!w) Y_D = B; 	else Y_D = G;
+			G: 	if (!w) Y_D = B; 	else Y_D = H;
+			H: 	if (!w) Y_D = B; 	else Y_D = I;
+			I: 	if (!w) Y_D = B; 	else Y_D = I;
+			default: 	Y_D = 8'bxxxxxxxx;
+		endcase
 		
-	reg [8:0] y, d, c; //y - stan obecny, d- stan nastepny
+	always @(posedge clk,negedge aclr)	// definicja pamieci
+		if (~aclr) 		y_Q <= 0;
+		else		y_Q <= Y_D;
 	
-	localparam [7:0] A = 8'd1, 
-		B = 8'd2,
-		C = 8'd4,
-		D = 8'd8,
-		E = 8'd16,
-		F = 8'd32,
-		G = 8'd64,
-		H = 8'd128,
-		I = 8'd256;
-	
-	always @(*) 
-		begin
-			case (y)
-				A: if (!w) d = B; 	else d = F;
-				B: if (!w) d = C; 	else d = F;
-				C: if (!w) d = D; 	else d = F;
-				D: if (!w) d = E; 	else d = F;
-				E: if (!w) d = E; 	else d = F;
-				F: if (!w) d = G; 	else d = B;
-				G: if (!w) d = H; 	else d = B;
-				H: if (!w) d = I; 	else d = B;
-				I: if (!w) d = I; 	else d = B;
-				default: d = A;
-			endcase
-		end
-		
 	always @(*)
-		z = y[4] | y[8];
-		
-	always @(posedge clk, negedge aclr)
-		if (~aclr) 
-			begin
-				y <= 0; 
-				stan <= 0;
-			end
-		else 
-			begin
-				y <= d;
-				stan <= 0;
-			end
+		stan <= y_Q;
+	
+	always @(*)			// definicja wyjsc
+		z = (y_Q == E) | (y_Q == I);
 		
 endmodule

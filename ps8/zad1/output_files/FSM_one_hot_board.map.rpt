@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FSM_one_hot_board
-Thu Apr 18 11:55:52 2019
+Thu Apr 18 15:15:36 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -13,12 +13,12 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
- 13. Analysis & Synthesis Suppressed Messages
+  8. State Machine - |FSM_one_hot_board|FSM_one_hot:ex1|y_Q
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -44,14 +44,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Apr 18 11:55:52 2019       ;
+; Analysis & Synthesis Status     ; Successful - Thu Apr 18 15:15:36 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; FSM_one_hot_board                           ;
 ; Top-level Entity Name           ; FSM_one_hot_board                           ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 8                                           ;
-; Total pins                      ; 13                                          ;
+; Total pins                      ; 14                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -156,7 +156,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 2           ;
+; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -168,40 +168,40 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                  ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                    ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
-; FSM_one_hot_board.v              ; yes             ; User Verilog HDL File  ; C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                              ;
++----------------------------------+-----------------+------------------------+---------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------+---------+
+; FSM_one_hot_board.v              ; yes             ; User Verilog HDL File  ; D:/Projects/SW/ps8/zad1/FSM_one_hot_board.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                        ;
-+---------------------------------------------+----------------------+
-; Resource                                    ; Usage                ;
-+---------------------------------------------+----------------------+
-; Estimate of Logic utilization (ALMs needed) ; 14                   ;
-;                                             ;                      ;
-; Combinational ALUT usage for logic          ; 20                   ;
-;     -- 7 input functions                    ; 0                    ;
-;     -- 6 input functions                    ; 7                    ;
-;     -- 5 input functions                    ; 1                    ;
-;     -- 4 input functions                    ; 6                    ;
-;     -- <=3 input functions                  ; 6                    ;
-;                                             ;                      ;
-; Dedicated logic registers                   ; 8                    ;
-;                                             ;                      ;
-; I/O pins                                    ; 13                   ;
-;                                             ;                      ;
-; Total DSP Blocks                            ; 0                    ;
-;                                             ;                      ;
-; Maximum fan-out node                        ; FSM_one_hot:ex1|y[0] ;
-; Maximum fan-out                             ; 9                    ;
-; Total fan-out                               ; 121                  ;
-; Average fan-out                             ; 2.24                 ;
-+---------------------------------------------+----------------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 5           ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 9           ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 0           ;
+;     -- 5 input functions                    ; 2           ;
+;     -- 4 input functions                    ; 0           ;
+;     -- <=3 input functions                  ; 7           ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 8           ;
+;                                             ;             ;
+; I/O pins                                    ; 14          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; SW[1]~input ;
+; Maximum fan-out                             ; 8           ;
+; Total fan-out                               ; 73          ;
+; Average fan-out                             ; 1.62        ;
++---------------------------------------------+-------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,22 +209,38 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Entity Name       ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+-------------------+--------------+
-; |FSM_one_hot_board         ; 20 (0)              ; 8 (0)                     ; 0                 ; 0          ; 13   ; 0            ; |FSM_one_hot_board                 ; FSM_one_hot_board ; work         ;
-;    |FSM_one_hot:ex1|       ; 20 (20)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |FSM_one_hot_board|FSM_one_hot:ex1 ; FSM_one_hot       ; work         ;
+; |FSM_one_hot_board         ; 9 (0)               ; 8 (0)                     ; 0                 ; 0          ; 14   ; 0            ; |FSM_one_hot_board                 ; FSM_one_hot_board ; work         ;
+;    |FSM_one_hot:ex1|       ; 9 (9)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |FSM_one_hot_board|FSM_one_hot:ex1 ; FSM_one_hot       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; FSM_one_hot:ex1|stan[0]               ; Stuck at GND due to stuck port data_in ;
-; FSM_one_hot:ex1|y[8]                  ; Stuck at GND due to stuck port data_in ;
-; FSM_one_hot:ex1|stan[1..7]            ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 9 ;                                        ;
-+---------------------------------------+----------------------------------------+
+Encoding Type:  User-Encoded
++-------------------------------------------------------------------------+
+; State Machine - |FSM_one_hot_board|FSM_one_hot:ex1|y_Q                  ;
++-------+--------+--------+-------+-------+-------+-------+-------+-------+
+; Name  ; y_Q~11 ; y_Q~10 ; y_Q~9 ; y_Q~8 ; y_Q~7 ; y_Q~6 ; y_Q~5 ; y_Q~4 ;
++-------+--------+--------+-------+-------+-------+-------+-------+-------+
+; y_Q.A ; 0      ; 0      ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ;
+; y_Q.B ; 0      ; 0      ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; y_Q.C ; 0      ; 0      ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ;
+; y_Q.D ; 0      ; 0      ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ;
+; y_Q.E ; 0      ; 0      ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ;
+; y_Q.F ; 0      ; 0      ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ;
+; y_Q.G ; 0      ; 0      ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ;
+; y_Q.H ; 0      ; 1      ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ;
+; y_Q.I ; 1      ; 0      ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ;
++-------+--------+--------+-------+-------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; FSM_one_hot:ex1|y_Q~12                ; Lost fanout        ;
+; Total Number of Removed Registers = 1 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -249,17 +265,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 8                           ;
 ;     CLR               ; 8                           ;
-; arriav_lcell_comb     ; 21                          ;
-;     normal            ; 21                          ;
+; arriav_lcell_comb     ; 10                          ;
+;     normal            ; 10                          ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 6                           ;
-;         4 data inputs ; 6                           ;
-;         5 data inputs ; 1                           ;
-;         6 data inputs ; 7                           ;
-; boundary_port         ; 13                          ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 2                           ;
+;         5 data inputs ; 2                           ;
+; boundary_port         ; 14                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.78                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.86                        ;
 +-----------------------+-----------------------------+
 
 
@@ -268,7 +283,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -278,26 +293,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Apr 18 11:55:19 2019
+    Info: Processing started: Thu Apr 18 15:15:06 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FSM_one_hot_board -c FSM_one_hot_board
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Warning (10229): Verilog HDL Expression warning at FSM_one_hot_board.v(25): truncated literal to match 8 bits File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v Line: 25
 Info (12021): Found 2 design units, including 2 entities, in source file fsm_one_hot_board.v
-    Info (12023): Found entity 1: FSM_one_hot_board File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v Line: 1
-    Info (12023): Found entity 2: FSM_one_hot File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v Line: 11
+    Info (12023): Found entity 1: FSM_one_hot_board File: D:/Projects/SW/ps8/zad1/FSM_one_hot_board.v Line: 1
+    Info (12023): Found entity 2: FSM_one_hot File: D:/Projects/SW/ps8/zad1/FSM_one_hot_board.v Line: 11
 Info (12127): Elaborating entity "FSM_one_hot_board" for the top level hierarchy
-Info (12128): Elaborating entity "FSM_one_hot" for hierarchy "FSM_one_hot:ex1" File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v Line: 6
+Info (12128): Elaborating entity "FSM_one_hot" for hierarchy "FSM_one_hot:ex1" File: D:/Projects/SW/ps8/zad1/FSM_one_hot_board.v Line: 6
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v Line: 4
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v Line: 4
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v Line: 4
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v Line: 4
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v Line: 4
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v Line: 4
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v Line: 4
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v Line: 4
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: D:/Projects/SW/ps8/zad1/FSM_one_hot_board.v Line: 4
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[10] -entity DE1_SoC was ignored
@@ -870,25 +878,18 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to HPS_DDR3_DQ[9] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_N -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
-Info (144001): Generated suppressed messages file C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/output_files/FSM_one_hot_board.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v Line: 3
-Info (21057): Implemented 33 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "KEY[1]" File: D:/Projects/SW/ps8/zad1/FSM_one_hot_board.v Line: 3
+Info (21057): Implemented 23 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 20 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 585 warnings
-    Info: Peak virtual memory: 4816 megabytes
-    Info: Processing ended: Thu Apr 18 11:55:52 2019
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:00:45
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/output_files/FSM_one_hot_board.map.smsg.
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 9 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 577 warnings
+    Info: Peak virtual memory: 4826 megabytes
+    Info: Processing ended: Thu Apr 18 15:15:36 2019
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:57
 
 

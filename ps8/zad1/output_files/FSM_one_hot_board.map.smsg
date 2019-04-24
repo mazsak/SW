@@ -1,2 +1,2 @@
-Info (10281): Verilog HDL Declaration information at FSM_one_hot_board.v(15): object "c" differs only in case from object "C" in the same scope File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v Line: 15
-Info (10281): Verilog HDL Declaration information at FSM_one_hot_board.v(15): object "d" differs only in case from object "D" in the same scope File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad1/FSM_one_hot_board.v Line: 15
+Info (10281): Verilog HDL Declaration information at FSM_one_hot_board.v(15): object "c" differs only in case from object "C" in the same scope File: D:/Projects/SW/ps8/zad1/FSM_one_hot_board.v Line: 15
+Info (10281): Verilog HDL Declaration information at FSM_one_hot_board.v(15): object "d" differs only in case from object "D" in the same scope File: D:/Projects/SW/ps8/zad1/FSM_one_hot_board.v Line: 15
