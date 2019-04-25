@@ -1,6 +1,6 @@
 vendor_name = ModelSim
-source_file = 1, D:/Projects/SW/ps7/zad1V2/accum_N_bits_board.v
-source_file = 1, D:/Projects/SW/ps7/zad1V2/db/accum_N_bits_board.cbx.xml
+source_file = 1, C:/Users/Acerek/Desktop/SWrepo2/SW/ps7/zad1V2/accum_N_bits_board.v
+source_file = 1, C:/Users/Acerek/Desktop/SWrepo2/SW/ps7/zad1V2/db/accum_N_bits_board.cbx.xml
 design_name = accum_N_bits_board
 instance = comp, \LEDR[0]~output , LEDR[0]~output, accum_N_bits_board, 1
 instance = comp, \LEDR[1]~output , LEDR[1]~output, accum_N_bits_board, 1

@@ -6,7 +6,7 @@ module accum_N_bits_board(
 		
 	
 	accumulator_N_bits 
-	#(8) ex(SW[7:0], KEY[1], !KEY[0], LEDR[7:0], LEDR[8], LEDR[9]);
+	#(8) ex(SW[7:0], KEY[1], KEY[0], LEDR[7:0], LEDR[8], LEDR[9]);
 	
 	decoder_hex_16 d3(SW[7:4],HEX3[0:6]);
 	decoder_hex_16 d2(SW[3:0],HEX2[0:6]);
@@ -92,9 +92,9 @@ module accumulator_N_bits
 	
 	wire [N-1:0] B, C;
 	
-	register_N_bits rA(A[N-1],clk,aclr,B[N-1:0]);
+	register_N_bits rA(S[N-1],clk,aclr,B[N-1:0]);
 	
-	adder_carry sum(B[N-1:0],S[N-1:0], 1'd0, C[N-1:0], carry);
+	adder_carry sum(B[N-1:0],A[N-1:0], 1'd0, C[N-1:0], carry);
 	
 	register_N_bits rS(C[N-1],clk,aclr,S[N-1:0]);
 	

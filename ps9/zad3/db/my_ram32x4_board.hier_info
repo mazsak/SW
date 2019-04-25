@@ -1,0 +1,145 @@
+|my_ram32x4_board
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+SW[3] => SW[3].IN2
+SW[4] => SW[4].IN2
+SW[5] => SW[5].IN2
+SW[6] => SW[6].IN2
+SW[7] => SW[7].IN2
+SW[8] => SW[8].IN2
+SW[9] => SW[9].IN1
+KEY[0] => KEY[0].IN1
+HEX0[6] << decoder_hex_16:hex0.port1
+HEX0[5] << decoder_hex_16:hex0.port1
+HEX0[4] << decoder_hex_16:hex0.port1
+HEX0[3] << decoder_hex_16:hex0.port1
+HEX0[2] << decoder_hex_16:hex0.port1
+HEX0[1] << decoder_hex_16:hex0.port1
+HEX0[0] << decoder_hex_16:hex0.port1
+HEX2[6] << decoder_hex_16:hex2.port1
+HEX2[5] << decoder_hex_16:hex2.port1
+HEX2[4] << decoder_hex_16:hex2.port1
+HEX2[3] << decoder_hex_16:hex2.port1
+HEX2[2] << decoder_hex_16:hex2.port1
+HEX2[1] << decoder_hex_16:hex2.port1
+HEX2[0] << decoder_hex_16:hex2.port1
+HEX4[6] << decoder_hex_16:hex4.port1
+HEX4[5] << decoder_hex_16:hex4.port1
+HEX4[4] << decoder_hex_16:hex4.port1
+HEX4[3] << decoder_hex_16:hex4.port1
+HEX4[2] << decoder_hex_16:hex4.port1
+HEX4[1] << decoder_hex_16:hex4.port1
+HEX4[0] << decoder_hex_16:hex4.port1
+HEX5[6] << decoder_hex_16:hex5.port1
+HEX5[5] << decoder_hex_16:hex5.port1
+HEX5[4] << decoder_hex_16:hex5.port1
+HEX5[3] << decoder_hex_16:hex5.port1
+HEX5[2] << decoder_hex_16:hex5.port1
+HEX5[1] << decoder_hex_16:hex5.port1
+HEX5[0] << decoder_hex_16:hex5.port1
+
+
+|my_ram32x4_board|my_ram32x4:x0
+address[0] => memory_array.waddr_a[0].DATAIN
+address[0] => memory_array.WADDR
+address[0] => memory_array.RADDR
+address[1] => memory_array.waddr_a[1].DATAIN
+address[1] => memory_array.WADDR1
+address[1] => memory_array.RADDR1
+address[2] => memory_array.waddr_a[2].DATAIN
+address[2] => memory_array.WADDR2
+address[2] => memory_array.RADDR2
+address[3] => memory_array.waddr_a[3].DATAIN
+address[3] => memory_array.WADDR3
+address[3] => memory_array.RADDR3
+address[4] => memory_array.waddr_a[4].DATAIN
+address[4] => memory_array.WADDR4
+address[4] => memory_array.RADDR4
+clk => memory_array.we_a.CLK
+clk => memory_array.waddr_a[4].CLK
+clk => memory_array.waddr_a[3].CLK
+clk => memory_array.waddr_a[2].CLK
+clk => memory_array.waddr_a[1].CLK
+clk => memory_array.waddr_a[0].CLK
+clk => memory_array.data_a[3].CLK
+clk => memory_array.data_a[2].CLK
+clk => memory_array.data_a[1].CLK
+clk => memory_array.data_a[0].CLK
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => memory_array.CLK0
+data[0] => memory_array.data_a[0].DATAIN
+data[0] => memory_array.DATAIN
+data[1] => memory_array.data_a[1].DATAIN
+data[1] => memory_array.DATAIN1
+data[2] => memory_array.data_a[2].DATAIN
+data[2] => memory_array.DATAIN2
+data[3] => memory_array.data_a[3].DATAIN
+data[3] => memory_array.DATAIN3
+wren => memory_array.we_a.DATAIN
+wren => memory_array.WE
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|my_ram32x4_board|decoder_hex_16:hex5
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+h[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|my_ram32x4_board|decoder_hex_16:hex4
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+h[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|my_ram32x4_board|decoder_hex_16:hex2
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+h[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|my_ram32x4_board|decoder_hex_16:hex0
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+h[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

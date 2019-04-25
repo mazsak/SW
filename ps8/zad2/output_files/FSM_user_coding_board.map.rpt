@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FSM_user_coding_board
-Thu Apr 18 09:26:24 2019
+Thu Apr 25 13:23:30 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -43,14 +43,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Apr 18 09:26:24 2019       ;
+; Analysis & Synthesis Status     ; Successful - Thu Apr 25 13:23:29 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; FSM_user_coding_board                       ;
 ; Top-level Entity Name           ; FSM_user_coding_board                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 4                                           ;
-; Total pins                      ; 4                                           ;
+; Total pins                      ; 13                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -192,14 +192,14 @@ refer to the applicable agreement for further details.
 ;                                             ;                           ;
 ; Dedicated logic registers                   ; 4                         ;
 ;                                             ;                           ;
-; I/O pins                                    ; 4                         ;
+; I/O pins                                    ; 13                        ;
 ;                                             ;                           ;
 ; Total DSP Blocks                            ; 0                         ;
 ;                                             ;                           ;
 ; Maximum fan-out node                        ; FSM_user_coding:ex1|y_Q~4 ;
-; Maximum fan-out                             ; 5                         ;
-; Total fan-out                               ; 40                        ;
-; Average fan-out                             ; 2.35                      ;
+; Maximum fan-out                             ; 6                         ;
+; Total fan-out                               ; 53                        ;
+; Average fan-out                             ; 1.51                      ;
 +---------------------------------------------+---------------------------+
 
 
@@ -208,7 +208,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Entity Name           ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+-----------------------+--------------+
-; |FSM_user_coding_board     ; 5 (0)               ; 4 (0)                     ; 0                 ; 0          ; 4    ; 0            ; |FSM_user_coding_board                     ; FSM_user_coding_board ; work         ;
+; |FSM_user_coding_board     ; 5 (0)               ; 4 (0)                     ; 0                 ; 0          ; 13   ; 0            ; |FSM_user_coding_board                     ; FSM_user_coding_board ; work         ;
 ;    |FSM_user_coding:ex1|   ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |FSM_user_coding_board|FSM_user_coding:ex1 ; FSM_user_coding       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -254,14 +254,15 @@ Encoding Type:  User-Encoded
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 4                           ;
 ;     CLR               ; 4                           ;
-; arriav_lcell_comb     ; 5                           ;
-;     normal            ; 5                           ;
+; arriav_lcell_comb     ; 6                           ;
+;     normal            ; 6                           ;
+;         0 data inputs ; 1                           ;
 ;         4 data inputs ; 2                           ;
 ;         5 data inputs ; 3                           ;
-; boundary_port         ; 4                           ;
+; boundary_port         ; 13                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.83                        ;
+; Average LUT depth     ; 0.77                        ;
 +-----------------------+-----------------------------+
 
 
@@ -270,7 +271,7 @@ Encoding Type:  User-Encoded
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -280,7 +281,7 @@ Encoding Type:  User-Encoded
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Apr 18 09:25:51 2019
+    Info: Processing started: Thu Apr 25 13:22:59 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FSM_user_coding_board -c FSM_user_coding_board
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -289,6 +290,12 @@ Info (12021): Found 2 design units, including 2 entities, in source file fsm_use
     Info (12023): Found entity 2: FSM_user_coding File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad2/FSM_user_coding_board.v Line: 10
 Info (12127): Elaborating entity "FSM_user_coding_board" for the top level hierarchy
 Info (12128): Elaborating entity "FSM_user_coding" for hierarchy "FSM_user_coding:ex1" File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad2/FSM_user_coding_board.v Line: 6
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad2/FSM_user_coding_board.v Line: 4
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad2/FSM_user_coding_board.v Line: 4
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad2/FSM_user_coding_board.v Line: 4
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad2/FSM_user_coding_board.v Line: 4
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps8/zad2/FSM_user_coding_board.v Line: 4
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
@@ -864,14 +871,14 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 9 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 1 output pins
+    Info (21059): Implemented 10 output pins
     Info (21061): Implemented 5 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 573 warnings
-    Info: Peak virtual memory: 4828 megabytes
-    Info: Processing ended: Thu Apr 18 09:26:24 2019
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:00:46
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 579 warnings
+    Info: Peak virtual memory: 4821 megabytes
+    Info: Processing ended: Thu Apr 25 13:23:30 2019
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:45
 
 

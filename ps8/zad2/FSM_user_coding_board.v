@@ -1,15 +1,15 @@
 module FSM_user_coding_board(
 		input [1:0] SW,
 		input [0:0] KEY,
-		output [0:0] LEDR);
+		output [9:0] LEDR);
 	
-	FSM_user_coding ex1(SW[1],KEY[0],SW[0],LEDR[0:0]);
+	FSM_user_coding ex1(SW[1],KEY[0],SW[0],LEDR[9], LEDR[8:0]);
 	
 endmodule
 
 module FSM_user_coding(
 	input w,clk,aclr,
-	output reg z);	
+	output reg z, output reg [8:0] stan);	
 	
 	reg [3:0] y_Q, Y_D; 	// aktualny stan, nastepny stan
 			
@@ -40,6 +40,9 @@ module FSM_user_coding(
 	always @(posedge clk,negedge aclr)	// definicja pamieci
 		if (~aclr) 		y_Q <= 0;
 		else		y_Q <= Y_D;
+		
+	always @(*)
+		stan <= y_Q;
 
 	always @(*)			// definicja wyjsc
 		z = (y_Q == E) | (y_Q == I);

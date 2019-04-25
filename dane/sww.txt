@@ -1,7 +1,9 @@
-ps1: 4/4
+﻿ps1: 4/4
 ps2: 8/8  8 zadań na cw2 SW
 ps3: 8/8
 ps4: 6/6 6-zamiast cout daj error w kodzie
 ps5: 5/5 5-kod przemkowy
 ps6: 4/5
 ps7: 0/5
+ps8: 3/6
+ps9: 4/4

@@ -1,6 +1,6 @@
 module FSM_one_hot_board(
 		input [1:0] SW,
-		input [1:0] KEY,
+		input [0:0] KEY,
 		output [9:0] LEDR);
 	
 	FSM_one_hot ex1(SW[1],KEY[0],SW[0],LEDR[9], LEDR[8:0]);

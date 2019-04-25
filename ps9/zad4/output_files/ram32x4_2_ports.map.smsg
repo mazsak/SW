@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at ram32x4_2_ports.v(4): object "HEX5" differs only in case from object "hex5" in the same scope File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps9/zad4/ram32x4_2_ports.v Line: 4
+Info (10281): Verilog HDL Declaration information at ram32x4_2_ports.v(4): object "HEX4" differs only in case from object "hex4" in the same scope File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps9/zad4/ram32x4_2_ports.v Line: 4
+Info (10281): Verilog HDL Declaration information at ram32x4_2_ports.v(4): object "HEX2" differs only in case from object "hex2" in the same scope File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps9/zad4/ram32x4_2_ports.v Line: 4
+Info (10281): Verilog HDL Declaration information at ram32x4_2_ports.v(4): object "HEX0" differs only in case from object "hex0" in the same scope File: C:/Users/Acerek/Desktop/SWrepo2/SW/ps9/zad4/ram32x4_2_ports.v Line: 4

@@ -8,6 +8,22 @@
 					"strict" : false
 				},
 				{
+					"name" : "LEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[9]",
+					"strict" : false
+				},
+				{
 					"name" : "SW[1]",
 					"strict" : false
 				},

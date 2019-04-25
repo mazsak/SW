@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Thu Apr 25 10:45:42 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : my_ram32x4_board
+Top-level Entity Name : my_ram32x4_board
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 0
+Total pins : 39
+Total virtual pins : 0
+Total block memory bits : 128
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0
