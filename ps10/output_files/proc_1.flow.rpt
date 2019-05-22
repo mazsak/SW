@@ -1,5 +1,5 @@
 Flow report for proc_1
-Thu May 09 11:51:50 2019
+Thu May 16 08:29:15 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -37,29 +37,29 @@ refer to the applicable agreement for further details.
 
 
 
-+----------------------------------------------------------------------------------------+
-; Flow Summary                                                                           ;
-+---------------------------------+------------------------------------------------------+
-; Flow Status                     ; EDA Netlist Writer Failed - Thu May 09 11:51:50 2019 ;
-; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition          ;
-; Revision Name                   ; proc_1                                               ;
-; Top-level Entity Name           ; proc_1                                               ;
-; Family                          ; Cyclone V                                            ;
-; Device                          ; 5CSEMA5F31C6                                         ;
-; Timing Models                   ; Final                                                ;
-; Logic utilization (in ALMs)     ; 70 / 32,070 ( < 1 % )                                ;
-; Total registers                 ; 102                                                  ;
-; Total pins                      ; 22 / 457 ( 5 % )                                     ;
-; Total virtual pins              ; 0                                                    ;
-; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                                ;
-; Total DSP Blocks                ; 0 / 87 ( 0 % )                                       ;
-; Total HSSI RX PCSs              ; 0                                                    ;
-; Total HSSI PMA RX Deserializers ; 0                                                    ;
-; Total HSSI TX PCSs              ; 0                                                    ;
-; Total HSSI PMA TX Serializers   ; 0                                                    ;
-; Total PLLs                      ; 0 / 6 ( 0 % )                                        ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                        ;
-+---------------------------------+------------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Thu May 16 08:29:15 2019       ;
+; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                   ; proc_1                                      ;
+; Top-level Entity Name           ; proc_1                                      ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSEMA5F31C6                                ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 70 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 102                                         ;
+; Total pins                      ; 22 / 457 ( 5 % )                            ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -102,7 +102,39 @@ refer to the applicable agreement for further details.
 ; TimeQuest Timing Analyzer ; 00:00:15     ; 1.1                     ; 5102 MB             ; 00:00:13                           ;
 ; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4746 MB             ; 00:00:04                           ;
 ; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4717 MB             ; 00:00:04                           ;
-; Total                     ; 00:03:29     ; --                      ; --                  ; 00:03:59                           ;
+; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4717 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4725 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4717 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4725 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4717 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4725 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4717 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4725 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4717 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4725 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4717 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:07     ; 1.0                     ; 4725 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:07     ; 1.0                     ; 4717 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4725 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4717 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4725 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:08     ; 1.0                     ; 4717 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:08     ; 1.0                     ; 4725 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:07     ; 1.0                     ; 4717 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:15     ; 1.0                     ; 4725 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:07     ; 1.0                     ; 4717 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:08     ; 1.0                     ; 4725 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:08     ; 1.0                     ; 4717 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:15     ; 1.0                     ; 4746 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4717 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4725 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4717 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4717 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4717 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4717 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4717 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4725 MB             ; 00:00:04                           ;
+; Total                     ; 00:06:49     ; --                      ; --                  ; 00:06:31                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,6 +149,38 @@ refer to the applicable agreement for further details.
 ; TimeQuest Timing Analyzer ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 
@@ -129,6 +193,38 @@ quartus_asm --read_settings_files=off --write_settings_files=off proc_1 -c proc_
 quartus_sta proc_1 -c proc_1
 quartus_eda --read_settings_files=off --write_settings_files=off proc_1 -c proc_1
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/output_files/Waveform1.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/output_files/Waveform1.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/ proc_1 -c proc_1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/ proc_1 -c proc_1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/ proc_1 -c proc_1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/ proc_1 -c proc_1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/ proc_1 -c proc_1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/ proc_1 -c proc_1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/ proc_1 -c proc_1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/ proc_1 -c proc_1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform1.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/ proc_1 -c proc_1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform1.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/ proc_1 -c proc_1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform1.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/ proc_1 -c proc_1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform1.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/ proc_1 -c proc_1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform1.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/ proc_1 -c proc_1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform1.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform1.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform1.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform1.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_1 -c proc_1 --vector_source=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/Waveform2.vwf --testbench_file=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/Waveform2.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Acerek/Desktop/SWrepo2/SW/ps10/simulation/qsim/ proc_1 -c proc_1
 
 
 

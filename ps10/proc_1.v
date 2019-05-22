@@ -15,12 +15,12 @@ module proc (DIN, Resetn, Clock, Run, Done, BusWires);
 		
 	parameter T0 = 2'b00, T1 = 2'b01, T2 = 2'b10, T3 = 2'b11;
 	
-	//deklaracja zmiennych
 	reg [8:0] BusWires;
    reg [0:7] Rin, Rout;
 	reg [8:0] Sum;
 	reg IRin, Done, DINout, Ain, Gin, Gout, AddSub;
 	reg [2:0] Tstep_Q /* synthesis preserve */ , Tstep_D /* synthesis preserve */ ;
+	
 	wire [2:0] I;
 	wire [0:7] Xreg, Yreg;
 	wire [8:0] R0, R1, R2, R3, R4, R5, R6, R7;
@@ -33,11 +33,11 @@ module proc (DIN, Resetn, Clock, Run, Done, BusWires);
 	dec3to8 decX (IR[4:6], 1'b1, Xreg);
 	dec3to8 decY (IR[7:9], 1'b1, Yreg);
 	
-	// Zarządzaj tabelą stanów FSM
+	// zmiana stanow FSM
 	always@(Tstep_Q, Run, Done)
 	begin
 		case(Tstep_Q)
-			T0: // W tej chwili dane są ładowane do IR
+			T0: // w tej chwili dane są ładowane do IR
 				if (~Run) Tstep_D = T0;
 				else Tstep_D = T1;
 	 		T1:
@@ -50,13 +50,13 @@ module proc (DIN, Resetn, Clock, Run, Done, BusWires);
 		endcase
 	end
 	
-	//Deklaracja operacji
+	// deklaracja operacji
 	parameter mv = 3'b000, mvi = 3'b001, add = 3'b010, sub = 3'b011;
 	
-	// Sterowanie wejściami FSM
+	// sterowanie wejściami FSM
 	always @(Tstep_Q or I or Xreg or Yreg)
 	begin
-		//określenie wartości początkowych
+		// określenie wartości początkowych
 		Rin = 8'b0; Rout = 8'b0; Done = 1'b0; IRin = 1'b0;
 		DINout = 1'b0;
 		Ain = 1'b0; Gin = 1'b0; Gout = 1'b0; AddSub = 1'b0;
@@ -111,14 +111,14 @@ module proc (DIN, Resetn, Clock, Run, Done, BusWires);
 		endcase
 	end 
 
-	// sterowanie przerzutnikami FSM
+	// sprawdzanie resetu
 	always @(posedge Clock, negedge Resetn)
 		if (!Resetn)
 			Tstep_Q <= T0;
 		else
 			Tstep_Q <= Tstep_D;
 			
-	// Inicjacja innych rejestrow
+	// deklaracja rejestrow
 	regn reg_0 (BusWires, Rin[0], Clock, R0);
 	regn reg_1 (BusWires, Rin[1], Clock, R1);
 	regn reg_2 (BusWires, Rin[2], Clock, R2);
@@ -130,7 +130,7 @@ module proc (DIN, Resetn, Clock, Run, Done, BusWires);
 	regn reg_A (BusWires, Ain, Clock, A);
 	regn #(.n(9)) reg_IR (DIN, IRin, Clock, IR);
 
-	//	moduł sumatora / odejmowania
+	//	modul ALU
 	always @(AddSub or A or BusWires)
 		begin
 		if (!AddSub)
@@ -139,12 +139,11 @@ module proc (DIN, Resetn, Clock, Run, Done, BusWires);
 			Sum = A - BusWires;
 	end
 	
-	//Deklaracja rejestru G przechowującego wynik z ALU aaaaaaaaaaaaaaaaaaaaaaaa
+	// deklaracja rejestru G przechowującego wynik z ALU
    regn reg_G (Sum, Gin, Clock, G);
 	
-	//określenie szyny
+	// multiplekser
 	assign Sel = {Rout, Gout, DINout};
-
 	always @(*)
 	begin
 		if (Sel == 10'b1000000000)

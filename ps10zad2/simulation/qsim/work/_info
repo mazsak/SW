@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Acerek/Desktop/SWrepo2/SW/ps10zad2/simulation/qsim
+vprocessor_with_ROM
+Z1 !s110 1557993266
+!i10b 1
+!s100 XdD9=niKQ1JR>e9:9zF@Z3
+IYhB_g2VWGnd=L=ic953ZV2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1557993264
+8processor_with_ROM.vo
+Fprocessor_with_ROM.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1557993266.000000
+!s107 processor_with_ROM.vo|
+!s90 -work|work|processor_with_ROM.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+nprocessor_with_@r@o@m
+vprocessor_with_ROM_vlg_vec_tst
+R1
+!i10b 1
+!s100 oa^gNIANNUV;1eoPC^JXn1
+IgfOW?oSR09g3_^E><Dzna2
+R2
+R0
+w1557993259
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+nprocessor_with_@r@o@m_vlg_vec_tst
