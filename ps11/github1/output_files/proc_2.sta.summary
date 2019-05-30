@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'regn:reg_G|Q[0]'
+Slack : -17.029
+TNS   : -227.390
+
+Type  : Slow 1100mV 85C Model Setup 'Clock'
+Slack : -7.551
+TNS   : -698.526
+
+Type  : Slow 1100mV 85C Model Hold 'regn:reg_G|Q[0]'
+Slack : -3.744
+TNS   : -40.066
+
+Type  : Slow 1100mV 85C Model Hold 'Clock'
+Slack : -1.198
+TNS   : -11.870
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'regn:reg_G|Q[0]'
+Slack : -2.362
+TNS   : -318.458
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Clock'
+Slack : -0.394
+TNS   : -68.282
+
+Type  : Slow 1100mV 0C Model Setup 'regn:reg_G|Q[0]'
+Slack : -16.615
+TNS   : -223.368
+
+Type  : Slow 1100mV 0C Model Setup 'Clock'
+Slack : -7.296
+TNS   : -667.268
+
+Type  : Slow 1100mV 0C Model Hold 'regn:reg_G|Q[0]'
+Slack : -3.696
+TNS   : -39.506
+
+Type  : Slow 1100mV 0C Model Hold 'Clock'
+Slack : -1.308
+TNS   : -17.440
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'regn:reg_G|Q[0]'
+Slack : -2.255
+TNS   : -320.191
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -0.394
+TNS   : -72.340
+
+Type  : Fast 1100mV 85C Model Setup 'regn:reg_G|Q[0]'
+Slack : -10.881
+TNS   : -139.022
+
+Type  : Fast 1100mV 85C Model Setup 'Clock'
+Slack : -4.741
+TNS   : -420.409
+
+Type  : Fast 1100mV 85C Model Hold 'regn:reg_G|Q[0]'
+Slack : -2.193
+TNS   : -23.239
+
+Type  : Fast 1100mV 85C Model Hold 'Clock'
+Slack : -0.665
+TNS   : -5.336
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'regn:reg_G|Q[0]'
+Slack : -1.215
+TNS   : -133.757
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Clock'
+Slack : -0.086
+TNS   : -10.494
+
+Type  : Fast 1100mV 0C Model Setup 'regn:reg_G|Q[0]'
+Slack : -9.711
+TNS   : -125.334
+
+Type  : Fast 1100mV 0C Model Setup 'Clock'
+Slack : -4.046
+TNS   : -353.521
+
+Type  : Fast 1100mV 0C Model Hold 'regn:reg_G|Q[0]'
+Slack : -1.971
+TNS   : -20.755
+
+Type  : Fast 1100mV 0C Model Hold 'Clock'
+Slack : -0.744
+TNS   : -10.454
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'regn:reg_G|Q[0]'
+Slack : -1.014
+TNS   : -112.230
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -0.086
+TNS   : -10.611
+
+------------------------------------------------------------

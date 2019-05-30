@@ -1,0 +1,301 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Done",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[8]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[9]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[10]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[11]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[12]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[13]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[14]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ADDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ADDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ADDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ADDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ADDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ADDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ADDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ADDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ADDR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "W",
+					"strict" : false
+				},
+				{
+					"name" : "Tstep_Q[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Tstep_Q[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Tstep_Q[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[7]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[8]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[9]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[10]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[11]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[12]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[13]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[14]",
+					"strict" : false
+				},
+				{
+					"name" : "R0[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Resetn",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
