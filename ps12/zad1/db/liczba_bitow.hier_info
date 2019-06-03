@@ -1,0 +1,68 @@
+|liczba_bitow
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => ~NO_FANOUT~
+SW[9] => SW[9].IN1
+CLOCK_50 => CLOCK_50.IN1
+KEY[0] => KEY[0].IN1
+HEX0[6] <= decoder_hex_10:dec.port1
+HEX0[5] <= decoder_hex_10:dec.port1
+HEX0[4] <= decoder_hex_10:dec.port1
+HEX0[3] <= decoder_hex_10:dec.port1
+HEX0[2] <= decoder_hex_10:dec.port1
+HEX0[1] <= decoder_hex_10:dec.port1
+HEX0[0] <= decoder_hex_10:dec.port1
+LEDR[9] <= liczba_b:x0.port5
+
+
+|liczba_bitow|liczba_b:x0
+in[0] => ~NO_FANOUT~
+in[1] => Selector0.IN0
+in[2] => Selector8.IN0
+in[3] => Selector9.IN0
+in[4] => Selector10.IN0
+in[5] => Selector11.IN0
+in[6] => Selector12.IN0
+in[7] => Selector13.IN1
+clk => state~1.DATAIN
+sclr => Selector2.IN3
+sclr => Selector3.IN3
+sclr => done$latch.DATAIN
+sclr => Selector7.IN2
+sclr => Selector1.IN2
+sclr => next.DATAB
+sclr => state~3.DATAIN
+run => done.IN0
+run => A[1].IN1
+run => result[3].IN1
+run => next.s3_272.LATCH_ENABLE
+run => next.s2_278.LATCH_ENABLE
+run => next.s1_284.LATCH_ENABLE
+run => next.s0_290.LATCH_ENABLE
+result[0] <= result[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+done <= done$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|liczba_bitow|decoder_hex_10:dec
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+h[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
